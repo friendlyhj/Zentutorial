@@ -10,12 +10,12 @@ Material类有以下方法构建材料部件
 
 ```text
 registerParts(String[] partNames); 
-//参数为字符串数组，为所需要注册的部件ID
+//参数为字符串数组，为所需要注册的部件ID（可以使用预设部件的ID)
 registerParts(IPart[] parts);
 //参数也可以为部件对象数组
 
 registerPart(String partName);
-//参数为字符串，为所需要注册的部件ID
+//参数为字符串，为所需要注册的部件ID（可以使用预设部件的ID)
 registerPart(IPart part);
 //参数为部件对象
 ```
