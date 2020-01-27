@@ -12,3 +12,4 @@
 
 更多内容参见[官方wiki](https://docs.blamejared.com/1.12/en/)
 
+使用CC BY-NC-SA 4.0 协议
