@@ -41,7 +41,7 @@
   * [Math包](advanced/calc-and-assign/math-package.md)
   * [in/has 操作符](advanced/calc-and-assign/in-operator.md)
   * [三元操作符](advanced/calc-and-assign/ternary-operator.md)
-* [预处理器](advanced/yu-chu-li-qi.md)
+* [预处理器](advanced/preprocessors.md)
 * [全局和静态变量](advanced/global-and-static-variable.md)
 * [跨脚本引用](advanced/cross-scripts-reference.md)
 * [关联数组\(映射\)](advanced/maps.md)
