@@ -26,3 +26,16 @@ print(scripts.a.myVal);
 scripts.a.makeLine();
 ```
 
+你甚至可以使用import导入脚本
+
+c.zs
+
+```javascript
+import scripts.a
+
+print(a.myVal);
+a.makeLine();
+```
+
+
+
