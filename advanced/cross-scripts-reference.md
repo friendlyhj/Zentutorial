@@ -31,7 +31,7 @@ scripts.a.makeLine();
 c.zs
 
 ```javascript
-import scripts.a
+import scripts.a;
 
 print(a.myVal);
 a.makeLine();
