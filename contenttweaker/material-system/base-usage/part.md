@@ -68,7 +68,7 @@ var pBuilder as PartBuilder = MaterialSystem.getPartBuilder();
 
 ### 部件类型
 
-你需要部件类型指定你需要的部件是什么类型，通过MaterialSystem包的getPartType方法获取 你可以使用：
+你需要为你将要创建的部件指定类型，通过MaterialSystem包的getPartType方法获取 你可以使用：
 
 * item （物品）
 * block （方块）
