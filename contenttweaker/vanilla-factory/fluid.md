@@ -22,7 +22,7 @@
 | colorize | bool | true | 实际材质是否受颜色参数影响 |
 | stillLocation | string | "contenttweaker:fluids/fluid" | 设定源头材质路径，建议类似水的设置为"base:fluids/liquid"，类似熔岩设置为"base:fluids/molten" |
 | flowingLocation | string | "contenttweaker:fluids/fluid\_flow" | 设定流动流体的材质路径，建议类似水的设置为"base:fluids/liquid\_flow"，类似熔岩设置为"base:fluids/molten\_flowing" |
-| material | IMaterialDefinition | \ | 建议类似水的设置为\，类似熔岩设置为\ |
+| material | IMaterialDefinition | \<blockmaterial:water\> | 建议类似水的设置为\<blockmaterial:water\>，类似熔岩设置为\<blockmaterial:lava\> |
 | gaseous | bool | false | 流体是否反重力流动 |
 
 示例脚本
