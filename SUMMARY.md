@@ -92,6 +92,6 @@
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
   * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
-* [ZenClass](contenttweaker/zenclass.md)
-* [CraftTweaker 类库](contenttweaker/crafttweaker-lib.md)
+* [ZenClass](zenclass.md)
+* [CraftTweaker 类库](crafttweaker-lib.md)
 

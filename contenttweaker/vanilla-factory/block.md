@@ -1,7 +1,5 @@
 # 方块
 
-
-
 需要`import mods.contenttweaker.Block;`导入有关包。原版加工厂包也需要导入！
 
 用`val testBlock as Block = VanillaFactory.createItem(字符串方块ID, BlockMaterial);`呼出一个方块类的一个实例，并存储在某个变量中，以做接下来的修改。ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。 设定的BlockMaterial将会影响方块的一些特性。
