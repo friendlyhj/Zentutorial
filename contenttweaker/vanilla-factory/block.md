@@ -19,7 +19,7 @@
 | blockHardness | float | 5.0 | 方块硬度 |
 | blockLayer | string | "SOLID" | 可用“SOLID”, “CUTOUT\_MIPPED”, “CUTOUT”, “TRANSLUCENT”之一，如果方块材质有透明的，需用“TRANSLUCENT” |
 | blockResistance | float | 5.0 | 方块防爆等级 |
-| blockSoundType | SoundType | `soundtype:metal` | 设置方块声音，方块放置破坏时的声音，记得记得/ct soundtype指令 |
+| blockSoundType | SoundType | `<soundtype:metal>` | 设置方块声音，方块放置破坏时的声音，记得记得/ct soundtype指令 |
 | creativeTab | ICreativeTab | 杂项创造标签 | 设置物品所在创造标签，记得/ct creativetab指令 |
 | dropHandler | IBlockDropHandler | null | 函数，用于设定方块掉落物 |
 | entitySpawnable | bool | true | 生物是否可以在这个方块上生成 |
