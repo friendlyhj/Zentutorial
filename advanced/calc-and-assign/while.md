@@ -18,8 +18,9 @@ print("After loop: " + i);
 
 //会输出 10 - 6, 因为在下一轮循环中 i等于5 ,使循环中断
 while (i > 0) {
-    if i == 5
+    if (i == 5) {
         break;
+    }
     print(i);
     i -= 1;
 }
