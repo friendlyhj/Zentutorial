@@ -29,8 +29,9 @@ print("After loop 2: " + i);
 
 
 for k in 1 .. 10 {
-    if (k == 5)
+    if (k == 5) {
         break;
+    }
     print(k);
 }
 ```
