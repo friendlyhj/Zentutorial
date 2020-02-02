@@ -15,8 +15,8 @@
 | `item.onlyDamageAtLeast(value)` | `vaule`为整数 | 只有耐久不小于`value`值才能参与合成 |
 | `item.onlyDamageAtMost(value)` | `vaule`为整数 | 只有耐久不大于`value`值才能参与合成 |
 | `item.onlyDamageBetween(valueA, valueB)` | `valueA`和`valueB`均为整数 | 只有耐久在两者之间才能参与合成 |
-| `item.withTag(NBT)` | `NBT`为物品所带NBT | 需要带有设定NBT的物品才能参与合成，JEI内显示带设定NBT的物品（用于输入）或将带设定NBT的物品作为合成成品（用于输出） |
-| `item.onlyWithTag(NBT)` | `NBT`为物品所带NBT | 需要带有设定NBT的物品才能参与合成，JEI内显示不带NBT的物品 |
+| `item.withTag(NBT)` | `NBT`为物品所带NBT | 需要带有设定NBT标签的物品才能参与合成，JEI内显示带设定NBT的物品（用于输入）或将带设定NBT的物品作为合成成品（用于输出） |
+| `item.onlyWithTag(NBT)` | `NBT`为物品所带NBT | 需要**只**带有设定NBT的物品才能参与合成 |
 | `item.withDamage(value)` | `value`为整数 | 输出带有`value`点耐久损耗的物品 |
 | `item.only(function)` | `function`为以这个物品为参数的匿名函数 | 自定义物品条件，具体用法将在高级运用讲解 |
 
