@@ -11,7 +11,7 @@ Zenscript用`<`和`>`来表示游戏的一个对象。比如物品、矿辞。
 
 <ore:ingotIron> //获取铁锭矿辞(IOreDictEntry)
 
-<entity:minecraft:creeper> //获取原版苦力怕实体定义(IEntityLivingDefinition)
+<entity:minecraft:creeper> //获取原版苦力怕实体定义(IEntityDefinition)
 
 <blockstate:minecraft:stone> //获取原版石头方块状态(IBlockState)
 
