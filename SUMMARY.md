@@ -7,6 +7,7 @@
 
 * [CTGUI](easy/ctgui.md)
 * [局部变量](easy/variable.md)
+* [尖括号调用](easy/bracket-handlers.md)
 * [工作台合成](easy/crafting-table/README.md)
   * [添加配方](easy/crafting-table/add-recipes.md)
   * [移除配方](easy/crafting-table/remove-recipes.md)
