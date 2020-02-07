@@ -60,8 +60,6 @@
   * [常用类](advanced/event-overview/usual-classes.md)
   * [基本框架](advanced/event-overview/basic-framework.md)
   * [一些忠告](advanced/event-overview/tips.md)
-  * [例子](advanced/event-overview/examples/README.md)
-    * [修改方块掉落物](advanced/event-overview/examples/tweaking-block-drops.md)
 
 ## ContentTweaker
 
@@ -93,6 +91,12 @@
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
   * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
+
+## 实战 <a id="actual-combat"></a>
+
+* [配方](actual-combat/recipes.md)
+* [事件](actual-combat/events/README.md)
+  * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
 * [ZenClass](zenclass.md)
 * [CraftTweaker 类库](crafttweaker-lib.md)
 
