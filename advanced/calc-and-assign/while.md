@@ -1,5 +1,7 @@
 # while
 
+
+
 While循环只要后面的条件为`true`就会循环执行给定的代码。 另外，可以使用`break`关键字结束循环。
 
 ```javascript

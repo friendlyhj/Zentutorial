@@ -18,3 +18,5 @@ Zenscript用`<`和`>`来表示游戏的一个对象。比如物品、矿辞。
 <potion:minecraft:speed> //获取原版速度效果(IPotion)
 ```
 
+
+
