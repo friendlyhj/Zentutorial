@@ -1,7 +1,5 @@
 # ZenMethod\(方法\)
 
-
-
 ZenMethod就是实打实的方法，需要参数，会执行一些特殊的东西。可能不返回值，也可能会返回。具体看各个ZenMethod的描述。例如IItemDefintion类有一个makeStack方法，会返回IItemStack。
 
 ```javascript

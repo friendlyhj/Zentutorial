@@ -94,10 +94,10 @@
 
 ## 实战 <a id="actual-combat"></a>
 
-* [配方](actual-combat/recipes.md)
-* [Untitled](actual-combat/untitled.md)
+* [配方](actual-combat/recipes/README.md)
+  * [Untitled](actual-combat/recipes/untitled.md)
 * [事件](actual-combat/events/README.md)
-  * [修改方块掉落物](advanced/event-overview/examples/tweaking-block-drops.md)
+  * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
 * [ZenClass](zenclass.md)
 * [CraftTweaker 类库](crafttweaker-lib.md)
 
