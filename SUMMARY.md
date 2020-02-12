@@ -99,5 +99,18 @@
 * [事件](actual-combat/events/README.md)
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
 * [ZenClass](zenclass.md)
-* [CraftTweaker 类库](crafttweaker-lib.md)
+
+## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
+
+* [概述](crafttweaker-lib/README.md)
+  * 方块
+    * [IBlock](crafttweaker-lib/block/iblock.md)
+    * [IBlockDefinition](crafttweaker-lib/block/iblockdefinition.md)
+    * [IBlockPattern](crafttweaker-lib/block/iblockpattern.md)
+    * [IBlockProPerties](crafttweaker-lib/block/iblockstate.md)
+    * [IBlockState](crafttweaker-lib/block/iblockstate.md)
+    * [IBlockStateMatcher](crafttweaker-lib/block/iblockstatematcher.md)
+    * [IMaterial](crafttweaker-lib/block/imaterial.md)
+    * [IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)
+
 
