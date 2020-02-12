@@ -19,8 +19,8 @@
 |harvestTool|string|✘||
 |canSpawnInBlock|bool|✘||
 |unlocalizedName|string|✘||
-|creativeTab|[ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)|✔||
-|defaultState|[IBlockState](crafttweaker-lib/block/IBlockState.md)|✘||
+|creativeTab|[ICreativeTab]()|✔||
+|defaultState|[IBlockState](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockstate)|✘||
 |defaultSlipperiness|float|只有ZenSetter，无ZenGetter||
 
 ## 可用方法
