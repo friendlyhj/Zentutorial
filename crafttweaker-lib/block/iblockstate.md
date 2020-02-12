@@ -12,7 +12,7 @@ IBlockState类拓展了[IBlockProperties](https://youyi580.gitbook.io/zentutoria
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
 |-----|------|------|------|
-|block|[IBlock](iblock.md)|✘||
+|block|[IBlock](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblock)|✘||
 |meta|int|✘||
 
 ## 可用方法
