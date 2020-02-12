@@ -9,8 +9,8 @@
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
 |-----|------|------|------|
 |canProvidePower|bool|✘||
-|mobilityFlag|[IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)|✘||
-|material|[IMaterial](crafttweaker-lib/block/imaterial.md)|✘||
+|mobilityFlag|[IMobilityFlag](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imobilityflag)|✘||
+|material|[IMaterial](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imaterial)|✘||
 |causesSuffocation|bool|✘||
 |hasCustomBreakingProgress|bool|✘||
 |blockNormalCube|bool|✘||
