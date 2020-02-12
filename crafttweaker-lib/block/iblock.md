@@ -6,16 +6,16 @@
 
 ## 拓展
 
-IBlock类拓展了[IBlockPattern](crafttweaker-lib/block/iblockpattern.md)类
+IBlock类拓展了[IBlockPattern](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockpattern)类
 
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
 | ---- | ---- | ------------------- | ---- |
-|definition|[IBlockDefinition](crafttweaker/block/iblockdefinition.md)| ✘ |      |
+|definition|[IBlockDefinition](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockdefinition)| ✘ |      |
 |meta|int| ✘ | |
-|data|[IData](crafttweaker-lib/data/idata.md)| ✘ | |
-|fluid|[IFluidDefinition](crafttweaker-lib/liquid/ifluiddefinition.md)| ✘ | |
+|data|[IData](https://youyi580.gitbook.io/zentutorial/advanced/idata)| ✘ | |
+|fluid|[IFluidDefinition]()| ✘ | |
 
 ## 可用方法
 
