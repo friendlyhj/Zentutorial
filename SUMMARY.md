@@ -99,7 +99,7 @@
 * [事件](actual-combat/events/README.md)
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
 
-## [ZenClass](zenclass.md)
+## [ZenClass](zenclass.md) <a id="zenclass"></a>
 
 ## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
 
