@@ -6,7 +6,7 @@
 
 ## 拓展
 
-IBlockState类拓展了[IBlockProperties](iblockproperties.md)和[IBlockStateMatcher](iblockstatematcher.md)类
+IBlockState类拓展了[IBlockProperties](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockproperties)和[IBlockStateMatcher](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockstatematcher)类
 
 ## 可用ZenGetter
 
