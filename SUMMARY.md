@@ -98,7 +98,8 @@
   * [Untitled](actual-combat/recipes/untitled.md)
 * [事件](actual-combat/events/README.md)
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
-* [ZenClass](actual-combat/zenclass.md)
+
+## [ZenClass](zenclass.md)
 
 ## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
 
