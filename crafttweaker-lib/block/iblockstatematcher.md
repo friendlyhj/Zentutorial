@@ -7,8 +7,8 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-| :--- | :--- | :--- | :--- |
-| commandString | string | ✘ |  |
+|-----|------|------|------|
+|commandString|string|✘||
 
 ## 可用方法
 
@@ -28,4 +28,3 @@
 
 * `in/has`
 * `|`
-

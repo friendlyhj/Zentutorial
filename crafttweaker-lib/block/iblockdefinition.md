@@ -7,21 +7,21 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-| :--- | :--- | :--- | :--- |
-| id | string | ✘ |  |
-| displayName | string | ✘ |  |
-| lightOpacity | int | 只有ZenSetter，无ZenGetter |  |
-| lightLevel | int | 只有ZenSetter，无ZenGetter |  |
-| resistance | float | 只有ZenSetter，无ZenGetter |  |
-| hardness | float | ✔ |  |
-| tickRandomly | bool | ✔ |  |
-| harvestLevel | int | ✘ |  |
-| harvestTool | string | ✘ |  |
-| canSpawnInBlock | bool | ✘ |  |
-| unlocalizedName | string | ✘ |  |
-| creativeTab | [ICreativeTab](https://github.com/friendlyhj/Zentutorial/tree/34f66bd70bbc030d6c24a691588ffaae66960745/crafttweaker-lib/block/crafttweaker-lib/creativetabs/icreativetab.md) | ✔ |  |
-| defaultState | [IBlockState](https://github.com/friendlyhj/Zentutorial/tree/34f66bd70bbc030d6c24a691588ffaae66960745/crafttweaker-lib/block/crafttweaker-lib/block/IBlockState.md) | ✘ |  |
-| defaultSlipperiness | float | 只有ZenSetter，无ZenGetter |  |
+|-----|------|------|------|
+|id|string|✘||
+|displayName|string|✘||
+|lightOpacity|int|只有ZenSetter，无ZenGetter||
+|lightLevel|int|只有ZenSetter，无ZenGetter||
+|resistance|float|只有ZenSetter，无ZenGetter||
+|hardness|float|✔||
+|tickRandomly|bool|✔||
+|harvestLevel|int|✘||
+|harvestTool|string|✘||
+|canSpawnInBlock|bool|✘||
+|unlocalizedName|string|✘||
+|creativeTab|[ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)|✔||
+|defaultState|[IBlockState](crafttweaker-lib/block/IBlockState.md)|✘||
+|defaultSlipperiness|float|只有ZenSetter，无ZenGetter||
 
 ## 可用方法
 
@@ -34,4 +34,3 @@
 `boolean canPlaceBlockAt(IWorld world, IBlockPos pos);`
 
 `float getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);`
-

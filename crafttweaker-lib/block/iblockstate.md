@@ -1,4 +1,4 @@
-# IBlockProPerties
+# IBlockState
 
 ## 导入
 
@@ -6,14 +6,14 @@
 
 ## 拓展
 
-IBlockState类拓展了[IBlockProperties](https://github.com/friendlyhj/Zentutorial/tree/34f66bd70bbc030d6c24a691588ffaae66960745/crafttweaker-lib/block/crafttweaker-lib/block/iblockproperties.md)和[IBlockStateMatcher](https://github.com/friendlyhj/Zentutorial/tree/34f66bd70bbc030d6c24a691588ffaae66960745/crafttweaker-lib/block/crafttweaker-lib/block/iblockstatematcher.md)类
+IBlockState类拓展了[IBlockProperties](crafttweaker-lib/block/iblockproperties.md)和[IBlockStateMatcher](crafttweaker-lib/block/iblockstatematcher.md)类
 
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-| :--- | :--- | :--- | :--- |
-| block | [IBlock](https://github.com/friendlyhj/Zentutorial/tree/34f66bd70bbc030d6c24a691588ffaae66960745/crafttweaker-lib/block/crafttweaker-lib/block/iblock.md) | ✘ |  |
-| meta | int | ✘ |  |
+|-----|------|------|------|
+|block|[IBlock](crafttweaker-lib/block/iblock.md)|✘||
+|meta|int|✘||
 
 ## 可用方法
 
@@ -36,4 +36,3 @@ IBlockState类拓展了[IBlockProperties](https://github.com/friendlyhj/Zentutor
 ## 可用操作符
 
 `==`
-
