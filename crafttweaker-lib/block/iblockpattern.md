@@ -6,7 +6,7 @@
 
 ## 获取
 
-可用两个[IBlock](crafttweaker-lib/block/iblock.md)对象用`|`连接获取
+可用两个[IBlock](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblock)对象用`|`连接获取
 
 ## 可用ZenGetter
 
