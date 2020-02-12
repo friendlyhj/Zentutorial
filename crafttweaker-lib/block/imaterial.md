@@ -16,7 +16,7 @@
 |replaceable|bool|✘||
 |soild|bool|✘||
 |toolNotRequired|bool|✘||
-|mobilityFlag|[IMobilityFlag](crafttweaker-lib/block/imobilityflag)|✘||
+|mobilityFlag|[IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)|✘||
 
 ## 可用方法
 
