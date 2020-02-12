@@ -1,10 +1,10 @@
-# CraftTweaker 类库
+# 概述
 
 本节将会详细地说明CrT的所有类，以及可以访问的ZenSetter、ZenGetter、ZenMethod。
 
 本节内容为我翻源码而得，有些内容wiki并没有
 
-其实也可以打指令/ct dumpzs <输出方式>(可选log html json)来查看
+其实也可以打指令/ct dumpzs &lt;输出方式&gt;\(可选log html json\)来查看
 
 基本getter啥的没有描述，因为基本上名称就说明用处了。还是推荐与wiki配合使用。
 
@@ -27,3 +27,4 @@ IBlockState.getBlockState("minecraft:wool", ["color=red"]); //getBlockState静�
 来表示
 
 静态方法会在返回值类型前有个 `static` 标识
+
