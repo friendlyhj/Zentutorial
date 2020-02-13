@@ -18,6 +18,7 @@ description: 当你把ZenScript当作一种“编程”语言时……更广阔�
 | 字符串\(string\) | 文本（注1：Java可用的string类的方法，ZenScript一样可用 注2：可用`==`判断是否相同，不需用equals方法） | `var test as string = "hello!";` |  |
 | 单精度浮点数\(float\) | 小数 | `var test as float = 1.5;` |  |
 | 双精度浮点数\(double\) | 也是小数，但是比float范围更大，有效数字更多 | `var test as double = 1.2345;` |  |
+| 无类型\(void\) | 空，null，用于函数/方法表明该函数/方法无返回值 | `var test as void = null;` | |
 | 物品堆\(IItemStack\) | 一个物品 | `var test as IItemStack = <minecraft:stone>;` | `import crafttweaker.item.IItemStack;` |
 | 材料\(IIngredient\) | 一个或多个物品（比如`<minecraft:stone>`和`<ore:ingotIron>`\) | `var test as IIngredient = <minecraft:stone>;` | `import crafttweaker.item.IIngredient;` |
 | 矿物词典\(IOreDictEntry\) | 一个矿辞代表的多个物品 | `var test as IOreDictEntry = <ore:ingotIron>;` | `import crafttweaker.oredict.IOreDictEntry;` |
