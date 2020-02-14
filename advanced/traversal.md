@@ -71,7 +71,7 @@ for ench in oreDict.entries /* oreDict.entries 在所有注册OD中循环 */ {
 
 例子三：遍历游戏内所有物品
 ```javascript
-for mod in loadedMod { //遍历游戏内所有的模组
+for mod in loadedMods { //遍历游戏内所有的模组，loadedMods一个全局关键词，包括游戏内所有模组(IMod[string])
     for item in mod.item { //再遍历一个模组的所有物品
         recipes.remove(item); 
         //这只是个例子！要删除游戏内所有物品的配方，用recipes.removeAll();就好了
