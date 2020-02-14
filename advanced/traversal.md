@@ -27,7 +27,7 @@ function checkIngredient (o as IIngredient, a as IIngredient[]) as bool {
     return false;
 }
 
-for recipe in recipes.all() {
+for recipe in recipes.all() { // 遍历游戏内所有注册物品
     //用ICraftingRecipe的ingredients1D ZenGetter获取配方的材料，返回IIngredient[]
     if (checkIngredient(<minecraft:iron_ingot>, recipe.ingredients1D)) {
         recipes.removeByRecipeName(recipe.name);
@@ -69,3 +69,11 @@ for ench in oreDict.entries /* oreDict.entries 在所有注册OD中循环 */ {
 }
 ```
 
+例子三：遍历游戏内所有物品
+```javascript
+for mod in loadedMod { //遍历游戏内所有的模组
+    for item in mod.item { //再遍历一个模组的所有物品
+        recipes.remove(item); 
+        //这只是个例子！要删除游戏内所有物品的配方，用recipes.removeAll();就好了
+    }
+}
