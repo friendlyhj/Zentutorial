@@ -27,7 +27,7 @@ function checkIngredient (o as IIngredient, a as IIngredient[]) as bool {
     return false;
 }
 
-for recipe in recipes.all() { // 遍历游戏内所有注册物品
+for recipe in recipes.all() { // 遍历游戏内所有注册配方
     //用ICraftingRecipe的ingredients1D ZenGetter获取配方的材料，返回IIngredient[]
     if (checkIngredient(<minecraft:iron_ingot>, recipe.ingredients1D)) {
         recipes.removeByRecipeName(recipe.name);
