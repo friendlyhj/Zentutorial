@@ -15,7 +15,7 @@ A类拓展了B类，说明A类可以使用B类的所有getter setter和方法。
 events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
     if (event.entityLivingBase instanceof IPlayer) { //event.entityLivingBase返回IEntityLivingBase类，IPlayer是它的拓展类
         val player as IPlayer = event.entityLivingBase;
-        print("玩家" ~ player.name ~ "死了!);
+        print("玩家" ~ player.name ~ "死了！");
     }
 });
 ```
