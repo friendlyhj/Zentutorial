@@ -77,3 +77,4 @@ for mod in loadedMods { //遍历游戏内所有的模组，loadedMods一个全�
         //这只是个例子！要删除游戏内所有物品的配方，用recipes.removeAll();就好了
     }
 }
+```
