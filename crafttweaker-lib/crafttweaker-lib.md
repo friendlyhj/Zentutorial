@@ -8,7 +8,17 @@
 
 基本getter啥的没有描述，因为基本上名称就说明用处了。还是推荐与wiki配合使用。
 
-A类拓展了B类，说明A类可以使用B类的所有getter setter和方法
+A类拓展了B类，说明A类可以使用B类的所有getter setter和方法。需要B类作为参数的函数/方法，也可使用A类。如果是反过来，建议用`instanceof`关键字判断后进行类型转换。
+
+```javascript
+//导入类部分省略
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
+    if (event.entityLivingBase instanceof IPlayer) { //event.entityLivingBase返回IEntityLivingBase类，IPlayer是它的拓展类
+        val player as IPlayer = event.entityLivingBase;
+        print("玩家" ~ player.name ~ "死了!);
+    }
+});
+```
 
 静态方法说明该方法针对包，而不是一个具体的对象、实例。
 
