@@ -4,7 +4,7 @@
 
 基本格式：`recipes.addShaped(recipeName, output, inputbox);`
 
-1.12中Mojang移除了IRecipe，每个配方以一个json文件储存，同时每个配方有一个ID。当你打开高级提示框（F3+H\)时，可以在JEI中看见每一个配方的ID。但实际上，你也可以省略配方ID，就像旧版本那样，这样CrT会使用hash值自动指定配方ID。配方名不能重复。
+1.12中Mojang修改了合成的注册系统，每个配方以一个json文件储存，同时每个配方有一个ID。当你打开高级提示框（F3+H\)时，可以在JEI中看见每一个配方的ID。但实际上，你也可以省略配方ID，就像旧版本那样，这样CrT会使用hash值自动指定配方ID。配方名不能重复。
 
 output即为配方输出。inputbox即为需要的物品。比如我们拿铁护腿举个例子。
 
