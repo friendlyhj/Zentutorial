@@ -59,8 +59,8 @@
 * [事件概论](advanced/event-overview/README.md)
   * [常用类](advanced/event-overview/usual-classes.md)
   * [基本框架](advanced/event-overview/basic-framework.md)
-  * [一些忠告](advanced/event-overview/tips.md) 
-* [ZenClass](zenclass.md)
+  * [一些忠告](advanced/event-overview/tips.md)
+* [ZenClass](advanced/zenclass.md)
 
 ## ContentTweaker
 
@@ -112,17 +112,5 @@
   * [IBlockStateMatcher](crafttweaker-lib/block/iblockstatematcher.md)
   * [IMaterial](crafttweaker-lib/block/imaterial.md)
   * [IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)
-* 聊天信息
-  * [IChatMessage](crafttweaker-lib/chat/ichatmessage.md)
-* 客户端
-  * [IClient](crafttweaker-lib/client/iclient.md)
-* 命令
-  * [ICommand](crafttweaker-lib/command/icommand.md)
-  * [ICommandManager](crafttweaker-lib/command/icommandmanager.md)
-  * [ICommandSender](crafttweaker-lib/command/icommandsender.md)
-* 容器
-  * [IContainer](crafttweaker-lib/container/icontainer.md)
-* 创造标签
-  * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
-* 伤害
-  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
+* [Untitled](crafttweaker-lib/untitled.md)
+
