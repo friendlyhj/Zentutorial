@@ -99,6 +99,7 @@
   * [Untitled](actual-combat/recipes/untitled.md)
 * [事件](actual-combat/events/README.md)
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
+  * [禁止开创造](actual-combat/events/ban-creative-mode.md)
 
 ## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
 
@@ -112,5 +113,17 @@
   * [IBlockStateMatcher](crafttweaker-lib/block/iblockstatematcher.md)
   * [IMaterial](crafttweaker-lib/block/imaterial.md)
   * [IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)
-* [Untitled](crafttweaker-lib/untitled.md)
-
+* 聊天信息
+  * [IChatMessage](crafttweaker-lib/chat/ichatmessage.md)
+* 客户端
+  * [IClient](crafttweaker-lib/client/iclient.md)
+* 命令
+  * [ICommand](crafttweaker-lib/command/icommand.md)
+  * [ICommandManager](crafttweaker-lib/command/icommandmanager.md)
+  * [ICommandSender](crafttweaker-lib/command/icommandsender.md)
+* 容器
+  * [IContainer](crafttweaker-lib/container/icontainer.md)
+* 创造标签
+  * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
+* 伤害
+  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
