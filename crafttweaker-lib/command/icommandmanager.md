@@ -7,8 +7,8 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|commands|ICommand[string]|✘||
+| :--- | :--- | :--- | :--- |
+| commands | ICommand\[string\] | ✘ |  |
 
 ## 可用方法
 
@@ -17,3 +17,4 @@
 `string列表 getTabCompletions(ICommandSender sender, String input, @Optional IBlockPos pos);`
 
 `ICommand列表 getPossibleCommands(ICommandSender sender);`
+

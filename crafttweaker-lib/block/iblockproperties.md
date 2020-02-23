@@ -1,4 +1,4 @@
-# IBlockProperties
+# IBlockProPerties
 
 ## 导入
 
@@ -7,18 +7,18 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|canProvidePower|bool|✘||
-|mobilityFlag|[IMobilityFlag](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imobilityflag)|✘||
-|material|[IMaterial](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imaterial)|✘||
-|causesSuffocation|bool|✘||
-|hasCustomBreakingProgress|bool|✘||
-|blockNormalCube|bool|✘||
-|fullBlock|bool|✘||
-|fullCube|bool|✘||
-|normalCube|bool|✘||
-|opaqueCube|bool|✘||
-|useNeighborBrightness|bool|✘||
+| :--- | :--- | :--- | :--- |
+| canProvidePower | bool | ✘ |  |
+| mobilityFlag | [IMobilityFlag](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imobilityflag) | ✘ |  |
+| material | [IMaterial](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/imaterial) | ✘ |  |
+| causesSuffocation | bool | ✘ |  |
+| hasCustomBreakingProgress | bool | ✘ |  |
+| blockNormalCube | bool | ✘ |  |
+| fullBlock | bool | ✘ |  |
+| fullCube | bool | ✘ |  |
+| normalCube | bool | ✘ |  |
+| opaqueCube | bool | ✘ |  |
+| useNeighborBrightness | bool | ✘ |  |
 
 ## 可用方法
 
@@ -43,3 +43,4 @@
 `int getStrongPower(IBlockAccess access, IBlockPos pos, IFacing facing);`
 
 `boolean isSideSolid(IBlockAccess access, IBlockPos pos, IFacing facing);`
+

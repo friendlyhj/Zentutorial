@@ -1,7 +1,5 @@
 # 穷举与遍历
 
-
-
 是的，你正在用循环做批量魔改。可为什么你可以对一些物品做批量魔改？那是因为这些物品都有相同点。而你需要找到所有你要改的物品，保存在一个数组中，这是穷举。但为什么不换个思路，直接遍历游戏内所有物品，找到符合你需要的条件的物品后，进行合成修改呢？
 
 首先你需要知道的是：
@@ -70,6 +68,7 @@ for ench in oreDict.entries /* oreDict.entries 在所有注册OD中循环 */ {
 ```
 
 例子三：遍历游戏内所有物品
+
 ```javascript
 for mod in loadedMods { //遍历游戏内所有的模组，loadedMods一个全局关键词，包括游戏内所有模组(IMod[string])
     for item in mod.items { //再遍历一个模组的所有物品
@@ -78,3 +77,4 @@ for mod in loadedMods { //遍历游戏内所有的模组，loadedMods一个全�
     }
 }
 ```
+

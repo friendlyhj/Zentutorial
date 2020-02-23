@@ -1,6 +1,6 @@
 # 添加配方
 
-### **添加有序合成**
+## **添加有序合成**
 
 基本格式：`recipes.addShaped(recipeName, output, inputbox);`
 
@@ -40,7 +40,7 @@ output即为配方输出。inputbox即为需要的物品。比如我们拿铁护
 
 可以用`recipes.addShapedMirrored(recipeName, output, inputBox);`和`recipes.addHiddenShaped(recipeName, output, inputBox);`添加。
 
-### **添加无序合成**
+## **添加无序合成**
 
 基本格式`recipes.addShapeless(recipeName, output, inputbox);`
 

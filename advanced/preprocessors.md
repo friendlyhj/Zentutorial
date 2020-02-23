@@ -18,3 +18,4 @@ description: 正如其名，预处理器将会在脚本加载前启动。预处�
 | `#sideonly sideName` | sideName可使用client或server，指定该脚本只在客户端或服务端中运行 |
 | `#profile` | a script file will profile the script actions |
 | `#disable_search_tree` | 禁用加载脚本前的配方表的重新计算，可能能加快脚本加载速度 |
+

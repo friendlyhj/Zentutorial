@@ -113,17 +113,18 @@
   * [IBlockStateMatcher](crafttweaker-lib/block/iblockstatematcher.md)
   * [IMaterial](crafttweaker-lib/block/imaterial.md)
   * [IMobilityFlag](crafttweaker-lib/block/imobilityflag.md)
-* 聊天信息
+* [聊天信息](crafttweaker-lib/chat/README.md)
   * [IChatMessage](crafttweaker-lib/chat/ichatmessage.md)
-* 客户端
+* [客户端](crafttweaker-lib/client/README.md)
   * [IClient](crafttweaker-lib/client/iclient.md)
-* 命令
+* [命令](crafttweaker-lib/command/README.md)
   * [ICommand](crafttweaker-lib/command/icommand.md)
   * [ICommandManager](crafttweaker-lib/command/icommandmanager.md)
   * [ICommandSender](crafttweaker-lib/command/icommandsender.md)
-* 容器
+* [容器](crafttweaker-lib/container/README.md)
   * [IContainer](crafttweaker-lib/container/icontainer.md)
-* 创造标签
+* [创造标签](crafttweaker-lib/creativetabs/README.md)
   * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
-* 伤害
+* [伤害](crafttweaker-lib/damage/README.md)
   * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
+

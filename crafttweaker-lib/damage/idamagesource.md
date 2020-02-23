@@ -12,25 +12,25 @@
 
 以下为游戏内已经有的damagesource类型
 
-* IN_FIRE
-* LIGHTNING_BOLT
-* ON_FIRE
+* IN\_FIRE
+* LIGHTNING\_BOLT
+* ON\_FIRE
 * LAVA
-* HOT_FLOOR
-* IN_WALL
+* HOT\_FLOOR
+* IN\_WALL
 * CRAMMING
 * DROWN
 * STARVE
 * CACTUS
 * FALL
-* FLY_INTO_WALL
-* OUT_OF_WORLD
+* FLY\_INTO\_WALL
+* OUT\_OF\_WORLD
 * GENERIC
 * MAGIC
 * WITHER
 * ANVIL
-* FALLING_BLOCK
-* DRAGON_BREATH
+* FALLING\_BLOCK
+* DRAGON\_BREATH
 * FIREWORKS
 
 如果引用的不在这其中，会创建一个全新的IDamageSource。
@@ -38,19 +38,19 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|harmInCreative|bool|✘||
-|damageType|string|✘||
-|hunderDamage|float|✘||
-|immediateSource|[IEntity](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/entity/ientity)|✘||
-|trueSource|IEntity|✘||
-|creativePlayer|bool|✘||
-|damageAbsolute|bool|✘||
-|difficultyScaled|bool|✘||
-|explosion|bool|✘||
-|fireDamage|bool|✘||
-|magicDamage|bool|✘||
-|projectile|bool|✘||
+| :--- | :--- | :--- | :--- |
+| harmInCreative | bool | ✘ |  |
+| damageType | string | ✘ |  |
+| hunderDamage | float | ✘ |  |
+| immediateSource | [IEntity](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/entity/ientity) | ✘ |  |
+| trueSource | IEntity | ✘ |  |
+| creativePlayer | bool | ✘ |  |
+| damageAbsolute | bool | ✘ |  |
+| difficultyScaled | bool | ✘ |  |
+| explosion | bool | ✘ |  |
+| fireDamage | bool | ✘ |  |
+| magicDamage | bool | ✘ |  |
+| projectile | bool | ✘ |  |
 
 ## 可用方法
 
@@ -87,3 +87,4 @@
 `static IDamageSource createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)`
 
 `static IDamageSource createOfType(String type)`
+

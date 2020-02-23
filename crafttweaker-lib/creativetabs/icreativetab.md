@@ -13,9 +13,9 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|searchBarWidth|int|✘||
-|tabLabel|string|✘||
+| :--- | :--- | :--- | :--- |
+| searchBarWidth | int | ✘ |  |
+| tabLabel | string | ✘ |  |
 
 ## 可用方法
 
@@ -24,3 +24,4 @@
 `void setNoScrollBar();`
 
 `void setNoTitle();`
+

@@ -11,6 +11,7 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|player|[IPlayer](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/player/iplayer)|✘||
-|language|string|✘||
+| :--- | :--- | :--- | :--- |
+| player | [IPlayer](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/player/iplayer) | ✘ |  |
+| language | string | ✘ |  |
+

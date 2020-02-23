@@ -11,11 +11,12 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|blocks|IBlock列表|✘||
-|displayName|string|✘||
+| :--- | :--- | :--- | :--- |
+| blocks | IBlock列表 | ✘ |  |
+| displayName | string | ✘ |  |
 
 ## 可用操作符
 
 * `in/has`操作符
 * `|`操作符
+

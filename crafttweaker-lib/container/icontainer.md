@@ -13,8 +13,8 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|containerSize|int|✘||
+| :--- | :--- | :--- | :--- |
+| containerSize | int | ✘ |  |
 
 ## 可用方法
 
@@ -23,3 +23,4 @@
 `void setStack(int i, IItemStack stack);`
 
 `String asString();`
+

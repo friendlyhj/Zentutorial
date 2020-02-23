@@ -1,6 +1,6 @@
 # 首页
 
-1.12.2的CraftTweaker，作为1.7.10的MineTweaker的继承，它具有更为强大的功能，能实现很多的设想。MT的wiki自然没有CrT的很多功能的叙述，而CrT的wiki篇目完全按照字母排序，最基本的工作台更改，藏在Vanilla - Recipes - Crafting Table Recipes，非常不便于新手使用。本篇教程将对其重新编排，让新手一步步走向高深。 
+1.12.2的CraftTweaker，作为1.7.10的MineTweaker的继承，它具有更为强大的功能，能实现很多的设想。MT的wiki自然没有CrT的很多功能的叙述，而CrT的wiki篇目完全按照字母排序，最基本的工作台更改，藏在Vanilla - Recipes - Crafting Table Recipes，非常不便于新手使用。本篇教程将对其重新编排，让新手一步步走向高深。
 
 本教程适用于1.12.2的CrT最终版本4.1.20
 

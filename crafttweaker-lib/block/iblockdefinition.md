@@ -7,21 +7,21 @@
 ## 可用ZenGetter
 
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
-|-----|------|------|------|
-|id|string|✘||
-|displayName|string|✘||
-|lightOpacity|int|只有ZenSetter，无ZenGetter||
-|lightLevel|int|只有ZenSetter，无ZenGetter||
-|resistance|float|只有ZenSetter，无ZenGetter||
-|hardness|float|✔||
-|tickRandomly|bool|✔||
-|harvestLevel|int|✘||
-|harvestTool|string|✘||
-|canSpawnInBlock|bool|✘||
-|unlocalizedName|string|✘||
-|creativeTab|[ICreativeTab]()|✔||
-|defaultState|[IBlockState](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockstate)|✘||
-|defaultSlipperiness|float|只有ZenSetter，无ZenGetter||
+| :--- | :--- | :--- | :--- |
+| id | string | ✘ |  |
+| displayName | string | ✘ |  |
+| lightOpacity | int | 只有ZenSetter，无ZenGetter |  |
+| lightLevel | int | 只有ZenSetter，无ZenGetter |  |
+| resistance | float | 只有ZenSetter，无ZenGetter |  |
+| hardness | float | ✔ |  |
+| tickRandomly | bool | ✔ |  |
+| harvestLevel | int | ✘ |  |
+| harvestTool | string | ✘ |  |
+| canSpawnInBlock | bool | ✘ |  |
+| unlocalizedName | string | ✘ |  |
+| creativeTab | [ICreativeTab](iblockdefinition.md) | ✔ |  |
+| defaultState | [IBlockState](https://youyi580.gitbook.io/zentutorial/crafttweaker-lib/block/iblockstate) | ✘ |  |
+| defaultSlipperiness | float | 只有ZenSetter，无ZenGetter |  |
 
 ## 可用方法
 
@@ -34,3 +34,4 @@
 `boolean canPlaceBlockAt(IWorld world, IBlockPos pos);`
 
 `float getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);`
+
