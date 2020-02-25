@@ -37,6 +37,7 @@ food.onItemFoodEaten = function(stack, world, player) { // 框架
         //player.addPotionEffect(药水ID.makePotionEffect(时间, 等级));
         //时间的单位为tick 1秒 = 20ticks
         //药水ID可用/ct potions 指令查看
+        //想要加多个buff，就把下面这行多写几次就行
         player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(60, 1)); // 吃食物给3s虚弱效果
     }  // 框架
 }; // 框架
@@ -57,6 +58,7 @@ soup.alwaysEdible = true;
 soup.onItemFoodEaten = function(stack, world, player) {
     if (!world.remote) {
         player.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(100, 1));
+        player.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(200, 2));
     }
 };
 soup.register();
