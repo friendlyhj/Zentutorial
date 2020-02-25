@@ -24,6 +24,7 @@
 | alwaysEdible | bool | false | 该食物在玩家饥饿值满时是否还可以吃 |
 | wolfFood | bool | false | 该食物是否可喂给狼 |
 | saturation | float | 0.6 | 该食物可恢复的饱和度 |
+| onItemFoodEaten | IItemFoodEaten | null | 吃下该食物后会发生什么\(见下文\) |
 
 ### 吃食物给药水效果
 
@@ -49,15 +50,15 @@ food.onItemFoodEaten = function(stack, world, player) { // 框架
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.ItemFood;
 
-var food as ItemFood = VanillaFactory.createItemFood("sweet_soup", 4);
+var soup as ItemFood = VanillaFactory.createItemFood("sweet_soup", 4);
 
-food.saturation = 1.5;
-food.alwaysEdible = true;
-food.onItemFoodEaten = function(stack, world, player) {
+soup.saturation = 1.5;
+soup.alwaysEdible = true;
+soup.onItemFoodEaten = function(stack, world, player) {
     if (!world.remote) {
         player.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(100, 1));
     }
 };
-item.register();
+soup.register();
 ```
 
