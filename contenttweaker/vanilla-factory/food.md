@@ -22,7 +22,7 @@
 | :--- | :--- | :--- | :--- |
 | healAmount | int |  | 该食物可恢复的饥饿值 |
 | alwaysEdible | bool | false | 该食物在玩家饥饿值满时是否还可以吃 |
-| wolfFood | bool | false | 该事物是否可喂给狼 |
+| wolfFood | bool | false | 该食物是否可喂给狼 |
 | saturation | float | 0.6 | 该食物可恢复的饱和度 |
 
 ### 吃食物给药水效果
