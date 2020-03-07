@@ -96,7 +96,7 @@
 ## 实战 <a id="actual-combat"></a>
 
 * [配方](actual-combat/recipes/README.md)
-  * [Untitled](actual-combat/recipes/untitled.md)
+  * [数据驱动合成修改](actual-combat/recipes/data-recipe.md)
 * [事件](actual-combat/events/README.md)
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
   * [禁止开创造](actual-combat/events/ban-creative-mode.md)

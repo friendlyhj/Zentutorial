@@ -9,7 +9,7 @@
 | 名称 | 类型 | 是否有同名ZenSetter | 描述 |
 | :--- | :--- | :--- | :--- |
 | name | string | ✘ | 获取该对象参数的命令名（如 `/gamemode 1` 中的 `gamemode` \) |
-| aliases | string\[\] | ✘ | |
+| aliases | string\[\] | ✘ |  |
 
 ## 可用方法
 

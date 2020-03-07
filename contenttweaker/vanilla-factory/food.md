@@ -2,17 +2,17 @@
 
 食物是一种特殊的物品。
 
-### 导入包
+## 导入包
 
 `import mods.contenttweaker.ItemFood;` 原版加工厂包也需要导入！
 
-### 创建
+## 创建
 
 用`val testItem as ItemFood = VanillaFactory.createItemFood(字符串物品ID, 整数可恢复饥饿值);`呼出一个物品类的一个实例，并存储在某个变量中，以做接下来的修改。物品ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
 
 食物是一种特殊的物品，接下来的操作与物品差不多。（注册、设置信息、设置本地化、材质与添加物品一致）[传送门](https://youyi580.gitbook.io/zentutorial/contenttweaker/vanilla-factory/item)
 
-### 可用ZenProperties
+## 可用ZenProperties
 
 创建物品时可用的ZenProperties，食物也能用！
 
@@ -26,7 +26,7 @@
 | saturation | float | 0.6 | 该食物可恢复的饱和度 |
 | onItemFoodEaten | IItemFoodEaten | null | 吃下该食物后会发生什么\(见下文\) |
 
-### 吃食物给药水效果
+## 吃食物给药水效果
 
 我知道你在想什么。这是事件高级运用，但你肯定想要，对吧？
 
@@ -43,7 +43,7 @@ food.onItemFoodEaten = function(stack, world, player) { // 框架
 }; // 框架
 ```
 
-### 例子
+## 例子
 
 ```javascript
 #loader contenttweaker
