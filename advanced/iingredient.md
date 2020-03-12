@@ -6,7 +6,7 @@
 
 `recipes.addShaped(recipeName, output, inputBox);`
 
-实际上，output是一个IIngredient对象，inputBox则是IIngredient的二维数组。
+实际上，output是IItemStack，而inputBox则是IIngredient的二维数组。
 
 IIngredient——材料，它用来匹配一个合成的材料，输入或输出。IIngredient是IItemStack（物品堆）、IOreDictEntry（矿物辞典）、ILiquidStack（流体堆）的接口。这意味着IIngredient可用的方法，IItemStack、IOreDictEntry、ILiquidStack一样可用。对于一个需要IIngredient为参数的函数/方法或者定义IIngredient数组，也可以用IItemStack、IOreDictEntry、ILiquidStack输入。（你加合成的时候，用的不就是IItemStack或者IOreDictEntry嘛）实际上前文的物品条件和物品转换器就是针对IIngredient的。（对于流体不可用，不过我想没人对流体加条件）
 
