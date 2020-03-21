@@ -47,7 +47,7 @@ recipes.addShaped("tag",<minecraft:diamond_pickaxe>,[
     [<ore:gemDiamond>,<ore:gemDiamond>,<ore:gemDiamond>],
     [null,<minecraft:golden_pickaxe:*>.marked("p"),null]],  // 注意金镐被标记了
     function(out,ins,info){
-        var data as IData = input.p.tag; // 获取标记为p的金镐的NBT
+        var data as IData = ins.p.tag; // 获取标记为p的金镐的NBT
     return out.withTag(data); // 返回包含这个NBT的输出——钻石镐
     },
 null);
