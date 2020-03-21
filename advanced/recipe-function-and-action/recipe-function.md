@@ -56,8 +56,6 @@ null);
 例子四：修复镐（Meta值操控）
 
 ```javascript
-val diaPick = ;
-
 recipes.addShapeless("pickrepair",<minecraft:diamond_pickaxe>,
 [<minecraft:diamond_pickaxe>.onlyDamaged().marked("p"),<minecraft:diamond>],
 function(out, ins, cInfo){
