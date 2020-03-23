@@ -23,7 +23,7 @@
 | healAmount | int |  | 该食物可恢复的饥饿值 |
 | alwaysEdible | bool | false | 该食物在玩家饥饿值满时是否还可以吃 |
 | wolfFood | bool | false | 该食物是否可喂给狼 |
-| saturation | float | 0.6 | 该食物可恢复的饱和度 |
+| saturation | float | 0.6 | 该食物的相对饱和度，实际饱和度为相对饱和度 * 饥饿值 |
 | onItemFoodEaten | IItemFoodEaten | null | 吃下该食物后会发生什么\(见下文\) |
 
 ## 吃食物给药水效果
@@ -53,7 +53,7 @@ import mods.contenttweaker.ItemFood;
 
 var soup as ItemFood = VanillaFactory.createItemFood("sweet_soup", 4);
 
-soup.saturation = 1.5;
+soup.saturation = 0.8;
 soup.alwaysEdible = true;
 soup.onItemFoodEaten = function(stack, world, player) {
     if (!world.remote) {
