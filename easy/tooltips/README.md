@@ -15,6 +15,8 @@
 //item.addShiftTooltip(tip);
 //按住Shift才会显示的tooltip
 <minecraft:chest>.addShiftTooltip("可以存27组物品！！！！");
+//按住Shift显示更多
+<minecraft:shears:*>.addShiftTooltip("可以用于剪羊毛", "按住Shift键显示更多");
 //item.clearTooltip();
 //清除该物品所有tooltip
 ```
