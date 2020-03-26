@@ -1,7 +1,5 @@
 # IIngredient接口
 
-
-
 让我们重新看到最基本的合成添加语句：
 
 `recipes.addShaped(recipeName, output, inputBox);`
