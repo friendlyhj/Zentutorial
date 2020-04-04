@@ -26,7 +26,7 @@ var mBuilder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 | :--- | :--- | :--- |
 | setName\(id\) | id 为 字符串 | 设定材料的ID（貌似能用中文，但极不推荐，因为这个ID会影响所注册的材料部件的矿辞名，待会出个`gear铜`矿辞就过草） |
 | setColor\(color\) | color为int或CTColor对象 | 设定材料的颜色\(int代表RGB颜色\) |
-| setHasEffect\(hasEffect\) | hasEffect为布尔值 | 设定其将来所创建的材料部件是否有附魔光芒 |
+| setHasEffect\(hasEffect\) | hasEffect为布尔值 | 设定其将来所创建的材料部件是否有附魔光芒（这个方法有bug，只要你调用了这个方法，不管你的参数是什么，所创建的材料部件都会有光芒） |
 
 ### 构建
 
