@@ -22,8 +22,6 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
 
 静态方法说明该方法针对包，而不是一个具体的对象、实例。
 
-比如recipes.addShaped中的addShaped是IRecipeManager类（一般用recipes全局关键词访问）的一个静态方法。
-
 ```javascript
 import crafttweaker.block.IBlockState;
 
