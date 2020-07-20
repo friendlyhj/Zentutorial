@@ -71,6 +71,4 @@ oreData.addDataValue("harvestLevel", "1,1");
 oreData.addDataValue("harvestTool", "pickaxe,shovel");
 ```
 
-
-
 [^1]: 字段为与对象或类关联的变量。
