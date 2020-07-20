@@ -41,7 +41,7 @@ import mods.contenttweaker.Material;
 
 var builder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 builder.setName("Urubuntu");
-builder.setColor(000151);
+builder.setColor(0x000151);
 builder.setHasEffect(false);
 val urubuntu as Material = builder.build();
 

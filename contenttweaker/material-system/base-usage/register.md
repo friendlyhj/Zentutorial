@@ -43,3 +43,15 @@ registerToMaterials(Material[] materials);
 
 与上文的基本同理，不阐述
 
+## 完全例子
+
+```javascript
+val copper as Material = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(0xFF9933).build();
+copper.registerParts(["gear", "casing", "rod"]); //同时注册铜齿轮、铜质外壳、铜杆三个 MaterialPart
+
+val denseIngotPart = MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(MaterialSystem.getPartType("item")).setOreDictName("denseIngot").build(); //构建致密锭 Part
+copper.registerPart(denseIngotPart); //注册致密铜锭 MaterialPart
+```
+
+
+
