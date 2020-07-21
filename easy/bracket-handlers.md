@@ -7,7 +7,7 @@ Zenscript用`<`和`>`来表示游戏的一个对象。比如物品、矿辞。
 例子
 
 ```javascript
-<minecraft:apple>  // 获取苹果物品(IItemStack)
+<item:minecraft:apple>  // 获取苹果物品(IItemStack) 这里的 item: 可省略
 
 <ore:ingotIron> //获取铁锭矿辞(IOreDictEntry)
 
