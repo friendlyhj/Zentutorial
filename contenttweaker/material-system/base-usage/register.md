@@ -53,5 +53,3 @@ val denseIngotPart = MaterialSystem.getPartBuilder().setName("dense_ingot").setP
 copper.registerPart(denseIngotPart); //注册致密铜锭 MaterialPart
 ```
 
-
-

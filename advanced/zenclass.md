@@ -23,7 +23,7 @@ zenClass MyClass { // 声明一个叫做 MyClass 的类
         // 一般这里填的都是给新的实例设置字段值
         print("new MyClass");
     }
-    
+
     zenConstructor(arg as string) { // 你可以声明多个构造函数，但不可互相调用，而且参数表不能相同。
         myValue = arg;
         myValueTwo = 25;
@@ -44,7 +44,7 @@ zenClass MyClass { // 声明一个叫做 MyClass 的类
         this.myValueThree = arg; // 由于 myValueThree 字段由 var 关键词声明，可以多次赋值
         return this; // 返回该对象本身
     }
-    
+
     function method() as string {
         return this.myValue ~ this.myValueTwo;
     }
@@ -69,4 +69,3 @@ val test as MyClass = MyClass("test");
 test.myStaticValue = 3;
 print(test.myStaticValue); // 也可以针对一个实例调用静态字段
 ```
-

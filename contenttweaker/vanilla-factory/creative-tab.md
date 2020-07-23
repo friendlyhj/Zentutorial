@@ -4,8 +4,6 @@ description: 真正要有mod的样，应该有属于自己的创造标签。
 
 # 创造标签
 
-
-
 需要`import mods.contenttweaker.CreativeTab;`导入相关包，原版加工厂包也需要导入！
 
 用`val testTab as CreativeTab = VanillaFactory.createCreativeTab(字符串创造标签ID, 一个东西表示图标);`

@@ -4,13 +4,13 @@ description: 材料是一个物品的材质。比如铜、锡、铁...  你需�
 
 # 材料
 
-### 导入
+## 导入
 
 你需要通过`import mods.contenttweaker.MaterialBuilder;`导入MaterialBuilder对象
 
 通过`import mods.contenttweaker.Material;`导入Material类。
 
-### 获取材料构建器
+## 获取材料构建器
 
 用MaterialSystem包的getMaterialBuilder方法获取材料构建器。
 
@@ -18,7 +18,7 @@ description: 材料是一个物品的材质。比如铜、锡、铁...  你需�
 var mBuilder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 ```
 
-### 指定参数
+## 指定参数
 
 你可以用以下方法指定所构建的材料对象的参数
 
@@ -28,11 +28,11 @@ var mBuilder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 | setColor\(color\) | color为int或CTColor对象 | 设定材料的颜色\(int代表RGB颜色\) |
 | setHasEffect\(hasEffect\) | hasEffect为布尔值 | 设定其将来所创建的材料部件是否有附魔光芒（这个方法有bug，只要你调用了这个方法，不管你的参数是什么，所创建的材料部件都会有光芒） |
 
-### 构建
+## 构建
 
 最后你需要对MaterialBuilder使用`build`方法来构建材料，这个方法将会返回一个Material对象。记得用变量储存，以便接下来构建材料部件！
 
-### 实例脚本
+## 实例脚本
 
 ```javascript
 import mods.contentTweaker.MaterialSystem;
@@ -48,7 +48,7 @@ val urubuntu as Material = builder.build();
 val arakantara as Material = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build();
 ```
 
-### 本地化
+## 本地化
 
 本地化key为`base.material.材料ID`
 
