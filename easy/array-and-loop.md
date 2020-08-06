@@ -21,7 +21,7 @@ var planks as IItemStack[] = [
     <minecraft:planks:2>,
     <minecraft:planks:3>,
     <minecraft:planks:4>,
-    <minecraft:planks:5>,
+    <minecraft:planks:5>
 ]; //两个数组要一一对应
 
 //这个只是为了方便编写
