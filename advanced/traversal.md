@@ -14,20 +14,9 @@
 例子一：删除一个物品所参与的所有合成配方
 
 ```javascript
-//checkIngredient自定义函数，用于判断一个材料对象是否在材料对象数组中
-//具体讲解将下章阐述
-function checkIngredient (o as IIngredient, a as IIngredient[]) as bool {
-    for i in a {
-        if (!isNull(i) && (i in o)) {
-            return true;
-        }
-    }
-    return false;
-}
-
 for recipe in recipes.all() { // 遍历游戏内所有注册配方
     //用ICraftingRecipe的ingredients1D ZenGetter获取配方的材料，返回IIngredient[]
-    if (checkIngredient(<minecraft:iron_ingot>, recipe.ingredients1D)) {
+    if (recipe.ingredients1D has <minecraft:iron_ingot>) {
         recipes.removeByRecipeName(recipe.name);
     }
 }
