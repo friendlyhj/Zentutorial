@@ -32,3 +32,19 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 该函数用于计算材料名称  
 例子:`myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};`  
 结果:在名字前面加上Cool  
+
+## 材料特征
+可以向材料添加特征  
+部件类型有:  
+ * null  
+ * "head"  
+ * "handle"  
+ * "extra"  
+ * "bow"  
+ * "bowstring"  
+ * "projectile"  
+ * "shaft"  
+ * "fletching"
+ 
+添加例子:`myMaterial.addMaterialTrait("fiery", "bowstring");`  
+删除例子:`myMaterial.remove("cactus", "bowstring");`
