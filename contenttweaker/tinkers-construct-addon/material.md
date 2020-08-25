@@ -1,7 +1,3 @@
----
-description: 实际上是部件(?)
----
-
 # 材料  
 
 ## 导入
@@ -29,7 +25,7 @@ val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create(identifier);
 | localizedName | string | 本地化描述 |
 
 ## 设定物品来制作材料
-//`myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));`
+//`myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));`  
 //item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 
 ## ItemLocalizer函数
