@@ -34,7 +34,7 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 结果:在名字前面加上Cool  
 
 ## 材料特征
-可以向材料添加特征  
+可以向材料添加特性  
 部件类型有:  
  * null  
  * "head"  
@@ -50,7 +50,7 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 删除例子:`myMaterial.remove("cactus", "bowstring");`
 
 ## Material Stats
-仅在向材料添加特征的时候才需要调用对应的Material Stats  
+仅在向材料添加特性的时候才需要调用对应的Material Stats  
 例子:在创建`myMaterial.addMaterialTrait("fiery", "bowstring");`的时候也要创建`myMat.addBowStringMaterialStats(float modifier);`  
 
 ## 注册材料
