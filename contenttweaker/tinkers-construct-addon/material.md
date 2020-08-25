@@ -32,7 +32,7 @@ val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create(identifier);
 //`myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));`
 //item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 
-## ItemLocalizer方法
+## ItemLocalizer函数
 该函数用于计算材料名称  
 例子:`myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};`  
 结果:在名字前面加上Cool  
