@@ -48,3 +48,45 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
  
 添加例子:`myMaterial.addMaterialTrait("fiery", "bowstring");`  
 删除例子:`myMaterial.remove("cactus", "bowstring");`
+
+## Material Stats
+仅在向材料添加特征的时候才需要调用对应的Material Stats  
+例子:在创建`myMaterial.addMaterialTrait("fiery", "bowstring");`的时候也要创建`myMat.addBowStringMaterialStats(float modifier);`  
+
+## 注册材料
+最后不要忘了`myMaterial.register();`一下,否则会报错的。
+
+## 官方例子
+```javascript
+#loader contenttweaker
+#modloaded tconstruct
+
+val testMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
+testMat.color = 0x8e661b;
+testMat.craftable = true;
+testMat.liquid = <liquid:lava>;
+testMat.castable = true;
+testMat.addItem(<item:minecraft:comparator>);
+testMat.addItem(<item:minecraft:repeater>, 1, 2);
+testMat.addItem(<item:minecraft:red_flower:4>);
+testMat.representativeItem = <item:minecraft:red_flower:4>;
+testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5);
+testMat.addHandleMaterialStats(0.3, 500);
+testMat.addBowStringMaterialStats(0.5f);
+testMat.addMaterialTrait(<ticontrait:kindlich_test>, "bowstring");
+testMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
+testMat.addMaterialTrait("blasting", "bowstring");
+testMat.addMaterialTrait("blasting", "head");
+
+//null (or not specifying that parameter at all) means that this is a default trait.
+//Default traits are only queried when no other traits are added to that material type.
+//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
+testMat.addMaterialTrait("dense", null);
+
+//Faulty, should error, though only during init, as then the strings will be checked.
+testMat.addMaterialTrait("dance", null);
+
+testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
+testMat.localizedName = "Wicked";
+testMat.register();
+```
