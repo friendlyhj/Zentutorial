@@ -22,7 +22,9 @@ val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create(identifier);
 | representativeItem | IItemStack | 在匠魂宝典里显示的物品 |
 | representativeOre | IOreDictEntry | 同上,只不过是变成了矿物词典 |
 | shard | 	IItemStack | ? |
-| localizedName | string | 本地化描述 |
+| localizedName | string | 本地化描述 |  
+
+**craftable和castable是可以同时为true,默认值貌似是false?**
 
 ## 设定物品来制作材料
 `//myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));`  
