@@ -1,8 +1,8 @@
 # 材料  
 
 ## 导入
-通过`import mods.contenttweaker.tconstruct.Material;`导入Material对象  
-通过`import mods.contenttweaker.tconstruct.MaterialBuilder;`导入MaterialBuilder对象
+通过`import mods.contenttweaker.tconstruct.Material;`导入Material类  
+通过`import mods.contenttweaker.tconstruct.MaterialBuilder;`导入MaterialBuilder类
 
 ## 材料构建器
 
@@ -101,7 +101,7 @@ myMat.removeProjectileMaterialStats();
  * accuracy\-精准度
 
 ## 注册材料
-最后不要忘了`.register();`一下,否则会报错
+最后不要忘了`.register();`一下,否则游戏内会无反应
 
 ## 本地化key
 本地化key为`material.材料名.name`
