@@ -41,4 +41,46 @@ myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IDa
 
 ## 访问特性数据
 例子:`(val myTraitData = )myTrait.getData(itemWithTrait);`  
-**myTrait指特性,itemWithTrait指工具**
+**myTrait指特性,itemWithTrait指工具**  
+
+## TraitDataRepresentation
+### 设定参数
+**ZenGetter与ZenSetter**  
+| 参数 | 是否有ZenGetter | 是否有ZenSetter | 返回(设定)值类型 | 参数描述 |
+| :---- | :---- | :---- | :---- | :---- |
+| identifier | √ | √ | string | 名称 |
+| extraInfo | √ | √ | string | 额外信息 |
+| info | √ | × | string | ? |
+| colorString | √ | × | string | ? |
+| level | √ | √ | int | 等级 | 
+| color | √ | √ | int | 颜色 |
+| current | √ | √ | int | ? |
+| max | √  | √ | int | ? |
+
+## 函数
+onUpdate函数  
+每Tick都会加载  
+**参数类型:Trait Representation类的`trait`,IItemStack类的`tool`,IWorld类的`world`,IEntity类的`owner`,int类型的`itemSlot`,boolean类型的`isSelected`**  
+不需要返回值  
+函数写法:`myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {//内容自写};`
+
+getMiningSpeed函数  
+在破坏方块时调用  
+**请注意,这会被我的世界的破坏方块事件监听到**  
+**参数类型:Trait Representation类的`trait`,IItemStack类的`tool`,一个PlayerBreakSpeedEvent事件**  
+不需要返回值  
+函数写法:`myTrait.getMiningSpeed = function(trait, tool, event) {//内容自写};`
+
+beforeBlockBreak函数  
+在方块被破坏之前调用  
+**请注意,这会被我的世界的破坏方块事件监听到**  
+**参数类型:Trait Representation类的`trait`,IItemStack类的`tool`,一个BlockBreakEvent事件**  
+不需要返回值  
+函数写法:`myTrait.beforeBlockBreak = function(trait, tool, event) {//内容自写};`
+
+afterBlockBreak函数
+在方块被破坏之后调用
+**参数类型:Trait Representation类的`trait`,IItemStack类的`tool`,IWorld类的`world`,IBlockState类的`block`,IEntityLivingBase类的`miner`,boolean类型的`wasEffective`**  
+不需要返回值  
+函数写法:`myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {//内容自写};`  
+
