@@ -15,20 +15,21 @@ val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create(identifier);
 | :--- | :--- | :--- |
 | identifier | string | Material名称 |
 | color | int | Material颜色 |
-| hidden | bool | ? |
+| hidden | bool | 隐藏材料 |
 | liquid | ILiquidStack | 设置流体 |
 | craftable | bool | 部件加工台是否可合成 |
 | castable | bool | 冶炼炉是否可合成 |
 | representativeItem | IItemStack | 在匠魂宝典里显示的物品 |
 | representativeOre | IOreDictEntry | 同上,只不过是变成了矿物词典 |
-| shard | 	IItemStack | ? |
+| shard | IItemStack | 代替部件加工台的碎片(仅此材料) |
 | localizedName | string | 本地化描述 |  
 
-**craftable和castable是可以同时为true,默认值貌似是false?**
+**craftable和castable可以同时为true,默认值是false**  
+**castable如果为true则还需要设置liquid**  
 
 ## 设定物品来制作材料
 `//myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));`  
-item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
+item为该物品,amountNeeded:?,amountMatched:?
 
 ## ItemLocalizer函数
 该函数用于计算材料名称  
@@ -38,26 +39,29 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 ## 材料特性
 可以向材料添加特性  
 部件类型有:  
- * null  
- * "head"  
- * "handle"  
- * "extra"  
- * "bow"  
- * "bowstring"  
- * "projectile"  
- * "shaft"  
- * "fletching"
- 
+ * null(默认,要是不填会把这个特性附加到全部材料上)
+ * "head"-头部 
+ * "handle"-手柄
+ * "extra"-大板,绑定节,坚韧手柄,坚韧绑定节,护手,宽护手,十字柄
+ * "bow"-?
+ * "bowstring"-弓弦
+ * "projectile"-?
+ * "shaft"-箭杆,弩箭核心
+ * "fletching"-箭羽
+
+**无论添加哪种部件都会多添加且只添加一次碎片的材料**  
 添加例子:`myMaterial.addMaterialTrait("fiery", "bowstring");`  
 删除例子:`myMaterial.remove("cactus", "bowstring");`
 
 ## 关于特性
-获取特性目前的方法只有翻看带有特性的工具的nbt,找到identifier,identifier后面即是特性名称
+获取特性目前的方法只有翻看带有特性的工具的nbt,找到trait,trait后面的数组即是特性名称
 
 ## Material Stats
 仅在向材料添加特性的时候才需要调用对应的Material Stats  
-例子:在创建`myMaterial.addMaterialTrait("fiery", "bowstring");`的时候也要创建`myMat.addBowStringMaterialStats(float modifier);`  
-有以下方法设定Material Stats
+**如果不使用Material Stats添加材料的属性,材料的部件将制作不出来**  
+例子:在写`myMaterial.addMaterialTrait("fiery", "bowstring");`的时候也要写`myMat.addBowStringMaterialStats(0.5f);`  
+
+有以下方法设置(删除)Material Stats
 ```
 myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
 myMat.removeHeadMaterialStats();
@@ -83,9 +87,24 @@ myMat.removeFletchingMaterialStats();
 myMat.addProjectileMaterialStats();
 myMat.removeProjectileMaterialStats();
 ```
+**参数解析:**  
+ * durability\-耐久度
+ * miningSpeed\-挖掘速度
+ * attackDamage\-伤害
+ * harvestLevel\-挖掘等级
+ * modifier\-系数
+ * extraDurability\-耐久度
+ * drawSpeed\-?
+ * range\-范围
+ * bonusDamage\-?
+ * bonusAmmo\-额外弹药
+ * accuracy\-精准度
 
 ## 注册材料
-最后不要忘了`myMaterial.register();`一下,否则会报错的。
+最后不要忘了`.register();`一下,否则会报错
+
+## 本地化key
+本地化key为`material.材料名.name`
 
 ## 官方例子
 ```javascript
