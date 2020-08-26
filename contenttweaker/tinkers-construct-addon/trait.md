@@ -92,7 +92,7 @@ onBlockHarvestDrops函数
 函数写法:`myTrait.onBlockHarvestDrops = function(trait, tool, event) {//内容自写};`  
 
 calcCrit函数
-对实体造成伤害之前调用~~,以确定它是否暴击(?)(看机翻的狼灭),返回`false`并不会阻止已经是爆击的命中。~~   
+对实体造成伤害之前调用~~以确定它是否暴击(?)(看机翻的狼灭),返回`false`并不会阻止已经是爆击的命中~~  
 **参数类型:Trait Representation类的`trait`,IItemStack类的`tool`,IEntityLivingBase类的`attacker`,IEntityLivingBase类的`target`**  
 需要返回值,返回true或者false  
 函数写法:`myTrait.calcCrit = function(trait, tool, attacker, target) {//内容自写 return true; //or false};`  
