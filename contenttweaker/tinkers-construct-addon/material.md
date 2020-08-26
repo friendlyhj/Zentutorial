@@ -33,7 +33,7 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 例子:`myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};`  
 结果:在名字前面加上Cool  
 
-## 材料特征
+## 材料特性
 可以向材料添加特性  
 部件类型有:  
  * null  
@@ -48,6 +48,9 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
  
 添加例子:`myMaterial.addMaterialTrait("fiery", "bowstring");`  
 删除例子:`myMaterial.remove("cactus", "bowstring");`
+
+## 关于特性
+获取特性目前的方法只有翻看带有特性的工具的nbt,找到identifier,identifier后面即是特性名称
 
 ## Material Stats
 仅在向材料添加特性的时候才需要调用对应的Material Stats  
@@ -77,15 +80,8 @@ testMat.addMaterialTrait(<ticontrait:kindlich_test>, "bowstring");
 testMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
 testMat.addMaterialTrait("blasting", "bowstring");
 testMat.addMaterialTrait("blasting", "head");
-
-//null (or not specifying that parameter at all) means that this is a default trait.
-//Default traits are only queried when no other traits are added to that material type.
-//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
 testMat.addMaterialTrait("dense", null);
-
-//Faulty, should error, though only during init, as then the strings will be checked.
 testMat.addMaterialTrait("dance", null);
-
 testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 testMat.localizedName = "Wicked";
 testMat.register();
