@@ -15,9 +15,9 @@
 | :---- | :---- | :---- |
 | identifier | string | 设定名称(一般在写构建器的时候就写了,不会用到) |
 | color | int | 设定颜色 |
-| maxLevel | int | 最高等级 |
+| maxLevel | int | 最高等级(默认为1) |
 | countPerLevel | int | 设定升级到第二级(前提是有,无就不需要写)需要多少个countPerLevel |
-| hidden | bool | ? | 
+| hidden | bool | 隐藏特性 | 
 | localizedDescription | string | 本地化描述 |
 | localizedName | sting | 本地化名称 |
 
@@ -37,27 +37,28 @@ myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IDa
     }
 };
 ```
-结果,额外信息显示Cool1,Cool2  
+结果:**额外信息显示Cool1,Cool2**  
 
 ## 访问特性数据
-例子:`(val myTraitData = )myTrait.getData(itemWithTrait);`  
-**myTrait指特性,itemWithTrait指工具**  
+例子:`val myTraitData = myTrait.getData(itemWithTrait);`  
+**myTrait指特性,itemWithTrait指带有特性的工具**  
 
 ## TraitDataRepresentation
 ### 设定参数
 **ZenGetter与ZenSetter**  
 | 参数 | 是否有ZenGetter | 是否有ZenSetter | 返回(设定)值类型 | 参数描述 |
 | :---- | :---- | :---- | :---- | :---- |
-| identifier | √ | √ | string | 名称 |
-| extraInfo | √ | √ | string | 额外信息 |
+| identifier | √ | √ | string | 特性名称 |
+| extraInfo | √ | √ | string | 特性额外信息 |
 | info | √ | × | string | ? |
 | colorString | √ | × | string | ? |
-| level | √ | √ | int | 等级 | 
-| color | √ | √ | int | 颜色 |
+| level | √ | √ | int | 特性等级 | 
+| color | √ | √ | int | 特性颜色 |
 | current | √ | √ | int | ? |
 | max | √  | √ | int | ? |
 
 ## 函数
+
 onUpdate函数  
 每Tick都会调用  
  * Trait Representation类的`trait`
@@ -75,7 +76,7 @@ getMiningSpeed函数
 **请注意,这会被我的世界的破坏方块事件监听到**  
  * Trait Representation类的`trait`
  * IItemStack类的`tool`
- * 一个PlayerBreakSpeedEvent事件
+ * 一个`PlayerBreakSpeedEvent`事件
  
 不需要返回值  
 函数写法:`myTrait.getMiningSpeed = function(trait, tool, event) {//内容自写};`
@@ -85,7 +86,7 @@ beforeBlockBreak函数
 **请注意,这会被我的世界的破坏方块事件监听到**  
  * Trait Representation类的`trait`
  * IItemStack类的`tool`
- * 一个BlockBreakEvent事件
+ * 一个`BlockBreakEvent`事件
  
 不需要返回值  
 函数写法:`myTrait.beforeBlockBreak = function(trait, tool, event) {//内容自写};`
@@ -107,22 +108,22 @@ onBlockHarvestDrops函数
 **请注意,这会被我的世界BlockHarvestBreak事件监听到**  
  * Trait Representation类的`trait`
  * IItemStack类的`tool`
- * 一个BlockHarvestDropsEvent事件
+ * 一个`BlockHarvestDropsEvent`事件
  
 不需要返回值  
 函数写法:`myTrait.onBlockHarvestDrops = function(trait, tool, event) {//内容自写};`  
 
-calcCrit函数
-对实体造成伤害之前调用~~以确定它是否暴击(?)(看机翻的狼灭),返回`false`并不会阻止已经是爆击的命中~~  
+calcCrit函数  
+对实体造成伤害之前调用~~以确定它是否暴击(?),返回`false`并不会阻止已经是爆击的命中~~  
  * Trait Representation类的`trait`
  * IItemStack类的`tool`
  * IEntityLivingBase类的`attacker`
  * IEntityLivingBase类的`target`
  
-需要返回值,返回true或者false  
+需要返回值,返回`true`或者`false`  
 函数写法:`myTrait.calcCrit = function(trait, tool, attacker, target) {//内容自写 return true; //or false};`  
 
-calcDamage函数
+calcDamage函数  
 对实体造成伤害,在实体和暴击伤害加成之前调用  
  * Trait Representation类的`trait`
  * IItemStack类的`tool`
@@ -132,5 +133,123 @@ calcDamage函数
  * float类型的`newDamage`
  * boolean类型的`isCritical`
  
-需要返回值,返回float类型的新伤害或者返回newDamage  
-函数写法:`myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {//内容自写 return newDamage; //或修改后的值};`  
+需要返回值,返回float类型的新伤害或者返回`newDamage`  
+函数写法:`myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {//内容自写 return newDamage; //或者一个新耐久度};`  
+
+onHit函数  
+在对实体即将造成伤害之前调用,在此之前所有的伤害都计算完毕(最后一步)  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * IEntityLivingBase类的`attacker`
+ * IEntityLivingBase类的`target`
+ * float类型的`newDamage`
+ * boolean类型的`isCritical`
+
+不需要返回值  
+函数写法:`myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {//内容自写};`  
+
+calcKnockBack函数  
+怪物被命中后调用,以修改击退  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * IEntityLivingBase类的`attacker`
+ * IEntityLivingBase类的`target`
+ * float类型的`danage`
+ * float类型的`originalKnockback`
+ * float类型的`newKnockback`
+ * boolean类型的`isCritical`
+
+需要返回一个float类型的数据,或者返回`newKnockback`  
+函数写法:`myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {//内容自写  return newDamage; //或者一个新耐久};`  
+
+afterHit函数  
+在实体受到伤害后调用  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * IEntityLivingBase类的`attacker`
+ * IEntityLivingBase类的`target`
+ * float类型的`dealtDamage`
+ * boolean类型的`wasCritical`
+ * boolean类型的`wasHit`
+
+不需要返回值  
+函数写法:`mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {//内容自写};`  
+
+onBlock函数  
+当持有工具的玩家阻挡攻击时调用  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * IPlayer类的`player`
+ * 一个`EntityLivingHurtEvent`事件
+
+不需要返回值  
+函数写法:`myTrait.onBlock = function(trait, tool, player, event) {//内容自写};`  
+
+onPlayerHurt函数  
+当持有工具的玩家未阻挡攻击时调用  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * IPlayer类的`player`
+ * IEntityLivingBase类的`attacker`
+ * 一个`EntityLivingHurtEvent`事件
+
+不需要返回值  
+函数写法:`myTrait.onPlayerHurt = function(trait, tool, player, event) {//内容自写};`  
+
+onToolDamage函数  
+在工具降低耐久度之前调用  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * int类型的`unmodifiedAmount`
+ * int类型的`newAmount`
+ * 代表当前工具的`holder`(IEntityLivingBase类型)
+
+返回一个新的int类型的新耐久度或者返回newAmount  
+函数写法:`myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {//内容自写  return newAmount; //或者一个新耐久};`  
+
+calcToolHeal函数  
+在工具提高耐久度之前调用  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * int类型的`unmodifiedAmount`
+ * int类型的`newAmount`
+ * 代表当前工具的`holder`(IEntityLivingBase类型)
+
+返回一个新的int类型的新耐久度或者返回newAmount  
+函数写法:`myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {//内容自写  return newAmount; //或者一个新耐久};`  
+
+onToolRepair函数  
+在使用材料修复工具前调用  
+请勿于`onToolHeal`混淆  
+如果不止一次使用这个物品,将被调用多次  
+ * Trait Representation类的`trait`
+ * IItemStack类的`tool`
+ * int类型的`amount`
+
+不需要返回值  
+函数写法:`myTrait.onToolRepair = function(trait, tool, amount) {//内容自写};`
+
+## 注册特性
+最后不要忘了`.register();`一下,否则会报错  
+
+## 本地化
+本地化为上文的`localizedDescription`和`localizedName`  
+
+## 官方例子
+```javascript
+#loader contenttweaker
+#modloaded tconstruct
+
+val testTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test");
+testTrait.color = 0xffaadd;
+testTrait.maxLevel = 100;
+testTrait.countPerLevel = 20;
+testTrait.addItem(<item:minecraft:iron_pickaxe>);
+testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
+testTrait.localizedName = "Whooooooooo";
+testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
+testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
+    attacker.heal(damageDealt);
+};
+testTrait.register();
+```
