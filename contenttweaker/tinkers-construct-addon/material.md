@@ -57,6 +57,32 @@ item为该物品,amountNeeded为多少个物品增加1点,amountMatched:?
 ## Material Stats
 仅在向材料添加特性的时候才需要调用对应的Material Stats  
 例子:在创建`myMaterial.addMaterialTrait("fiery", "bowstring");`的时候也要创建`myMat.addBowStringMaterialStats(float modifier);`  
+有以下方法设定Material Stats
+```
+myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
+myMat.removeHeadMaterialStats();
+
+myMat.addHandleMaterialStats(float modifier, int durability);
+myMat.removeHandleMaterialStats();
+
+myMat.addExtraMaterialStats(int extraDurability);
+myMat.removeExtraMaterialStats();
+
+myMat.addBowMaterialStats(float drawSpeed, float range, float bonusDamage);
+myMat.removeBowMaterialStats();
+
+myMat.addBowStringMaterialStats(float modifier);
+myMat.removeBowStringMaterialStats();
+
+myMat.addArrowShaftMaterialStats(float modifier, int bonusAmmo);
+myMat.removeArrowShaftMaterialStats();
+
+myMat.addFletchingMaterialStats(float accuracy, float modifier);
+myMat.removeFletchingMaterialStats();
+
+myMat.addProjectileMaterialStats();
+myMat.removeProjectileMaterialStats();
+```
 
 ## 注册材料
 最后不要忘了`myMaterial.register();`一下,否则会报错的。
