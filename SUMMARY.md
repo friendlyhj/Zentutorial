@@ -91,7 +91,8 @@
 * [匠魂联动](contenttweaker/tinkers-construct-addon/README.md)
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
-  * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
+  * [特性数据](contenttweaker/tinkers-construct-addon/traitDataRepresentation.md)
+  <!-- * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md) -->
 
 ## 实战 <a id="actual-combat"></a>
 
@@ -127,4 +128,3 @@
   * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
 * [伤害](crafttweaker-lib/damage/README.md)
   * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
-
