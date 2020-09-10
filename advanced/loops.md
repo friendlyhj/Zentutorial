@@ -85,7 +85,7 @@ var map as string[int] = {
 	2 : "二",
 	3 : "三",
 	4 : "四"
-}
+};
 
 // key 遍历法
 for key in map {
