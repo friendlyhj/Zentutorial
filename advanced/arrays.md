@@ -14,13 +14,13 @@
 var int_array1 as int[] = [];
 // 定义一个 int 类型的数组，没有初始元素
 
-var int_array2 as int[] = [10,20,30]；
+var int_array2 as int[] = [10,20,30];
 // 定义一个 int 类型的数组，有三个初始元素
 
-var strings as string[] = ["apple","carrot"]；
+var strings as string[] = ["apple","carrot"];
 // 定义一个 string 类型的数组，有两个初始元素
 
-var items as IItemStack[] = [<minecraft:apple>,<minecraft:carrot>]；
+var items as IItemStack[] = [<minecraft:apple>,<minecraft:carrot>];
 // 定义一个 IItemStack 类型的数组，有两个初始元素
 ```
 
