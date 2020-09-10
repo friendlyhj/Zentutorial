@@ -1,6 +1,6 @@
 # 循环与遍历
 
-## 一、for 循环
+## for 循环
 
 for 循环允许一段代码多次执行，同时能增强脚本的可读性。
 
@@ -47,7 +47,7 @@ for i in 0 .. items.length {
 
 
 
-## 二、while 循环
+## while 循环
 
 while 循环也可以多次执行代码，当小括号内的判断表达式为 `true`时，便会执行大括号内的语句，然后再次判断表达式，`true`则继续循环，`false`则不执行循环。
 
@@ -60,14 +60,14 @@ while(i <= 10) {
 // print() 函数会执行 11 次，依次输出 i 为: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 var j as int = 10;
-while(i >= 0) {
-    print(i);
-    i = i - 1;
+while(j >= 0) {
+    print(j);
+    j = j - 1;
 }
 // print() 函数会执行 11 次，依次输出 j 为：10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 ```
 
-## 三、增强 for 循环（foreach）
+## 增强 for 循环（foreach）
 
 增强 for 循环用来遍历数组或集合，可读性高，不需要下标，遍历每一个元素。
 
@@ -107,7 +107,7 @@ for entry in map.entrySet {
 
 
 
-## 四、break 与 continue
+## break 与 continue
 
 - `break`与`continue`都可以在 for 循环和 while 循环中使用。
 
@@ -115,7 +115,7 @@ for entry in map.entrySet {
 
 ```javascript
 for i in 0 .. 5 {
-    if(i == 3) { break; }
+    if(i == 3) break; 
     print(i);
 }
 // i 等于 3 时，执行 break，结束循环
@@ -126,7 +126,7 @@ for i in 0 .. 5 {
 
 ```javascript
 for i in 0 .. 5 {
-	if(i == 3) { continue; }
+	if(i == 3) continue; 
 	print(i);
 }
 // i 等于 3 时，执行 continue，跳出当前循环，并进入下一次循环
