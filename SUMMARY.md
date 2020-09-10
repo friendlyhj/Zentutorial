@@ -36,6 +36,7 @@
 * [基本运算](advanced/calculate.md)
 * [全局函数](advanced/global-function.md)
 * [Math包](advanced/math-package.md)
+* [if](advanced/if.md)
 * [in/has 操作符](advanced/in-operator.md)
 * [三元操作符](advanced/ternary-operator.md)
 * [数组与集合](advanced/arrays.md)
