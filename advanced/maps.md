@@ -1,86 +1,98 @@
----
-description: >-
-  关联数组（又称映射）与普通数组极为类似，也是用来存储多条数据的。但是它的key（键）可以自定义，而不是0 1 2 3 ...
-  在我的实际运用中，关联数组一般用于制作数据库，在之后的循环调用。
----
+# Map（映射、关联数组）
 
-# 关联数组\(映射\)
+Map 是集合的一种，也称作映射、关联数组等。特点是存储的数据为键值对(Key-Value)，key（键）和 value（值）一一对应。
 
-你需要用`{ }`和`:`来声明一个映射数组。
+> - Map 没有下标，取代下标的是 key（键）
+> - 你可以用 ZenScript 的任何类型作为 key
+> - 键值对的形式为 key: value，键在前，值在后
+> - 不可使用变量作为 key，变量名会被解释为字符串
+> - 数组可以作为 value，但不可以作为 key
 
-```javascript
-import crafttweaker.item.IItemStack
-val test as IItemStack[string] = {
-    "dirt" : <minecraft:dirt>,
-    "iron" : <minecraft:iron_ingot>
-};
-```
-
-需要注意的是
-
-* 你可以用ZenScript的任何类型作为key或值
-* 不可使用变量作为key，变量名会被解释为字符串
-* 不可用数组作为key，值可以。
-* 不可以直接遍历用数组作为值的关联数组。
-
-你可以用下标访问数组的某个元素，与普通数组不同，关联数组使用你事先定义的key来访问元素。比如上文例子的关联数组可用`test["iron"]`访问到`<minecraft:iron_ingot>`。如果key为字符串，也可以用`test.iron`
-
-数组的某个键对应的元素可以随时覆盖，与普通数组不同，你可以用一个新的key来添加一个新的条目。
+## 定义与访问
 
 ```javascript
-val changingArray as string[IItemStack] = {
-    <minecraft:dirt> : "这是我",
-    <minecraft:gold_ingot> : "我讨厌他"
+// 定义一个 Map 集合，key 为 int 类型，value 为 string 类型
+var map1 as string[int] = {
+    1 : "一",
+    2 : "二",
+    3 : "三"
 };
 
-val gg = <minecraft:gold_ingot>;
+// 通过 2 来访问 map1 中的 二， 输出 二
+print(map1[2]);
 
-//覆盖 gold_ingot 的 值
-changingArray[gg] = "我喜欢他";
+// 定义一个 Map 集合，key 为 string 类型，value 为 IItemStack 类型
+var map2 as IItemStack[string] = {
+    gold : <minecraft:gold_ingot>,
+    iron : <minecraft:iron_ingot>,
+    diamond : <minecraft:diamond>
+};
 
-//添加一个新的条目
-changingArray[<minecraft:grass>] = "力量！";
+// 通过 iron 来访问 map2 中的 <minecraft:iron_ingot>
+print(map2["iron"].displayName);
+
+// 特别的，key 为 string 类型时可以通过点来访问 value
+print(map2.iron.displayName);
 ```
 
-既然有了数组，我们需要遍历。你可以使用key遍历和key - value遍历。
+## 修改
 
-* key 遍历法：遍历 key，只需要传入一个参数。
-* key-value 遍历法：同时遍历 key 和 value，需要传入两个参数。
+你可以修改一个键对应的值，也可以给 Map 添加新的键值对。
 
 ```javascript
-val test as int[string] = {
-    "one" : 1,
-    "two" : 2,
-    "three" : 3,
-    "four" : 4
-}
+var map as string[int] = {
+    1 : "一",
+    2 : "二",
+    3 : "三",
+};
 
-//key遍历法
-//将会依次打印该映射数组的key one two three four
-for key in test {
-    print(key);
-}
-//key-value遍历法
-for key, value in test {
-    print("The key is " ~ key);
-    print(value * 125);
-}
+map[1] = "one"; // 修改
+map[2] = "two"; // 修改
+map[3] = "three"; // 修改
+map[4] = "four"; // 添加
+map[5] = "five"; // 添加
+
 ```
 
-关联数组提供了如下ZenGetter
+## 遍历
+
+可以通过增强 for 循环来遍历一个 Map 中的 key , key-value 和 entry。
 
 ```javascript
-//获取映射数组的所有key，返回包含所有key的普通数组，可以使用如下的其中一个
-AssocArray.keySet  //返回列表
-AssocArray.keys  
-//获取映射数组的所有值，返回包含所有值的普通数组，可以使用如下的其中一个
-AssocArray.values
-AssocArray.valueSet
-//获取映射数组的所有条目，返回包含所有条目的普通数组
-AssocArray.entrySet
-//每个条目有key和value两个Getter获取这个条目的键和值
-val Entry = AssocArray.entrySet[0];
-Entry.key;
-Entry.value;
+var map as string[int] = {
+    1 : "一",
+    2 : "二",
+    3 : "三",
+    4 : "四"
+}
+
+// key 遍历法
+for key in map {
+    print(key); // 输出 1, 2, 3, 4
+}
+
+// key-value 遍历法
+for key, value in map {
+    print(key ~ "-->" ~ value); // 输出 1-->一, 2-->二, 3-->三, 4-->四
+}
+
+// entry 遍历法
+for entry in map.entrySet {
+    print(entry.key ~ "-->" ~ entry.value); // 输出 1-->一, 2-->二, 3-->三, 4-->四
+}
 ```
 
+## Set 与 Entry
+
+keySet, valueSet, entrySet
+
+```javascript
+map.keySet   // Returns the map's keySet.
+map.keys     // Returns the map's keySet.
+map.values   // Returns the map's valueSet.
+map.valueSet // Returns the map's valueSet.
+map.entrySet // Returns the map's entrySet.
+
+entry.key;   // Returns the entry's key.
+entry.value; // Returns the entry's value.
+```
