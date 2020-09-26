@@ -119,7 +119,6 @@ contenttweaker.part.dense_ingot=致密%s锭
 
 ## 材质
 
-需要在所需的文件夹放置于文件名与部件名的png文件。
+需要在所需的文件夹放置于文件名与部件名相同的png文件。
 
-例如上文的例子需要在/resources/contenttweaker/textures/items放置dense\_gear.png和dense\_ingot.png
-
+例如上文的例子需要在/resources/contenttweaker/textures/items放置dense_gear.png和dense_ingot.png
