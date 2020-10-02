@@ -106,7 +106,7 @@ var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName
 
 ## 本地化
 
-本地化key为`contenttweaker.part.PartID`
+本地化key为`contenttweaker.part.<PartID>`
 
 其的值需要有个%s，这个将会在其构建的材料部件中被材料名替代
 
@@ -122,3 +122,6 @@ contenttweaker.part.dense_ingot=致密%s锭
 需要在所需的文件夹放置于文件名与部件名相同的png文件。
 
 例如上文的例子需要在/resources/contenttweaker/textures/items放置dense_gear.png和dense_ingot.png
+
+
+方块就自然要放到 blocks 文件夹里。
