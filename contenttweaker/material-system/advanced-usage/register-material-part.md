@@ -56,6 +56,31 @@ frame.blockColorSupplier = function(state, access, pos, tintIndex) {
 };
 ```
 
+## 例子
+
+```javascript
+val frame as PartType = MaterialSystem.createPartType("frame", function(materialPart){
+    var materialName as string = materialPart.getMaterial().getName();
+    var frame as Block = VanillaFactory.createBlock("frame_" ~ materialName.toLowerCase(), <blockmaterial:iron>);
+    frame.blockLayer = "TRANSLUCENT";
+    frame.blockHardness = 3.0;
+    frame.blockResistance = 45.0;
+    frame.lightOpacity = 0;
+    frame.fullBlock = false;
+    frame.setToolClass("pickaxe");
+    frame.translucent = true;
+    frame.setToolLevel(1);
+    frame.textureLocation = mods.contenttweaker.ResourceLocation.create("contenttweaker:blocks/frame");
+    frame.itemColorSupplier = function(item, tintindex) {
+        return materialPart.getCTColor();
+    };
+    frame.blockColorSupplier = function(state, access, pos, tintIndex) {
+        return materialPart.getCTColor();
+    };
+    frame.register();
+});
+```
+
 ## 本地化
 
 材料系统的另外一个特点，就是自动确定本地化名。你也会发现，我们是注册了一个个单独方块，有各自的 ID，不像预设的材料类型只占用一个 ID，而以 meta 区分。所以你会发现注册的方块的非本地化名（也就是本地化所需要的 key）也是不同的，跟随原版加工厂添加方块的本地化 key: `tile.contenttweaker.方块ID.name`
@@ -67,8 +92,8 @@ frame.blockColorSupplier = function(state, access, pos, tintIndex) {
 ```javascript
 import mods.zenutils.StaticString;
 
-for item in itemUtils.getItemsByRegexRegistryName("^contenttweaker:block_frame_.*") {
-    val materialName as string = item.definition.id.substring("contenttweaker:block_frame_".length);
+for item in itemUtils.getItemsByRegexRegistryName("^contenttweaker:frame_.*") {
+    val materialName as string = item.definition.id.substring("contenttweaker:frame_".length);
     item.displayName = StaticString.format(game.localize("contenttweaker.part.frame"), [game.localize("base.material." ~ materialName)]);
 }
 ```
