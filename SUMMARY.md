@@ -83,8 +83,8 @@
     * [注册自定义部件](contenttweaker/material-system/advanced-usage/register-material-part.md)
     * [自定义材料部件信息](contenttweaker/material-system/advanced-usage/custom-part-data.md)
 * [高级运用](contenttweaker/advanced-usage/README.md)
-  * [ContentTweaker 类库（非函数类）](contenttweaker/advanced-usage/contenttweaker-lib.md)
-  * [函数](contenttweaker/advanced-usage/functions.md)
+  <!-- * [ContentTweaker 类库（非函数类）](contenttweaker/advanced-usage/contenttweaker-lib.md)
+  * [函数](contenttweaker/advanced-usage/functions.md) -->
 * [更多鸡联动](contenttweaker/chickens-addon.md)
 * [匠魂联动](contenttweaker/tinkers-construct-addon/README.md)
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
