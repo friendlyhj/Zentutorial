@@ -83,7 +83,7 @@ val frame as PartType = MaterialSystem.createPartType("frame", function(material
 
 ## 本地化
 
-材料系统的另外一个特点，就是自动确定本地化名。你也会发现，我们是注册了一个个单独方块，有各自的 ID，不像预设的材料类型只占用一个 ID，而以 meta 区分。所以你会发现注册的方块的非本地化名（也就是本地化所需要的 key）也是不同的，跟随原版加工厂添加方块的本地化 key: `tile.contenttweaker.方块ID.name`
+材料系统的另外一个特点，就是自动确定本地化名。你也会发现，我们是注册了一个个单独方块，有各自的 ID，不像预设的材料类型只占用一个 ID，而以 meta 区分。所以你会发现注册的方块的非本地化名（也就是本地化所需要的 key）也是不同的，而是跟随原版加工厂添加方块的本地化 key: `tile.contenttweaker.方块ID.name`
 
 你自然可以再用语言文件进行本地化，但或许会过于繁琐了。用 CrT 自带的设定物品名称功能更好。(记得另开脚本！)
 
