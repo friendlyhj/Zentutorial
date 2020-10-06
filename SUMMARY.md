@@ -100,7 +100,7 @@
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
   * [禁止开创造](actual-combat/events/ban-creative-mode.md)
 
-## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
+<!-- ## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
 
 * [概述](crafttweaker-lib/crafttweaker-lib.md)
 * [方块](crafttweaker-lib/block/README.md)
@@ -125,4 +125,4 @@
 * [创造标签](crafttweaker-lib/creativetabs/README.md)
   * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
 * [伤害](crafttweaker-lib/damage/README.md)
-  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
+  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md) -->
