@@ -24,7 +24,7 @@ function(materialPart){
 ```javascript
 // import 和函数声明部分从略
 val materialName as string = materialPart.getMaterial().getName();
-val frame as Block = MaterialPart.createBlock("frame_" ~ materialName.toLowerCase(), <blockmaterial:iron>)
+val frame as Block = VanillaFactory.createBlock("frame_" ~ materialName.toLowerCase(), <blockmaterial:iron>)
 ```
 
 你会发现我们对方块 ID 进行了字符串拼接。很明显，我们添加的方块 ID 是不能重复的。最好的方法就是根据 `MaterialPart` 的材料的名字来给所要注册的物品/方块确定名字。例子所中的就是铜框架材料部件将会注册一个 ID 为 frame_copper 的方块。然后你就可以像添加普通方块修改所需的其他 ZenProperty.
