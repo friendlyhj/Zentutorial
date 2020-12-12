@@ -6,6 +6,7 @@ description: >-
 # DataMap
 
 
+## 声明
 
 声明一个DataMap的方法与IData其他子类的声明不同。
 
@@ -27,7 +28,9 @@ val nestedMap as IData = { key1:
                 };
 ```
 
-然而IDataMap的元素不能直接修改，你也可以用key检索其中的元素，将会返回这个key对应的值，均以IData形式返回。
+## 修改
+
+然而 DataMap 的元素不能直接修改，你也可以用 key 检索其中的元素，将会返回这个 key 对应的值，均以 IData 形式返回。
 
 ```javascript
 val mySecondMap as IData = {key1: "value1",
@@ -43,7 +46,7 @@ var k2 as IData = mySecondMap.memberGet("key2");
 print(k2.asString());
 ```
 
-你可以用`+`来合并两个IDataMap和`-`来裁剪IDataMap。合并时，相同key的值后者会覆盖前者（这是你唯一可以修改值的方法）。裁剪可以去除特定key的元素。
+你可以用 `+` 来合并两个IDataMap和 `-` 来裁剪IDataMap。合并时，相同key的值后者会覆盖前者（这是你唯一可以修改值的方法）。裁剪可以去除特定key的元素。
 
 ```javascript
 val map1 as IData = {
@@ -75,3 +78,18 @@ val map4 as IData = {
 print((map3 - map4).asString()); // 打印出 {key1 : "two", key2 : "two"}
 ```
 
+## in/has 操作符
+
+你可以用 in/has 操作符来检测一个 DataMap 是否有指定的 key
+
+```javascript
+
+val map3 as IData = {
+    key1 : "two",
+    key2 : "two",
+    key3 : "three"
+};
+
+print(map3 has "key1"); // true
+print(map3 has "key4"); // false
+```
