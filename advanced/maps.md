@@ -16,6 +16,8 @@ ZenScript 的 Map 以 Java 的 HashMap 实现。所以如果 key 的类没有重
 - IIOreDictEntry
 - IItemDefinition
 - ILiquidDefinition
+- IFacing
+- IBlockPos
 - IPlayer（然而 IPlayer 对象在玩家死亡重生后就会被游戏删除，并非持久保存，依旧不推荐作为 key）
 
 当然如果你的映射只是为了遍历就不用担心这个了。
