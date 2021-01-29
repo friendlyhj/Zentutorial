@@ -35,4 +35,3 @@ IBlockState.getBlockState("minecraft:wool", ["color=red"]); //getBlockState静�
 来表示
 
 静态方法会在返回值类型前有个 `static` 标识
-

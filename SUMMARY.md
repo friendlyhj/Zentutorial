@@ -33,21 +33,18 @@
   * [ZenGetter](advanced/overview/zengetter.md)
   * [ZenSetter](advanced/overview/zensetter.md)
   * [ZenMethod\(方法\)](advanced/overview/zenmethod.md)
-* [运算与赋值](advanced/calc-and-assign/README.md)
-  * [基本运算](advanced/calc-and-assign/calculate.md)
-  * [全局函数](advanced/calc-and-assign/global-function.md)
-  * [if](advanced/calc-and-assign/if.md)
-  * [for](advanced/calc-and-assign/for.md)
-  * [while](advanced/calc-and-assign/while.md)
-  * [Math包](advanced/calc-and-assign/math-package.md)
-  * [in/has 操作符](advanced/calc-and-assign/in-operator.md)
-  * [三元操作符](advanced/calc-and-assign/ternary-operator.md)
+* [基本运算](advanced/calculate.md)
+* [全局函数](advanced/global-function.md)
+* [Math包](advanced/math-package.md)
+* [if](advanced/if.md)
+* [in/has 操作符](advanced/in-operator.md)
+* [三元操作符](advanced/ternary-operator.md)
 * [数组与集合](advanced/arrays.md)
 * [循环与遍历](advanced/loops.md)
 * [预处理器](advanced/preprocessors.md)
 * [全局和静态变量](advanced/global-and-static-variable.md)
 * [跨脚本引用](advanced/cross-scripts-reference.md)
-* [关联数组\(映射\)](advanced/maps2.md)
+* [关联数组\(映射\)](advanced/maps.md)
 * [IItemStack类型的重新认识](advanced/iitemstack.md)
 * [IIngredient接口](advanced/iingredient.md)
 * [IItemDefinition & IBlockDefinition](advanced/iitemdefinition-and-iblockdefinition.md)
@@ -82,18 +79,18 @@
     * [注册材料部件](contenttweaker/material-system/base-usage/register.md)
     * [材料部件信息](contenttweaker/material-system/base-usage/material-part-data.md)
   * [高级运用](contenttweaker/material-system/advanced-usage/README.md)
-    * [MaterialSystem](contenttweaker/material-system/advanced-usage/materialsystem.md)
-    * [Material](contenttweaker/material-system/advanced-usage/material.md)
-    * [Part](contenttweaker/material-system/advanced-usage/part.md)
-    * [PartType](contenttweaker/material-system/advanced-usage/parttype.md)
+    * [自定义部件类型](contenttweaker/material-system/advanced-usage/custom-part-type.md)
+    * [注册自定义部件](contenttweaker/material-system/advanced-usage/register-material-part.md)
+    * [自定义材料部件信息](contenttweaker/material-system/advanced-usage/custom-part-data.md)
 * [高级运用](contenttweaker/advanced-usage/README.md)
-  * [ContentTweaker 类库（非函数类）](contenttweaker/advanced-usage/contenttweaker-lib.md)
-  * [函数](contenttweaker/advanced-usage/functions.md)
+  <!-- * [ContentTweaker 类库（非函数类）](contenttweaker/advanced-usage/contenttweaker-lib.md)
+  * [函数](contenttweaker/advanced-usage/functions.md) -->
 * [更多鸡联动](contenttweaker/chickens-addon.md)
 * [匠魂联动](contenttweaker/tinkers-construct-addon/README.md)
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
-  * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
+  * [特性数据](contenttweaker/tinkers-construct-addon/traitDataRepresentation.md)
+  <!-- * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md) -->
 
 ## 实战 <a id="actual-combat"></a>
 
@@ -103,7 +100,7 @@
   * [修改方块掉落物](actual-combat/events/tweaking-block-drops.md)
   * [禁止开创造](actual-combat/events/ban-creative-mode.md)
 
-## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
+<!-- ## CraftTweaker 类库 <a id="crafttweaker-lib"></a>
 
 * [概述](crafttweaker-lib/crafttweaker-lib.md)
 * [方块](crafttweaker-lib/block/README.md)
@@ -128,5 +125,4 @@
 * [创造标签](crafttweaker-lib/creativetabs/README.md)
   * [ICreativeTab](crafttweaker-lib/creativetabs/icreativetab.md)
 * [伤害](crafttweaker-lib/damage/README.md)
-  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md)
-
+  * [IDamageSource](crafttweaker-lib/damage/idamagesource.md) -->

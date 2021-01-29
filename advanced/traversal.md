@@ -35,7 +35,7 @@ for ench in oreDict.entries /* oreDict.entries 在所有注册OD中循环 */ {
     var enchGear as IItemStack = ench.firstItem; // 获得OD的第一个物品
     // 进行条件判断，第二个条件是当时魔改时，排除EIO充能合金齿轮等的干扰
     if (oreName.startsWith("gear") && enchGear.definition.owner != "enderio") {
-        var key as string = oreName.substring(4, oreName.length); // 获取金属名
+        var key as string = oreName.substring("gear".length); // 获取金属名
         // 获取魔改需要的该金属的其他部件，杆和板
         var stick as IOreDictEntry = oreDict.get("stick" ~ key);
         var plate as IOreDictEntry = oreDict.get("plate" ~ key);

@@ -16,7 +16,7 @@ val shapedRecipes as IIngredient[][][IItemStack] = { // 保存要修改的有序
     <minecraft:iron_block> : [
         [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
         [<ore:ingotIron>, <ore:ingotGold>, <ore:ingotIron>],
-        [<ore:ingotIron, <ore:ingotIron>, <ore:ingotIron>]
+        [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]
     ],
     <minecraft:stick> * 4: [
         [<ore:plank>, null],

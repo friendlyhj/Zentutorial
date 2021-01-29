@@ -15,7 +15,7 @@
 | axisAlignedBB | MCAxisAlignedBB | 完整方块 | 设置方块碰撞箱 |
 | beaconBase | bool | false | 是否可作为信标基座 |
 | blockHardness | float | 5.0 | 方块硬度 |
-| blockLayer | string | "SOLID" | 可用“SOLID”, “CUTOUT\_MIPPED”, “CUTOUT”, “TRANSLUCENT”之一，如果方块材质有透明的，需用“TRANSLUCENT” |
+| blockLayer | string | "SOLID" | 可用“SOLID”, “CUTOUT\_MIPPED”, “CUTOUT”, “TRANSLUCENT”之一。渲染类似冰的半透明请用 TRANSLUCENT，类似玻璃的请用 CUTOUT_MIPPED 或 CUTOUT|
 | blockResistance | float | 5.0 | 方块防爆等级 |
 | blockSoundType | SoundType | `<soundtype:metal>` | 设置方块声音，方块放置破坏时的声音，记得记得/ct soundtype指令 |
 | creativeTab | ICreativeTab | 杂项创造标签 | 设置物品所在创造标签，记得/ct creativetab指令 |
