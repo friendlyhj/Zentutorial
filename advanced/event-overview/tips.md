@@ -1,6 +1,6 @@
 # 一些忠告
 
-### **isNull函数规避NPE异常**
+## **isNull函数规避NPE异常**
 
 一些Getter可能会返回null，而试图对null使用任何方法、Getter会抛出NPE异常。你需要事先用isNull函数判断其是否为null，不是则跳过操作。比如，你需要获取副手的物品的id，如果和指定的相同，则进行接下的操作
 
@@ -24,7 +24,7 @@ if (!isNull(offItem) && offItem.definition.id == "minecraft:sand") {
 
 在这个例子中，先判断isNull函数，如果offItem为null，isNull函数结果为true，取反后为false，（运算优先级：非大于和大于或）结果直接判断为false，后面的`offItem.definition.id == "minecraft:sand"`运算跳过。只有offItem不为null，才会检测其ID，从而规避NPE异常。
 
-### **!world.remote保证事件只在服务端处理**
+## **!world.remote保证事件只在服务端处理**
 
 MC分为服务端和客户端，服务端用来处理事件、存储存档，而客户端用来渲染、向服务端发送数据包。大部分事件**只能**在服务端内执行，客户端不能执行。单人游戏同样存在内置服务端和客户端。
 
@@ -47,7 +47,7 @@ bat.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 
 你应该用合适的Getter获取到IWorld对象。比如`player.world`
 
-# 将数据持久化保存
+## 将数据持久化保存
 
 > 读懂此条目需要有较高的水平，请确保对以下关键词已有相当了解：事件，IPlayer，IData，DataMap，NBT格式。
 
@@ -55,7 +55,7 @@ bat.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 
 我们可以将数据保存到玩家数据中，在退出、保存游戏时，我们的数据也随着保存到硬盘上了，即使游戏关闭了也依然存在。
 
-## 写入数据
+### 写入数据
 
 ```javascript
 import crafttweaker.events.IEventManager;
@@ -99,7 +99,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 - 在`PlayerPersisted`内部的数据即可做到真正的持久化保存，即使玩家死亡了也不会清空。
 
-## 读取、修改数据
+### 读取、修改数据
 
 这里就要简单许多了，但是还有几点需要注意，先看代码。
 
