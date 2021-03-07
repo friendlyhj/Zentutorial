@@ -35,8 +35,8 @@ myTrait指特性,itemWithTrait指带有特性的工具
 ### CanApplyTogether函数
 
 可以使特性或附魔不能同存
-例子1:`myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){return otherTrait != 特性名称(identifier)};`  
-例子2:`myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){return enchant != 附魔名称};`
+例子1:`myTrait.canApplyTogetherTrait = function(thisTrait, otherTrait){return otherTrait != 特性名称(identifier)};`  
+例子2:`myTrait.canApplyTogetherEnchantment = function(thisTrait, enchant){return enchant != 附魔名称};`
 
 ### Extra info函数
 
@@ -45,7 +45,7 @@ myTrait指特性,itemWithTrait指带有特性的工具
 例子:
 
 ```javascript
-myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){
+myTrait.extraInfo = function(thisTrait, item, tag){
     val infos as string[] = ["1","2"];
     for i, info in infos {
         return "Cool" ~ info;
