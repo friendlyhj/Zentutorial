@@ -68,7 +68,7 @@ myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IDa
 
 不需要返回值
 
-函数写法:`myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {//内容自写};`
+函数写法:`myTrait.onUpdate = function(trait, tool, world, owner, itemSlot, isSelected) {//内容自写};`
 
 ### getMiningSpeed函数
 
