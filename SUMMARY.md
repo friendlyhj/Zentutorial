@@ -90,7 +90,7 @@
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
   * [特性数据](contenttweaker/tinkers-construct-addon/traitDataRepresentation.md)
-  <!-- * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md) -->
+  * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
 
 ## 实战 <a id="actual-combat"></a>
 
