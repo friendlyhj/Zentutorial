@@ -153,7 +153,7 @@ myTrait.onBlockHarvestDrops = function(thisTrait, tool, event) {
 * [Trait](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Trait/) 类的 `thisTrait`
 * [IItemStack](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/) 类的 `tool`
 * [IWorld](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) 类的 `world`
-* [IEntity](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntity/) 类的 `entity` (实际使用时这个对象可能是为 [IPlayer](https://docs.blamejared.com/1.12/en/Vanilla/Players/IPlayer/), [IEntityLivingBase](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntityLivingBase/), 只不过被强转为 [IEntity](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntity/))
+* [IEntity](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntity/) 类的 `entity` (实际使用时这个对象可能是为 [IPlayer](https://docs.blamejared.com/1.12/en/Vanilla/Players/IPlayer/), [IEntityLivingBase](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntityLivingBase/), 只是被自动转型为 [IEntity](https://docs.blamejared.com/1.12/en/Vanilla/Entities/IEntity/), 可以 instanceof 判断之后就向下强转)
 * int 类型的 `itemSlot`
 * boolean 类型的 `isSelected`  
 
