@@ -2,7 +2,7 @@
 
 ## 导入
 
-通过`import mods.contenttweaker.tconstruct.TraitDataRepresentation;`导入TraitDataRepresentation类  
+通过 `import mods.contenttweaker.tconstruct.TraitDataRepresentation;` 导入TraitDataRepresentation类  
 
 ## 参数
 
@@ -10,14 +10,11 @@
 | :---- | :---- | :---- | :---- | :---- |
 | identifier | √ | √ | string | 特性名称 |
 | extraInfo | √ | √ | string | 特性额外信息 |
-| info | √ | × | string | ? |
+| info | √ | × | string | 特性信息 |
 | colorString | √ | × | string | ? |
 | level | √ | √ | int | 特性等级 |
 | color | √ | √ | int | 特性颜色 |
 | current | √ | √ | int | ? |
 | max | √  | √ | int | ? |
 
-## 注意事项
-
-* 请不要直接把材料(特征)直接使用此类的方法
-* 请使用了getData()方法之后,对getData()方法的结果使用此类的方法
+可以通过此类设置一些关于 Trait 的信息
