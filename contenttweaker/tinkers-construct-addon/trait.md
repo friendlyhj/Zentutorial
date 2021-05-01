@@ -47,7 +47,7 @@ print(cactus); //输出的结果为 <ticontrait:cactus>
 val myTraitData as TraitDataRepresentation = myTrait.getData(itemWithTrait);
 ```  
 
-关于 TraitDataRepresentation 类的信息请看[这](https://youyi580.gitbook.io/zentutorial/contenttweaker/tinkers-construct-addon/traitdatarepresentation)
+关于 TraitDataRepresentation 类的信息请看[特性数据](https://youyi580.gitbook.io/zentutorial/contenttweaker/tinkers-construct-addon/traitdatarepresentation)
 
 myTrait 对象为 Trait 类, itemWithTrait 对象为 [IItemStack](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/) 类(不要在不是 Trait 类的对象用此方法)
 
@@ -82,4 +82,4 @@ testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wa
 testTrait.register();
 ```
 
-上文函数内的代码为什么要用 world.remote ? 看[这](https://youyi580.gitbook.io/zentutorial/advanced/event-overview/tips#worldremote-bao-zheng-shi-jian-zhi-zai-fu-wu-duan-chu-li)
+上文函数内的代码为什么要用 world.remote ? 看[一些忠告](https://youyi580.gitbook.io/zentutorial/advanced/event-overview/tips#worldremote-bao-zheng-shi-jian-zhi-zai-fu-wu-duan-chu-li)
