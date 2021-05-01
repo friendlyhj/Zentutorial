@@ -2,7 +2,7 @@
 
 ## 实例
 
-请看[这](https://ikexing.gitbook.io/crt/)
+请看 https://ikexing.gitbook.io/crt/
 
 ## 运用于 MaterialBuilder 对象的函数
 
