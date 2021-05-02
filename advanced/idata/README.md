@@ -70,7 +70,7 @@ IData是一个数据接口，用来操纵各种数据。
 | DataByte\[\] | ✘ | ✘ | `≡` | ✘ | ✘ | ✘ | ✔ | ✔ | ✘ | `null` | ✘ | ✔ |
 | DataDouble | ✘ | ✔ | `null` | `≡` | ✔ | ✔ | `null` | `null` | ✔ | `null` | ✔ | ✔ |
 | DataFloat | ✘ | ✔ | `null` | ✔ | `≡` | ✔ | `null` | `null` | ✔ | `null` | ✔ | ✔ |
-| DataInt | ✘ | ✔ | `null` | ✔ | ✔ | `≡` | `null` | `null` | ✔ | `null` | ✔ | ✔ |
+| DataInt | ✔ | ✔ | `null` | ✔ | ✔ | `≡` | `null` | `null` | ✔ | `null` | ✔ | ✔ |
 | DataInt\[\] | ✘ | ✘ | ✔ | ✘ | ✘ | ✘ | `≡` | ✔ | ✘ | `null` | ✘ | ✔ |
 | DataList | ✘ | ✘ | ✔ | ✘ | ✘ | ✘ | ✔ | `≡` | ✘ | `null` | ✘ | ✔ |
 | DataLong | ✘ | ✔ | `null` | ✔ | ✔ | ✔ | `null` | `null` | `≡` | `null` | ✔ | ✔ |
