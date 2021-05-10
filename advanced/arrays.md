@@ -31,7 +31,7 @@ var items as IItemStack[] = [<minecraft:apple>,<minecraft:carrot>];
 ```javascript
 var numbers as int[] = [10,20,20]; // 定义一个数组
 numbers[2] = 30; // 将下标为 2 的元素修改为 30 
-number += 40; // 往数组的末尾添加一个元素
+numbers += 40; // 往数组的末尾添加一个元素
 ```
 
 - 数组有一个`length`属性，返回数组的元素个数。
