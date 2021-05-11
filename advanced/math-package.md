@@ -25,11 +25,21 @@
 | sqrt | 1个double | 开方 |
 | random | 无参数 | 返回0到1之间的随机数 |
 | round | 1个double | 四舍五入取整 |
-| clamp | 三个double/float/int/long参数 | 如果第一个参数在第二三个参数之间，则返回第一个参数，如果第一个小于第二个，则返回第二个，若第一个大于第三个，则返回第三个。 |
+| clamp | 三个double/float/int/long参数 | 区间限制函数，见下例 |
 
 ```javascript
 import mods.ctuils.utils.Math;
 
-print(Math.clamp(12,14,19));  //返回12
+// Math.clamp(x, min, max)
+// 将数字限制在一个范围内
+// 若 x 在 min 与 max 之间，则返回 x
+// 若 x 小于 min，则返回 min
+// 若 x 大于 max，则返回 max
+
+// 12 在 14 与 19 之间，返回12
+print(Math.clamp(12, 14, 19));
+
+// 12 不在 10 与 19 之间，返回 10
+print(Math.clamp(12, 10, 19));
 ```
 
