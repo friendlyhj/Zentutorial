@@ -2,7 +2,7 @@
 
 需要`import mods.contenttweaker.Fluid;`导入有关包。原版加工厂包也需要导入！
 
-用`val testFluid as Fluid = VanillaFactory.createItem(字符串流体ID, int表示RGB模式颜色);`呼出一个流体类的一个实例，并存储在某个变量中，以做接下来的修改。ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
+用`val testFluid as Fluid = VanillaFactory.createFluid(字符串流体ID, int表示RGB模式颜色);`呼出一个流体类的一个实例，并存储在某个变量中，以做接下来的修改。ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
 
 流体的材质会根据所给的用颜色参数进行染色，让你方便制作出各种颜色的“水”或“熔岩”，而不用设定材质。
 
