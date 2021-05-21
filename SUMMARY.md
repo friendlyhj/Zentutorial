@@ -5,7 +5,6 @@
 
 ## 简单运用 <a id="easy"></a>
 
-* [CTGUI](easy/ctgui.md)
 * [局部变量](easy/variable.md)
 * [尖括号调用](easy/bracket-handlers.md)
 * [工作台合成](easy/crafting-table/README.md)
