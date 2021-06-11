@@ -7,7 +7,7 @@ description: >-
 
 ### scripts文件夹
 
-当你安装了CrT后，你可以在.minecraft文件夹下新建scripts文件夹，里面就是存放你的魔改脚本的地方。这里可以放无限多的脚本，其子文件夹里的脚本也能加载。魔改脚本以zs为后缀名。zs文件是纯文本文件，你可以用任何文本编辑器编辑（notepad++啊，visual studio code啊，等等都可以，不推荐windows自带的记事本），文本编码应为UTF-8（不带BOM），里面标点应该为英文标点。
+当你安装了CrT后，你可以在.minecraft文件夹下新建scripts文件夹，里面就是存放你的魔改脚本的地方。这里可以放无限多的脚本，其子文件夹里的脚本也能加载。魔改脚本以zs为后缀名。zs文件是纯文本文件，你可以用任何文本编辑器编辑（这里强烈建议使用 [VS Code](https://code.visualstudio.com/)），文本编码应为UTF-8（不带BOM），里面标点应该为英文标点。
 
 ### print 语句
 
