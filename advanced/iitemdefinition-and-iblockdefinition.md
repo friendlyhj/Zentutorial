@@ -1,17 +1,15 @@
 # IItemDefinition & IBlockDefinition
 
-
-
 物品定义和方块定义包括了一个物品或方块的定义信息，可以获取和修改更多底层信息。分别用IItemStack和IBlock类的definition ZenGetter获取。定义针对该ID下的所有物品，不包含Meta值和NBT！
 
-相关wiki界面 [物品定义](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Items/IItemDefinition/) [方块定义](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Blocks/IBlockDefinition/)
+相关wiki界面 [物品定义](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemDefinition/) [方块定义](https://docs.blamejared.com/1.12/en/Vanilla/Blocks/IBlockDefinition/)
 
 以下为使用物品定义的makeStack方法遍历Meta值的例子。
 
 ```javascript
 import crafttweaker.item.IItemDefinition;
 
-val itemDef as IItemDefiniton = <minecraft:wool>.definition;
+val itemDef as IItemDefinition = <minecraft:wool>.definition;
 
 //移除自 <minecraft:wool:3> 羊毛到 <minecraft:wool:12> 的羊毛
 for i in 3 to 13{
@@ -39,4 +37,3 @@ for i in 3 .. 13{
 <item:tinker_io:ore_crusher>.asBlock().definition.hardness = 3.0f;
 <item:minecraft:quartz_ore>.asBlock().definition.setHarvestLevel("pickaxe", 1);
 ```
-
