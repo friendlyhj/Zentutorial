@@ -8,7 +8,7 @@ description: 函数可以用于计算结果也可以打包一系列操作。
 
 
 
-```javascript
+```csharp
 function 函数名(参数表) as 返回类型名 {
     [代码]
     return 函数返回值;
@@ -25,7 +25,7 @@ return关键字将会把指定的值返回至函数的调用点上，执行后�
 
 例子一：getItemName函数，返回输入的IItemStack的物品名
 
-```javascript
+```csharp
 function getItemName(input as IItemStack) as string {
     val id as string = input.definition.id;
     val meta as int = input.metadata;
@@ -37,7 +37,7 @@ function getItemName(input as IItemStack) as string {
 
 例子二：将删合成和添加合成打包起来（打包操作不需要返回值）为了指定配方名用到了例子一的getItemName函数
 
-```javascript
+```csharp
 function recipeTweak(isShaped as bool, out as IItemStack, input as IIngredient[][]) {
     val recipeName as string = getItemName(out);
     recipes.remove(out,true);
@@ -51,7 +51,7 @@ function recipeTweak(isShaped as bool, out as IItemStack, input as IIngredient[]
 
 例子三：构建一个全局函数
 
-```javascript
+```csharp
 global addition as function(int, int)int = function (a as int, b as int) as int {
     return a + b;
 };

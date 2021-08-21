@@ -9,7 +9,7 @@
 
 具有 @Optional 注解的参数为可选参数
 
-```javascript
+```csharp
 val myTrait as TraitBuilder = mods.contenttweaker.tconstruct.TraitBuilder.create(identifier as string, color as int, @Optional maxLevel as int, @Optional countPerLevel as int);
 ```
 
@@ -35,7 +35,7 @@ val myTrait as TraitBuilder = mods.contenttweaker.tconstruct.TraitBuilder.create
 | commandString | string | 见下 |
 
 关于 commandString : 
-```javascript
+```csharp
 var cactus as string = <ticontrait:cactus>.commandString;
 print(cactus); //输出的结果为 <ticontrait:cactus>
 ```
@@ -43,7 +43,7 @@ print(cactus); //输出的结果为 <ticontrait:cactus>
 ## 访问特性数据
 
 例子 : 
-```javascript
+```csharp
 val myTraitData as TraitDataRepresentation = myTrait.getData(itemWithTrait);
 ```  
 
@@ -61,7 +61,7 @@ myTrait 对象为 Trait 类, itemWithTrait 对象为 [IItemStack](https://docs.b
 
 ## 例子
 
-```javascript
+```csharp
 #loader contenttweaker
 #modloaded tconstruct
 

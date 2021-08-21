@@ -5,7 +5,7 @@
 ## 声明
 声明全局变量或静态变量非常简单。注意`as 类型名` 不能省略，且已定义的全局、静态变量之后**不能再次定义，修改其类型或值**。全局变量可以直接在其他脚本中使用，静态变量还需要跨脚本调用。
 
-```javascript
+```csharp
 import crafttweaker.item.IItemStack;
 
 // 定义一个全局变量
@@ -28,7 +28,7 @@ static dirt as IItemStack = <minecraft:dirt>;
 
 这里有一个方法可以绕过全局、静态变量定义后不能再次修改的窘境。
 
-```javascript
+```csharp
 // 在脚本中定义一个静态数组
 static array as int[] = [1];
 

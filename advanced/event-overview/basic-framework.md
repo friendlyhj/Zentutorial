@@ -6,7 +6,7 @@
 
 你需要用一个函数描述事件，并告诉CraftTweaker要干什么。最重要的是**构建正确类型的事件**，否则你不能访问ZenGetter
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager; //导入事件管理器
 import crafttweaker.event.PlayerCraftedEvent //导入玩家合成事件的类
 

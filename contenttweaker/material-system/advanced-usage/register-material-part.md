@@ -6,7 +6,7 @@
 
 它的结构在上章已经有所说明：
 
-```javascript
+```csharp
 function(materialPart){
     // ...
 });
@@ -21,7 +21,7 @@ function(materialPart){
 
 想要往游戏里注册添加东西，那必须只能是原版加工厂了。我们现在需要框架，是个方块。 所以用 `createBlock` 方法。
 
-```javascript
+```csharp
 // import 和函数声明部分从略
 val materialName as string = materialPart.getMaterial().getName();
 val frame as Block = VanillaFactory.createBlock("frame_" ~ materialName.toLowerCase(), <blockmaterial:iron>)
@@ -33,7 +33,7 @@ val frame as Block = VanillaFactory.createBlock("frame_" ~ materialName.toLowerC
 
 对的，材料系统最经典的功能，你需要从头再写。这里我们需要设定 `textureLocation` `itemColorSupplier` `blockColorSupplier` ZenProperties 来指定基底材质和染色。
 
-```javascript
+```csharp
 // 确定基底材质路径于 contenttweaker:blocks/frame.png
 // 把所需的材质文件名为 frame.png 放到 /resources/contenttweaker/textures/blocks 中
 frame.textureLocation = mods.contenttweaker.ResourceLocation.create("contenttweaker:blocks/frame");
@@ -58,7 +58,7 @@ frame.blockColorSupplier = function(state, access, pos, tintIndex) {
 
 ## 例子
 
-```javascript
+```csharp
 val frame as PartType = MaterialSystem.createPartType("frame", function(materialPart){
     var materialName as string = materialPart.getMaterial().getName();
     var frame as Block = VanillaFactory.createBlock("frame_" ~ materialName.toLowerCase(), <blockmaterial:iron>);
@@ -89,7 +89,7 @@ val frame as PartType = MaterialSystem.createPartType("frame", function(material
 
 为了使用方便，使用了 [ZenUtils](https://www.curseforge.com/minecraft/mc-mods/zenutil)
 
-```javascript
+```csharp
 import mods.zenutils.StaticString;
 
 for item in itemUtils.getItemsByRegexRegistryName("^contenttweaker:frame_.*") {

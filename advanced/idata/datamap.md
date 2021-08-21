@@ -10,7 +10,7 @@ description: >-
 
 声明一个DataMap的方法与IData其他子类的声明不同。
 
-```javascript
+```csharp
 import crafttweaker.data.IData;
 
 val myFirstMap as IData = {key1: "value1",
@@ -20,7 +20,7 @@ val myFirstMap as IData = {key1: "value1",
 
 你甚至可以嵌套，NBT大多也是这样
 
-```javascript
+```csharp
 val nestedMap as IData = { key1: 
                     {
                         key1: "hello"
@@ -32,7 +32,7 @@ val nestedMap as IData = { key1:
 
 然而 DataMap 的元素不能直接修改，你也可以用 key 检索其中的元素，将会返回这个 key 对应的值，均以 IData 形式返回。
 
-```javascript
+```csharp
 val mySecondMap as IData = {key1: "value1",
                    key2: "value2",
                    key3: 3};
@@ -48,7 +48,7 @@ print(k2.asString());
 
 你可以用 `+` 来合并两个IDataMap和 `-` 来裁剪IDataMap。合并时，相同key的值后者会覆盖前者（这是你唯一可以修改值的方法）。裁剪可以去除特定key的元素。
 
-```javascript
+```csharp
 val map1 as IData = {
     key1 : "hello",
     key3 : "test",
@@ -82,7 +82,7 @@ print((map3 - map4).asString()); // 打印出 {key1 : "two", key2 : "two"}
 
 你可以用 in/has 操作符来检测一个 DataMap 是否有指定的 key
 
-```javascript
+```csharp
 
 val map3 as IData = {
     key1 : "two",

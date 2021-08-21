@@ -10,7 +10,7 @@
 
 - 数组里的元素具有顺序，可重复。
 
-```javascript
+```csharp
 var int_array1 as int[] = [];
 // 定义一个 int 类型的数组，没有初始元素
 
@@ -28,7 +28,7 @@ var items as IItemStack[] = [<minecraft:apple>,<minecraft:carrot>];
 
 - 数组里第一个元素的下标为 `0`。
 
-```javascript
+```csharp
 var numbers as int[] = [10,20,20]; // 定义一个数组
 numbers[2] = 30; // 将下标为 2 的元素修改为 30 
 numbers += 40; // 往数组的末尾添加一个元素
@@ -36,7 +36,7 @@ numbers += 40; // 往数组的末尾添加一个元素
 
 - 数组有一个`length`属性，返回数组的元素个数。
 
-```javascript
+```csharp
 var array as int[] = [2,4,6,8];
 print(array.length); // array 的元素个数为 4，输出 4
 ```
@@ -47,7 +47,7 @@ print(array.length); // array 的元素个数为 4，输出 4
 
 你用过`recipes.addShaped()`吗？它的参数里面就有一个多维数组。准确的来说，是一个二维数组。
 
-```javascript
+```csharp
 var <minecraft:gold_ingot> as IItemStack = gold;
 var <minecraft:apple> as IItemStack = apple;
 
@@ -62,7 +62,7 @@ recipes.addShaped("golden_apple", <minecraft:golden_apple>,
 
 二维数组的操作和一维数组的操作相似。
 
-```javascript
+```csharp
 var array as int[][] = [ //  定义一个二维数组
 	[1,2,3],
 	[4,5,6],

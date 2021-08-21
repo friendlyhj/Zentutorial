@@ -8,7 +8,7 @@
 
 使用映射保存所有需要的合成信息，你需要添加的在映射内的合成材料输入与输出，不用再重复写`recipes.addShaped`和`recipes.remove`了。
 
-```javascript
+```csharp
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 

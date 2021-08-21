@@ -45,7 +45,7 @@ registerToMaterials(Material[] materials);
 
 ## 完全例子
 
-```javascript
+```csharp
 val copper as Material = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(0xFF9933).build();
 copper.registerParts(["gear", "casing", "rod"]); //同时注册铜齿轮、铜质外壳、铜杆三个 MaterialPart
 

@@ -60,7 +60,7 @@
 
 ## 例子
 
-```javascript
+```csharp
 import mods.contenttweaker.MaterialSystem;
 
 val oreData = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build().registerPart("ore").getData();

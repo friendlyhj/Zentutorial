@@ -18,7 +18,7 @@ description: 配方函数可以决定配方输出结果，可以做到根据配�
 
 例子一：假合成（JEI能看到，其实上不能用）
 
-```javascript
+```csharp
 recipes.addShapeless("fake_recipe",<minecraft:diamond>,[<ore:dirt>,<ore:dirt>,<ore:dirt>],
     function (out,ins,info) {  // 声明配方函数
         return null;  // 直接返回null，不输出
@@ -29,7 +29,7 @@ null);
 
 例子二：需要在下界才能使用的合成
 
-```javascript
+```csharp
 recipes.addShapeless("nether_recipe",<minecraft:netherrack>,
 [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],
     function (out,ins,info) { 
@@ -40,7 +40,7 @@ null);
 
 例子三：继承原有NBT的升级配方（即可以做到升级镐后保留原来的附魔）
 
-```javascript
+```csharp
 import crafttweaker.data.IData;
 
 recipes.addShaped("tag",<minecraft:diamond_pickaxe>,[
@@ -55,7 +55,7 @@ null);
 
 例子四：修复镐（Meta值操控）
 
-```javascript
+```csharp
 recipes.addShapeless("pickrepair",<minecraft:diamond_pickaxe>,
 [<minecraft:diamond_pickaxe>.onlyDamaged().marked("p"),<minecraft:diamond>],
 function(out, ins, cInfo){
@@ -68,7 +68,7 @@ null);
 
 例子五：NBT操控（这是我测试匠魂凿子转换为iChisel的脚本，不做注释了，你需要对原来的输入包含的NBT结构有足够了解，记住/ct hand）
 
-```javascript
+```csharp
 recipes.remove(<chisel:chisel_hitech>);
 
 recipes.addShapeless("ichisel_tinker_go",<chisel:chisel_hitech>,

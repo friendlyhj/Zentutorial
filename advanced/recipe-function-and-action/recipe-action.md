@@ -14,7 +14,7 @@ description: 配方事件也是有三个参数的函数，用来指定合成完�
 
 例子：合成后玩家生命值减少5点
 
-```javascript
+```csharp
   recipes.addShapeless("recipe_action_test", <minecraft:sapling>,
   [<minecraft:stick>,<minecraft:leaves>],
     function (out,ins,info) {

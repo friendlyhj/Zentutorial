@@ -30,7 +30,7 @@
 
 我知道你在想什么。这是事件高级运用，但你肯定想要，对吧？
 
-```javascript
+```csharp
 food.onItemFoodEaten = function(stack, world, player) { // 框架
     if (!world.remote) { // 框架
         //以下一行可改，格式为
@@ -45,7 +45,7 @@ food.onItemFoodEaten = function(stack, world, player) { // 框架
 
 ## 例子
 
-```javascript
+```csharp
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

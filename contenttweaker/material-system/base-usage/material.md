@@ -14,7 +14,7 @@ description: 材料是一个物品的材质。比如铜、锡、铁...  你需�
 
 用MaterialSystem包的getMaterialBuilder方法获取材料构建器。
 
-```javascript
+```csharp
 var mBuilder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 ```
 
@@ -34,7 +34,7 @@ var mBuilder as MaterialBuilder = MaterialSystem.getMaterialBuilder();
 
 ## 实例脚本
 
-```javascript
+```csharp
 import mods.contentTweaker.MaterialSystem;
 import mods.contenttweaker.MaterialBuilder;
 import mods.contenttweaker.Material;

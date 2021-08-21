@@ -40,7 +40,7 @@ recipes.addShaped("te_frame_machine", <thermalexpansion:frame>,
 
 用liquids ZenGetter获取匹配的流体，返回ILiquidStack列表。
 
-```javascript
+```csharp
 //Returns an IItemStack List
 //possible items: All iron ingots and the gold ingot from MC
 val itemsIngredient = <ore:ingotIron> | <minecraft:gold_ingot>;

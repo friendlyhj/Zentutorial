@@ -6,7 +6,7 @@
 
 以下为使用物品定义的makeStack方法遍历Meta值的例子。
 
-```javascript
+```csharp
 import crafttweaker.item.IItemDefinition;
 
 val itemDef as IItemDefinition = <minecraft:wool>.definition;
@@ -33,7 +33,7 @@ for i in 3 .. 13{
 
 修改方块硬度和采掘等级
 
-```javascript
+```csharp
 <item:tinker_io:ore_crusher>.asBlock().definition.hardness = 3.0f;
 <item:minecraft:quartz_ore>.asBlock().definition.setHarvestLevel("pickaxe", 1);
 ```

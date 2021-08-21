@@ -13,7 +13,7 @@
 
 例子一：删除一个物品所参与的所有合成配方
 
-```javascript
+```csharp
 for recipe in recipes.all() { // 遍历游戏内所有注册配方
     //用ICraftingRecipe的ingredients1D ZenGetter获取配方的材料，返回IIngredient[]
     if (recipe.ingredients1D has <minecraft:iron_ingot>) {
@@ -24,7 +24,7 @@ for recipe in recipes.all() { // 遍历游戏内所有注册配方
 
 例子二：根据OD对齿轮进行合成修改
 
-```javascript
+```csharp
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
@@ -58,7 +58,7 @@ for ench in oreDict.entries /* oreDict.entries 在所有注册OD中循环 */ {
 
 例子三：遍历游戏内所有物品
 
-```javascript
+```csharp
 for mod in loadedMods { //遍历游戏内所有的模组，loadedMods一个全局关键词，包括游戏内所有模组(IMod[string])
     for item in mod.items { //再遍历一个模组的所有物品
         recipes.remove(item); 

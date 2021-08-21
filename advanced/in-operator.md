@@ -2,7 +2,7 @@
 
 你可以用in/has 操作符来判断A是否包含B。这里的示例中的`in`均可以替换为`has`
 
-```javascript
+```csharp
 //检测加载模组
 if (loadedMods in "thermalfoundation") {
     print("热力基本mod已被加载");

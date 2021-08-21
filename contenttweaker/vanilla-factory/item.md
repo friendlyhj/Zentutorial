@@ -25,7 +25,7 @@
 
 示例脚本
 
-```javascript
+```csharp
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
