@@ -22,7 +22,9 @@
 * [掉落物](easy/drops/README.md)
   * [打草掉落物](easy/drops/grass-drops.md)
   * [生物掉落物](easy/drops/entity-drops.md)
-* [地牢修改](easy/loottable-tweaker.md)
+* [战利品表 : 导论](easy/loottable-introduction.md)
+  * [战利品表修改(LootTableTweaker)](easy/loottabletweaker.md)
+  * [战利品表修改(LootTweaker-基础)](easy/loottweaker-easy.md)
 * [循环语句\(foreach循环\) / 普通数组](easy/array-and-loop.md)
 
 ## 高级运用 <a id="advanced"></a>
@@ -39,6 +41,7 @@
 * [Math包](advanced/math-package.md)
 * [if](advanced/if.md)
 * [in/has 操作符](advanced/in-operator.md)
+* [战利品表修改(LootTweaker-进阶)](advanced/loottweaker-advanced.md)
 * [三元操作符](advanced/ternary-operator.md)
 * [预处理器](advanced/preprocessors.md)
 * [全局和静态变量](advanced/global-and-static-variable.md)
