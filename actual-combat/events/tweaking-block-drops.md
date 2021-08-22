@@ -4,7 +4,7 @@
 
 
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.block.IBlock;

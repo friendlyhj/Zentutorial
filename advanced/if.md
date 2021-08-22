@@ -8,7 +8,7 @@
 >
 > 代码块由语句组成。代码块可以有多条语句，可以只有一条语句，也可以没有语句。
 
-```javascript
+```csharp
 //第一个例子
 if(1 >= 0){// 判断表达式为true
     print("1大于等于0！");// 执行 if 大括号内的语句
@@ -27,7 +27,7 @@ if(1 < 0){// 判断表达式为false
 
 `else` 关键字可以作为条件语句的后半部分，当 `if` 判断表达式为 `false` 时，就会执行`else`大括号内的代码块。
 
-```javascript
+```csharp
 //第一个例子
 if(1 >= 0){// 判断表达式为true
     print("1大于等于0！");// 执行 if 大括号内的语句
@@ -45,7 +45,7 @@ if(1 < 0){// 判断表达式为false
 
 如果`else`后再接着判断条件呢？你可以使用 if-else-if。
 
-```javascript
+```csharp
 var mark as int = 90;// 定义一个成绩，分数为90
 
 if(mark < 60){// 第一次判断，分数是否低于60
@@ -63,7 +63,7 @@ else{
 
 > 嵌套三层以上的`if`可读性会越来越差，不推荐使用过多的嵌套。
 
-```javascript
+```csharp
 if (true) {
     if (true) {
         if (true) {

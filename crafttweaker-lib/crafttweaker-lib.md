@@ -10,7 +10,7 @@
 
 A类拓展了B类，说明A类可以使用B类的所有getter setter和方法。需要B类作为参数的函数/方法，也可使用A类。如果是反过来，建议用`instanceof`关键字判断后进行类型转换。
 
-```javascript
+```csharp
 //导入类部分省略
 events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
     if (event.entityLivingBase instanceof IPlayer) { //event.entityLivingBase返回IEntityLivingBase类，IPlayer是它的拓展类
@@ -22,7 +22,7 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent) {
 
 静态方法说明该方法针对包，而不是一个具体的对象、实例。
 
-```javascript
+```csharp
 import crafttweaker.block.IBlockState;
 
 IBlockState.getBlockState("minecraft:wool", ["color=red"]); //getBlockState静态方法

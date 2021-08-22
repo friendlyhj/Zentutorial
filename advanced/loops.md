@@ -6,7 +6,7 @@ for 循环允许一段代码多次执行，同时能增强脚本的可读性。
 
 让我们看看一个普通 for 循环如何使用：
 
-```javascript
+```csharp
 
 for i in 0 .. 10 { // 你可以使用 .. ，这是第一种方式
     print(i);
@@ -27,7 +27,7 @@ for i in 0 to 10 { // 你还可以使用 to ，这是另一种方式
 
 使用 for 循环来遍历一个数组：
 
-```javascript
+```csharp
 var numbers as int[] = [2,4,8,16,32,64];
 for i in 0 .. numbers.length {
     print(numbers[i]);
@@ -51,7 +51,7 @@ for i in 0 .. items.length {
 
 while 循环也可以多次执行代码，当小括号内的判断表达式为 `true`时，便会执行大括号内的语句，然后再次判断表达式，`true`则继续循环，`false`则不执行循环。
 
-```javascript
+```csharp
 var i as int = 0;
 while(i <= 10) {
     print(i);
@@ -71,7 +71,7 @@ while(j >= 0) {
 
 增强 for 循环用来遍历数组或集合，可读性高，不需要下标，遍历每一个元素。
 
-```javascript
+```csharp
 // 定义一个数组并遍历
 var numbers as int[] = [2,4,8,16,32,64];
 for number in numbers {
@@ -113,7 +113,7 @@ for entry in map.entrySet {
 
 - 执行到`break`语句后将直接结束当前循环。
 
-```javascript
+```csharp
 for i in 0 .. 5 {
     if(i == 3) break; 
     print(i);
@@ -124,7 +124,7 @@ for i in 0 .. 5 {
 
 - 执行到`continue`语句后，跳出本次循环，并进入下一次循环。
 
-```javascript
+```csharp
 for i in 0 .. 5 {
 	if(i == 3) continue; 
 	print(i);

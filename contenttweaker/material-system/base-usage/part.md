@@ -95,7 +95,7 @@ var pBuilder as PartBuilder = MaterialSystem.getPartBuilder();
 
 ### 实例脚本
 
-```javascript
+```csharp
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));

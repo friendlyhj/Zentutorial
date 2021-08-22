@@ -24,7 +24,7 @@ ZenScript 的 Map 以 Java 的 HashMap 实现。所以如果 key 的类没有重
 
 ## 定义与访问
 
-```javascript
+```csharp
 // 定义一个 Map 集合，key 为 int 类型，value 为 string 类型
 var map1 as string[int] = {
     1 : "一",
@@ -53,7 +53,7 @@ print(map2.iron.displayName);
 
 你可以修改一个键对应的值，也可以给 Map 添加新的键值对。
 
-```javascript
+```csharp
 var map as string[int] = {
     1 : "一",
     2 : "二",
@@ -72,7 +72,7 @@ map[5] = "five"; // 添加
 
 可以通过增强 for 循环来遍历一个 Map 中的 key , key-value 和 entry。
 
-```javascript
+```csharp
 var map as string[int] = {
     1 : "一",
     2 : "二",
@@ -100,7 +100,7 @@ for entry in map.entrySet {
 
 keySet, valueSet, entrySet
 
-```javascript
+```csharp
 map.keySet   // Returns the map's keySet.
 map.keys     // Returns the map's keySet.
 map.values   // Returns the map's valueSet.

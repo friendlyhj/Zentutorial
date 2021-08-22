@@ -7,7 +7,7 @@
 
 ## 材料构建器
 
-```javascript
+```csharp
 val myMat as MaterialBuilder = mods.contenttweaker.tconstruct.MaterialBuilder.create(identifier as string);
 ```
 
@@ -33,7 +33,7 @@ castable 如果为 true 则还需要设置 liquid
 
 @Optional 注解的括号内的数字为默认值
 
-```javascript
+```csharp
 myMat.addItem(item as IIngredient, @Optional(1) amountNeeded as int, @Optional(144) amountMatched as int));
 ```  
 
@@ -55,14 +55,14 @@ ContentTweaker 里的部件类型有:
 注意 : 添加哪种特性至某种材料的部件都会多添加碎片的部件(除非已有)
 
 添加 : 
-```javascript
+```csharp
 myMat.addMaterialTrait("fiery", "bowstring");
 ```
 第一个参数可以填 Trait 对象, TraitBuilder 对象, String 类型的 identifier(特性名)  
 第二个参数为部件类型
 
 删除 : 
-```javascript
+```csharp
 myMat.removeMaterialTrait("fiery", "bowstring");
 ```
 第一个参数只能为 String 类型的 identifier(特性名)  
@@ -78,14 +78,14 @@ myMat.removeMaterialTrait("fiery", "bowstring");
 仅在向材料的某一部件添加特性的时候才需要设置对应的 MaterialStats 属性  
 如果不使用 MaterialStats 添加材料某一部件的的属性, 那个部件将制作不出来  
 例子:
-```javascript
+```csharp
 myMat.addMaterialTrait("fiery", "bowstring");
 myMat.addBowStringMaterialStats(0.5f);
 ```
 
 有以下方法设置 MaterialStats
 
-```javascript
+```csharp
 myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
 myMat.removeHeadMaterialStats();
 
@@ -135,7 +135,7 @@ myMat.removeProjectileMaterialStats();
 
 ## 官方例子
 
-```javascript
+```csharp
 #loader contenttweaker
 #modloaded tconstruct
 

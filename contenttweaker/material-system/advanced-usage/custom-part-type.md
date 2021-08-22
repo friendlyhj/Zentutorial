@@ -17,7 +17,7 @@
 
 摘自 wiki。这个脚本只是展示基本格式用法。这个例子由于 RegisterMaterialPart 函数是空的。这个脚本在游戏内不会产生任何变化。
 
-```javascript
+```csharp
 #loader contenttweaker
 
 import mods.contenttweaker.MaterialSystem;

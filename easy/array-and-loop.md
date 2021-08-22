@@ -2,7 +2,7 @@
 
 这里算简单还是高级呢？循环允许一个语句执行多次。用不到你一直复制粘贴，同时也能增强脚本的可读性。一个循环语句的基本样子：
 
-```javascript
+```csharp
 //导入包，为下面的定义数组作准备。
 import crafttweaker.item.IItemStack;
 

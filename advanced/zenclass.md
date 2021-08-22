@@ -15,7 +15,7 @@
 
 ## 声明例子
 
-```javascript
+```csharp
 zenClass MyClass { // 声明一个叫做 MyClass 的类
     zenConstructor(arg as string, arg1 as int) { // 声明构造函数
         myValue = arg;
@@ -55,7 +55,7 @@ zenClass MyClass { // 声明一个叫做 MyClass 的类
 
 假如前文的脚本保存在 `./scripts/Class.zs`中。
 
-```javascript
+```csharp
 import scripts.Class.MyClass; //导入该类
 
 val obj as MyClass = MyClass("abc", 1); // 构建该类的实例，调用构建函数

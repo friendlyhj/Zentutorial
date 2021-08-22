@@ -30,7 +30,7 @@ scripts.a.makeLine();
 
 c.zs
 
-```javascript
+```csharp
 import scripts.a;
 
 print(a.myVal);

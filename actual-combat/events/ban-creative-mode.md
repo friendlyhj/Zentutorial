@@ -1,6 +1,6 @@
 # 禁止开创造
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.CommandEvent;
 

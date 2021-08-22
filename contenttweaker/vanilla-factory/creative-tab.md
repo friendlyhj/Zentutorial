@@ -20,7 +20,7 @@ description: 真正要有mod的样，应该有属于自己的创造标签。
 
 实例脚本
 
-```javascript
+```csharp
 #loader contenttweaker
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.VanillaFactory;

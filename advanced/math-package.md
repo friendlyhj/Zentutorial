@@ -27,7 +27,7 @@
 | round | 1个double | 四舍五入取整 |
 | clamp | 三个double/float/int/long参数 | 区间限制函数，见下例 |
 
-```javascript
+```csharp
 import mods.ctuils.utils.Math;
 
 // Math.clamp(x, min, max)

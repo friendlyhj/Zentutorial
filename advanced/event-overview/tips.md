@@ -4,7 +4,7 @@
 
 一些Getter可能会返回null，而试图对null使用任何方法、Getter会抛出NPE异常。你需要事先用isNull函数判断其是否为null，不是则跳过操作。比如，你需要获取副手的物品的id，如果和指定的相同，则进行接下的操作
 
-```javascript
+```csharp
 var offItem as IItemStack = player.offHandHeldItem;
 if (offItem.definition.id == "minecraft:sand") {
     ...
@@ -13,7 +13,7 @@ if (offItem.definition.id == "minecraft:sand") {
 
 但是这样，若玩家副手没有物品，offItem就是null，对null使用方法会抛出异常。你需要用isNull函数
 
-```javascript
+```csharp
 var offItem as IItemStack = player.offHandHeldItem;
 if (!isNull(offItem) && offItem.definition.id == "minecraft:sand") {
     ...
@@ -30,7 +30,7 @@ MC分为服务端和客户端，服务端用来处理事件、存储存档，而
 
 IWorld的remote ZenGetter用来判断是否在服务端还是客户端。服务端这个ZenGetter会返回false，客户端为true。一旦和存档有关系，比如召唤实体、修改方块，必须使用!world.remote来保证只有服务端能执行这个事件。
 
-```javascript
+```csharp
 val bat = VanillaFactory.createItem("forestbat");
 bat.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
@@ -57,7 +57,7 @@ bat.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 
 ### 写入数据
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerCraftedEvent;
 
@@ -80,7 +80,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 那么要玩家死亡了也不会清空呢？你可以在`ForgeData`下建立`PlayerPersisted`这个标签，将数据保存在里面即可。
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerCraftedEvent;
 
@@ -103,7 +103,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 这里就要简单许多了，但是还有几点需要注意，先看代码。
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerCraftedEvent;
 
@@ -118,7 +118,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 想修改玩家数据，只能去覆盖它（详见DataMap）。
 
-```javascript
+```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.BlockPlaceEvent;
 import crafttweaker.player.IPlayer;
