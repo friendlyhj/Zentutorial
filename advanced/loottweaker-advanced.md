@@ -2,7 +2,7 @@
 description: 需要附属mod LootTweaker
 ---
 
-在阅读此页面前, 强烈建议先阅读 [战利品表修改(LootTweaker-基础)](easy/loottweaker-easy.md) 页面.
+在阅读此页面前, 强烈建议先阅读 [战利品表修改(LootTweaker-基础)](/easy/loottweaker-easy.md) 页面.
 
 # 进阶
 

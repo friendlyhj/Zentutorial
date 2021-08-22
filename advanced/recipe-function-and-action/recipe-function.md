@@ -10,7 +10,7 @@ description: 配方函数可以决定配方输出结果，可以做到根据配�
 
 * `out` 是这个配方的输出（IItemStack\)
 * `ins`：是一个映射，包含inputBox中所有标记过的材料（如何标记见[IIngredient接口章](https://youyi580.gitbook.io/zentutorial/advanced/iingredient)）
-* `info`：一个ICraftingInfo对象，包含合成时的一些信息，基本上只需要用`player` ZenGetter获取进行合成的玩家对应的IPlayer对象 和`inventory`ZenGetter获取合成时的物品栏[ICraftingInventory](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Recipes/Crafting/ICraftingInventory/)对象。
+* `info`：一个ICraftingInfo对象，包含合成时的一些信息，基本上只需要用`player` ZenGetter获取进行合成的玩家对应的IPlayer对象 和`inventory`ZenGetter获取合成时的物品栏[ICraftingInventory](https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Crafting/ICraftingInventory/)对象。
 
 配方函数需要返回一个IItemStack作为配方实际的输出。若为`null`即为没有输出，不可合成。
 

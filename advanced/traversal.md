@@ -8,7 +8,7 @@
 * 可以用contains方法检查一个字符串是否包含某些字
 * 可以用`oreDict.get()`用字符串呼出一个OD
 * 可以用`itemUtils.getItem()`用字符串和Meta值（可选，若是32767即为Meta通配符）呼出一个IItemStack
-* [ICraftingRecipe](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Recipes/Crafting/ICraftingRecipe/)类包含了一个配方的信息，可以用`recipes.all()`调出游戏内所有ICraftingRecipe的列表
+* [ICraftingRecipe](https://docs.blamejared.com/1.12/en/Vanilla/Recipes/Crafting/ICraftingRecipe/)类包含了一个配方的信息，可以用`recipes.all()`调出游戏内所有ICraftingRecipe的列表
 * 可以用`oreDict.entries`调出游戏内所有OD的列表
 
 例子一：删除一个物品所参与的所有合成配方

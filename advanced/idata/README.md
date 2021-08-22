@@ -25,7 +25,7 @@ IData是一个数据接口，用来操纵各种数据。
 | DataInt\[\] | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ | ✔ | ✔ | ✘ | ✘ |
 | DataList | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ | ✔ | ✔ | ✘ | ✘ |
 | DataLong | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [DataMap](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Data/DataMap) | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✔ | ✔ | ✘ | ✘ |
+| [DataMap](/advanced/idata/DataMap.md) | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✔ | ✔ | ✘ | ✘ |
 | DataShort | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | DataString | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ | ✔ | ✔ | ✔ | ✔ |
 
@@ -40,7 +40,7 @@ IData是一个数据接口，用来操纵各种数据。
 | DataInt\[\] | ✘ | ✘ |
 | DataList | ✘ | ✘ |
 | DataLong | ✔ | ✔ |
-| [DataMap](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Data/DataMap) | ✘ | ✘ |
+| [DataMap](/advanced/idata/DataMap.md) | ✘ | ✘ |
 | DataShort | ✔ | ✔ |
 | DataString | ✘ | ✘ |
 
@@ -63,7 +63,7 @@ IData是一个数据接口，用来操纵各种数据。
 
 你也可以使用数据接口来转换类型：`("1" as IData).asInt();`
 
-| 类型由 ↓ 转换成 → | bool | byte | byte\[\] | double | float | int | int\[\] | list | long | [Map](https://crafttweaker.readthedocs.io/zh_CN/latest/AdvancedFunctions/Associative_Arrays) | short | string |
+| 类型由 ↓ 转换成 → | bool | byte | byte\[\] | double | float | int | int\[\] | list | long | [Map](https://docs.blamejared.com/1.12/en/AdvancedFunctions/Associative_Arrays) | short | string |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | DataBool | `≡` | ✔ | `null` | ✔ | ✔ | ✔ | `null` | `null` | ✔ | `null` | ✔ | ✔ |
 | DataByte | ✘ | `≡` | `null` | ✔ | ✔ | ✔ | `null` | `null` | ✔ | `null` | ✔ | ✔ |

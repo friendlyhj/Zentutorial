@@ -42,5 +42,5 @@ IItemStack有如下的ZenGetter和ZenSetter。
 | hasCustomEntity |  | bool | ？ |
 | enchantments |  | IEnchantment List（可按照数组处理） | 返回物品所带附魔 |
 
-更多内容详见wiki对此的条目[点我](https://crafttweaker.readthedocs.io/zh_CN/latest/Vanilla/Items/IItemStack/)
+更多内容详见wiki对此的条目[点我](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/)
 
