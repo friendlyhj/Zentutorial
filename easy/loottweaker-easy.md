@@ -2,7 +2,7 @@
 description: 需要附属mod LootTweaker
 ---
 
-在阅读此页面前, 强烈建议先阅读 [LootTable : 导论](lootTable-introduction.md) 页面, 了解 LootTable 的相关原版概念.
+在阅读此页面前, 强烈建议先阅读 [LootTable : 导论](/easy/lootTable-introduction.md) 页面, 了解 LootTable 的相关原版概念.
 
 其次, LootTweaker 和 LootTableTweaker **并不冲突, 且互相都有对方没有的功能**, 实操时推荐两者都安装, 再根据自己的实际需求选用.
 
