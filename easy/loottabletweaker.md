@@ -2,7 +2,7 @@
 description: 需要附属mod LootTableTweaker
 ---
 
-在阅读此页面前, 强烈建议先阅读 [LootTable : 导论](lootTable-introduction.md) 页面, 了解 LootTable 的相关原版概念.
+在阅读此页面前, 强烈建议先阅读 [LootTable : 导论](loottable-introduction.md) 页面, 了解 LootTable 的相关原版概念.
 
 其次, LootTweaker 和 LootTableTweaker **并不冲突, 且互相都有对方没有的功能**, 实操时推荐两者都安装, 再根据自己的实际需求选用.
 
@@ -78,4 +78,4 @@ LootTable.removeGlobalItem(<minecraft:iron_sword>.id);
 
 是的, LootTableTweaker 无法添加 LootTable 或向任何 LootTable 中添加任何物品.
 
-想要创建 LootTable 或向 LootTable 中添加物品, 请移步 [LootTweaker](loottweaker.md)
+想要创建 LootTable 或向 LootTable 中添加物品, 请移步 [LootTweaker](loottweaker-easy.md)
