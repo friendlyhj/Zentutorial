@@ -12,6 +12,25 @@ description: 需要附属mod LootTweaker
 import loottweaker.LootTweaker;
 ```
 
+
+# 查询 LootTable
+
+LootTweaker 为 CraftTweaker 添加一个命令 `/ct loottables` 用于方便的查找 LootTable。
+它有四个子命令。
+
+| 命令                         | 描述                                                         | 示例                                           |
+| ---------------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| /ct loottables all           | 在`.minecraft/dumpzs/loot_tables/`下生成所有 LootTable 的 json 文件 | 无                                             |
+| /ct loottables list          | 在聊天栏中打印出所有 LootTable 名                            | 无                                             |
+| /ct loottables target        | 查询玩家看向的方块或实体的 LootTable                         | 无                                             |
+| /ct loottables byName <name> | 查询已知 LootTable 名的信息，并输出 json 文件到上述目录      | `/ct loottables byName minecraft:entities/pig` |
+
+需要注意，箱子的 LootTable 在其打开之后会被删除，因此查询前 **不能** 打开该箱子！
+
+更多信息请查看 LootTable [官方文档](https://loottweaker-docs.readthedocs.io/en/latest/index.html)。
+
+
+
 # 基础实例
 
 ## 移除物品
