@@ -1,17 +1,20 @@
 ---
 description: 需要附属mod LootTableTweaker
 ---
+# 战利品表修改 (LootTableTweaker)
 
 在阅读此页面前, 强烈建议先阅读 [LootTable : 导论](/easy/loottable-introduction.md) 页面, 了解 LootTable 的相关原版概念.
 
 其次, LootTweaker 和 LootTableTweaker **并不冲突, 且互相都有对方没有的功能**, 实操时推荐两者都安装, 再根据自己的实际需求选用.
 
-# 导包
+## 导包
+
 ```csharp
 import mods.ltt.LootTable;
 ```
 
-# 方法一览
+## 方法一览
+
 ```csharp
 LootTable.removeTable("table"); // 移除指定的 LootTable
 LootTable.removePool("table", "pool"); // 移除指定的随机池
@@ -23,7 +26,8 @@ LootTable.removeModTable("modtable"); // 移除所有指定模组添加的 LootT
 LootTable.removeGlobalItem("itemid"); // 从所有 LootTable 中移除指定物品
 ```
 
-# 原版箱子 LootTable 一览
+## 原版箱子 LootTable 一览
+
 ```csharp
 "minecraft:chests/abandoned_mineshaft"
 "minecraft:chests/desert_pyramid"
@@ -41,7 +45,7 @@ LootTable.removeGlobalItem("itemid"); // 从所有 LootTable 中移除指定物�
 "minecraft:chests/woodland_mansion"
 ```
 
-# 实例
+## 实例
 
 ```csharp
 import crafttweaker.item.IItemStack;

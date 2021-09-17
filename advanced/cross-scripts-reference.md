@@ -1,7 +1,5 @@
 # 跨脚本引用
 
-
-
 跨脚本调用主要是针对静态变量，但自定义函数和类也需要它！
 
 * 跨脚本调用需要以`scripts.`开头
@@ -36,6 +34,3 @@ import scripts.a;
 print(a.myVal);
 a.makeLine();
 ```
-
-
-

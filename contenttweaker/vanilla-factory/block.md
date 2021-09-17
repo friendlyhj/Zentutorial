@@ -53,4 +53,3 @@ antiIceBlock.blockSoundType = <soundtype:snow>;
 antiIceBlock.slipperiness = 0.75;
 antiIceBlock.register();
 ```
-

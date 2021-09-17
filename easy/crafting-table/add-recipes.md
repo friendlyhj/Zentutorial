@@ -1,6 +1,6 @@
 # 添加配方
 
-## **添加有序合成**
+## 添加有序合成
 
 基本格式：`recipes.addShaped(recipeName, output, inputbox);`
 
@@ -8,7 +8,7 @@
 
 output即为配方输出。inputbox即为需要的物品。比如我们拿铁护腿举个例子。
 
-![](https://i.loli.net/2019/08/11/2cLOkKTdjmiM81w.png)
+![img](https://i.loli.net/2019/08/11/2cLOkKTdjmiM81w.png)
 
 它在CrT是这么表示的
 
@@ -46,7 +46,7 @@ output即为配方输出。inputbox即为需要的物品。比如我们拿铁护
 
 以末影之眼举个例子
 
-![](https://i.loli.net/2019/08/11/LlFrkM3RnWSdVCa.png)
+![img](https://i.loli.net/2019/08/11/LlFrkM3RnWSdVCa.png)
 
 在CrT这么表示
 
@@ -59,4 +59,3 @@ output即为配方输出。inputbox即为需要的物品。比如我们拿铁护
 这里个inputbox只有一层\[\]，因为是无序配方，无所谓物品放在哪一行，自然没有表示形状的第二层\[\]了。
 
 可用`recipes.addHiddenShapeless(recipeName, output, inputBox);`添加隐藏无序合成。
-

@@ -45,8 +45,6 @@ for i in 0 .. items.length {
 // 输出 铁锭，金锭，钻石
 ```
 
-
-
 ## while 循环
 
 while 循环也可以多次执行代码，当小括号内的判断表达式为 `true`时，便会执行大括号内的语句，然后再次判断表达式，`true`则继续循环，`false`则不执行循环。
@@ -55,7 +53,7 @@ while 循环也可以多次执行代码，当小括号内的判断表达式为 `
 var i as int = 0;
 while(i <= 10) {
     print(i);
-	i = i + 1;
+    i = i + 1;
 }
 // print() 函数会执行 11 次，依次输出 i 为: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
@@ -75,16 +73,16 @@ while(j >= 0) {
 // 定义一个数组并遍历
 var numbers as int[] = [2,4,8,16,32,64];
 for number in numbers {
-	print(number);
+    print(number);
 }
 // 输出 2, 4, 8, 16, 32, 64
 
 // 定义一个 Map 映射并遍历
 var map as string[int] = {
-	1 : "一",
-	2 : "二",
-	3 : "三",
-	4 : "四"
+    1 : "一",
+    2 : "二",
+    3 : "三",
+    4 : "四"
 };
 
 // key 遍历法
@@ -102,10 +100,6 @@ for entry in map.entrySet {
     print(entry.key ~ "-->" ~ entry.value); // 输出 1-->一, 2-->二, 3-->三, 4-->四
 }
 ```
-
-
-
-
 
 ## break 与 continue
 
@@ -126,10 +120,9 @@ for i in 0 .. 5 {
 
 ```csharp
 for i in 0 .. 5 {
-	if(i == 3) continue; 
-	print(i);
+    if(i == 3) continue; 
+    print(i);
 }
 // i 等于 3 时，执行 continue，跳出当前循环，并进入下一次循环
 // 输出 0, 1, 2, 4, 5
 ```
-

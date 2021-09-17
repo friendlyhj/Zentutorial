@@ -1,7 +1,5 @@
 # NBT
 
-
-
 NBT使得游戏更有趣！啥，你不知道NBT是啥？建议去看看wiki [传送门](https://minecraft-zh.gamepedia.com/NBT%E6%A0%BC%E5%BC%8F)
 
 一个重命名为肥皂的铁锭是这么表示的。
@@ -16,4 +14,3 @@ NBT使得游戏更有趣！啥，你不知道NBT是啥？建议去看看wiki [�
 recipes.addShapeless("test001", <minecraft:iron_ingot>.withTag({display: {Name: "肥皂"}}),
 [<ore:dirt>, <ore:dirt>, <minecraft:clay_ball>]);
 ```
-

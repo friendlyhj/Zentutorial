@@ -1,7 +1,5 @@
 # 矿物词典\(Ore Dictionaries\)
 
-
-
 > **forge矿物辞典（forge ore dictionary，下面简称OD）**来源于RedPower2的作者eloraam的一个帖子，当时有人争议rp\(红石mod\)和ic\(工业mod\)添加同类的矿物\(铜矿、锡矿\)引起的混乱，于是forge矿物辞典随之诞生了。forge矿物辞典就是一种让不同模组的矿物通用的系统，例如在世界中采集到不同的铜矿，可以用来合成同样的物品，甚至可以混搭使用！
 
 大部分mod，如IC2，TE，TiC，RC，FR等均采用了矿物辞典登记自己的矿物，如IC2的铜锭登记ingotCopper，TE铜矿oreCopper。矿物辞典在多mod通用方面起着重要作用。
@@ -25,4 +23,3 @@
 ```
 
 P.S. 本页内容待更新
-

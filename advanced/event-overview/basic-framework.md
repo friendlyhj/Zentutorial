@@ -1,7 +1,5 @@
 # 基本框架
 
-
-
 最好先用`import crafttweaker.events.IEventManager;`导入有关包
 
 你需要用一个函数描述事件，并告诉CraftTweaker要干什么。最重要的是**构建正确类型的事件**，否则你不能访问ZenGetter
@@ -12,11 +10,13 @@ import crafttweaker.event.PlayerCraftedEvent //导入玩家合成事件的类
 
 //使用events全局关键词调用事件管理器，并使用一个ZenMethod指定使用的事件，在函数头将事件匹配至PlayerCraftedEvent
 events.onPlayerCrafted(function(event as PlayerCraftedEvent){
-    event.player.xp += 1; //玩家+1经验
+    event.player.xp += 1; //玩家 +1 经验
 });
 ```
 
-你可以使用这些事件
+你可以使用这些事件：
+
+由于 CrT 的更新，这个列表并不完整，完整内容，见 [官方文档](https://docs.blamejared.com/1.12/en/Vanilla/Events/IEventManager/)。
 
 | ZenMethod | 对应的类 |
 | :--- | :--- |
@@ -66,4 +66,3 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent){
 | onPlayerTick | [`crafttweaker.event.PlayerTickEvent`](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Events/Events/PlayerTick/) |
 | onPlayerUseHoe | [`crafttweaker.event.PlayerUseHoeEvent`](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Events/Events/PlayerUseHoe/) |
 | onSpecialSpawn | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Events/Events/EntityLivingSpawn/) |
-

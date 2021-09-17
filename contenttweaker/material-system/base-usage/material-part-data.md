@@ -71,4 +71,3 @@ oreData.addDataValue("resistance", "15,15");
 oreData.addDataValue("harvestLevel", "1,1");
 oreData.addDataValue("harvestTool", "pickaxe,shovel");
 ```
-

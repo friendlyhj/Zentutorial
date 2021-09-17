@@ -10,7 +10,7 @@ IIngredient——材料，它用来匹配一个合成的材料，输入或输出
 
 需要`import crafttweaker.item.IIngredient;`导入有关包。
 
-**标记**
+## 标记
 
 使用marked方法用一个字符串标记一个材料，在下文的配方函数和配方事件中将会用到。
 
@@ -19,11 +19,11 @@ recipes.addShapeless("test002", <minecraft:stone:2>,
 [<minecraft:iron_ingot>.marked("iron"),<minecraft:dirt>]);
 ```
 
-**数量**
+## 数量
 
 你们早就知道用`* 数量`来表示数量吧。你可以使用amount ZenGetter获取一个材料对象的数量。
 
-**或**
+## 或
 
 用`|`将两个材料连接起来，使得一个配方的某个槽可以使用材料A或材料B，而不用写多个配方。在某些时候，比OD更好用！
 
@@ -34,7 +34,7 @@ recipes.addShaped("te_frame_machine", <thermalexpansion:frame>,
 [<ore:ingotIron>|<ore:ingotAluminum>,<ore:blockGlass>,<ore:ingotIron>|<ore:ingotAluminum>]]);
 ```
 
-**获得匹配的物品和流体**
+## 获得匹配的物品和流体
 
 用items或itemArray ZenGetter获取匹配的物品，返回IItemStack列表或数组。
 
@@ -66,4 +66,3 @@ for liquid in liquidsIngredient.liquids{
     print(liquid.displayName);
 }
 ```
-

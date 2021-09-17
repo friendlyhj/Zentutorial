@@ -51,4 +51,3 @@ val arakantara as Material = MaterialSystem.getMaterialBuilder().setName("Arakan
 ## 本地化
 
 本地化key为`base.material.<材料ID>`，如铁的就是 `base.material.iron`
-

@@ -115,4 +115,3 @@ recipes.addShapeless("ichisel_repair",<chisel:chisel_hitech>,
     },
 null);
 ```
-

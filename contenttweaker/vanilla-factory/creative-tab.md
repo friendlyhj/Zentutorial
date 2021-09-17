@@ -33,4 +33,3 @@ val zsItem as Item = VanillaFactory.createItem("test_item");
 zsItem.creativeTab = <creativetab:contenttweaker>;
 zsItem.register();
 ```
-

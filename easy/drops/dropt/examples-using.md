@@ -1,9 +1,11 @@
 # Dropt - 使用示例
 
 ## 前言
+
 此页面列出大量 Dropt 使用实例以供参考.
 
 导包:
+
 ```csharp
 import mods.dropt.Dropt;
 ```
@@ -13,6 +15,7 @@ import mods.dropt.Dropt;
 Dropt 会检测并应用所有被创建的 ``RuleList``, 空的也是.
 
 不会被复用的规则和条件一般会直接在 ``RuleList`` 部分的本体中被现学现卖, 可能会造成混淆, 如:
+
 ```csharp
 import mods.dropt.Dropt;
 
@@ -25,7 +28,9 @@ Dropt.list("list_name")
       )
   );
 ```
+
 实际上等价于:
+
 ```csharp
 import mods.dropt.Dropt;
 import mods.dropt.Rule;
@@ -46,12 +51,12 @@ gblList.add(gblRule);
 
 简而言之, Dropt 有着很强的模块性, 这点在需要复用等进阶用途时十分重要.
 
-
 ## 正文
 
 请注意在阅读示例时, 不要因为因添加注释增加的空行忽视链式调用.
 
 ### 基础替换
+
 将 ```"minecraft:stone"``` 的所有掉落替换为 ```1``` 个 ```<minecraft:string>```.
 
 ```csharp
@@ -81,8 +86,8 @@ Dropt.list("basic_replacement")
   );
 ```
 
-
 ### 选择性替换
+
 阻止 ```<minecraft:cobblestone>``` 在 ```<minecraft:stone>``` 或 ```<minecraft:cobblestone>``` 被破坏时掉落.
 
 此脚本要求 Dropt 匹配 ```"minecraft:stone"``` 或 ```"minecraft:cobblestone"``` 被破坏时掉落 ```<minecraft:cobblestone>```. 替换策略会替换所有匹配上述条件的掉落为一个新的, 空的 ```Drop 对象```. 由于目标规则中仅有一个空掉落池, 此空池总是会被选中.
@@ -117,8 +122,8 @@ Dropt.list("selective_removal")
   );
 ```
 
-
 ### 打草掉落
+
 在破坏高草丛时, 有 15% 的概率掉落 ```<minecraft:string>```.
 
 注意 Dropt 不提供直接的设置概率概率方法, 于是此处同时添加了一个权重为 ```85``` 的空掉落, 此掉落仍会被选择, 但什么也不掉落, 即可实现概率掉落.
@@ -174,8 +179,8 @@ Dropt.list("grass_drop")
   );
 ```
 
-
 ### 树叶掉落
+
 在破坏树叶时, 掉落 ```<minecraft:stick>```.
 
 树叶方块在是否检测消散时有不同的 ```blockstate```, 使得其很难通过 META 检测其是否应被匹配
@@ -209,15 +214,11 @@ Dropt.list("leaf_drops")
   );
 ```
 
-
 ### 工具限制
+
 当玩家挖掘泥土时没有使用铲子, 则什么都不会掉落.
 
-此处的
-```csharp
-.mainHand("BLACKLIST", [], "shovel;0;-1")
-```
-起了主要作用. 即将所有没有 ```shovel``` 工具类型的, 且挖掘等级小于 ```0``` 的主手物品列入黑名单. 最后设置当此规则被匹配时, 将泥土的掉落替换为一个空的 Drop 对象 (默认替换策略即是 ```"REPLACE_ALL"```).
+此处的 `.mainHand("BLACKLIST", [], "shovel;0;-1")` 起了主要作用. 即将所有没有 ```shovel``` 工具类型的, 且挖掘等级小于 ```0``` 的主手物品列入黑名单. 最后设置当此规则被匹配时, 将泥土的掉落替换为一个空的 Drop 对象 (默认替换策略即是 ```"REPLACE_ALL"```).
 
 ```csharp
 import mods.dropt.Dropt;
@@ -256,12 +257,13 @@ Dropt.list("tool_restriction")
   );
 ```
 
-### 进阶幸运修正
-幸运等级越高, 挖掘 ```"minecraft:quartz_ore"``` 得到的 ```<minecraft:quartz>``` 数量越多.
+### 进阶时运修正
 
-通过权重设置, 将就算拥有幸运三效果仍会匹配到最低数量 (1~2 个) 的理论可能性减小到了 ```1/1111```.
+时运等级越高, 挖掘 ```"minecraft:quartz_ore"``` 得到的 ```<minecraft:quartz>``` 数量越多.
 
-重点在于使用 ```selector``` 方法的 ```fortuneLevelRequired``` 参数匹配幸运等级. 示例脚本因为直观展示需求, 并非是实现此目的的最优解.
+通过权重设置, 将就算拥有时运三效果仍会匹配到最低数量 (1~2 个) 的理论可能性减小到了 ```1/1111```.
+
+重点在于使用 ```selector``` 方法的 ```fortuneLevelRequired``` 参数匹配时运等级. 示例脚本因为直观展示需求, 并非是实现此目的的最优解.
 
 ```csharp
 import mods.dropt.Dropt;
@@ -297,7 +299,7 @@ Dropt.list("advanced_fortune")
           // 为父 Rule 对象定义一个选择器
           .selector(
 
-              // 设置父选择器的权重为 15, 无视精准采集效果, 需求最低 1 级的幸运效果
+              // 设置父选择器的权重为 15, 无视精准采集效果, 需求最低 1 级的时运效果
               Dropt.weight(10), "ANY", 1
           )
 
@@ -314,7 +316,7 @@ Dropt.list("advanced_fortune")
           // 为父 Rule 对象定义一个选择器
           .selector(
 
-              // 设置父选择器的权重为 100, 无视精准采集效果, 需求最低 2 级的幸运效果
+              // 设置父选择器的权重为 100, 无视精准采集效果, 需求最低 2 级的时运效果
               Dropt.weight(100), "ANY", 2
           )
 
@@ -331,7 +333,7 @@ Dropt.list("advanced_fortune")
           // 为父 Rule 对象定义一个选择器
           .selector(
 
-              // 设置父选择器的权重为 1000, 无视精准采集效果, 需求最低 3 级的幸运效果
+              // 设置父选择器的权重为 1000, 无视精准采集效果, 需求最低 3 级的时运效果
               Dropt.weight(1000), "ANY", 3
           )
 
@@ -341,8 +343,8 @@ Dropt.list("advanced_fortune")
   );
 ```
 
-
 ### 精准采集
+
 当使用精准采集效果破坏 ```<minecraft:stone>```, 掉落 ```1``` 个 ```<minecraft:string>```.
 
 此处使用了 ```REPLACE_ALL_IF_SELECTED``` 替换策略, 即仅在掉落池中物品被选中时, 才替换方块掉落物. 又因为添加的唯一一个掉落池定义了需要精准采集的选择器, 所以只有在方块被使用精准采集效果破坏时才会替换方块掉落物.
@@ -384,8 +386,8 @@ Dropt.list("silk_touch")
   );
 ```
 
-
 ### 等数替换
+
 掉落多少个 ```<minecraft:redstone>```, 就将掉落替换为多少个 ```<minecraft:dirt>```.
 
 ```csharp
@@ -418,8 +420,8 @@ Dropt.list("match_quantity")
   );
 ```
 
-
 ### 出生距离匹配
+
 当采掘地点在距世界出生点 ```32``` 格内, 将所有 ```"minecraft:cobblestone"``` 的掉落物替换为 ```<minecraft:dirt>```.
 
 ```csharp
@@ -452,8 +454,8 @@ Dropt.list("distance")
   );
 ```
 
-
 ### NBT 匹配
+
 匹配手持物品是否包含指定 NBT.
 
 是的, Dropt 支持匹配手持物品的 NBT, 也支持掉落带有 NBT 的物品.
@@ -516,8 +518,8 @@ Dropt.list("nbt")
   );
 ```
 
-
 ### 游戏阶段匹配
+
 当 ```"minecraft:stone"``` 被一个同时拥有 ```"stage_A"``` 和 ```"stage_B"``` 阶段的玩家破坏时, 将所有掉落替换为 ```<minecraft:string> * 1```.
 
 ```csharp
@@ -560,8 +562,8 @@ Dropt.list("gamestages")
   );
 ```
 
-
 ### 强制掉落
+
 当破坏 ```"minecraft:stone"``` 时, 永远掉落 ```<minecraft:string> * 1```, 且有 ```25%``` 的概率掉落一个 ```<minecraft:diamond>```.
 
 ```csharp
@@ -624,7 +626,8 @@ Dropt.list("forced_drops")
 ```
 
 ### 全部掉落替换
-当破坏 ```"minecraft:stone"``` 时, 将所有掉落替换为 ```<minecraft:string> * 100``` 与 ```<minecraft:diamond> * 10```.
+
+当破坏 ```"minecraft:stone"``` 时, 将所有掉落替换为 `<minecraft:string> * 100` 与 `<minecraft:diamond> * 10`.
 
 要达成此目的实际上有两种解法. 两个物品都可以被单独定义在两个 ```RuleList``` 对象中并单独定义 ```dropCount``` 为 ```2```, ```dropStrategy``` 为 ```UNIQUE```. 而另一种方法, 也是此处使用的方法则是将两个掉落定义在同一 ```RuleList``` 对象中, 并使用 ```ALL``` 掉落规则表策略, 且在此情况下就算掉落了多个物品, 多个掉落物也会被视为一次掉落.
 
@@ -656,6 +659,7 @@ Dropt.list("drop_all")
 ```
 
 ### BlockState 替换
+
 当破坏 ```"minecraft:stone"``` 时, 将所有内容为 ```<minecraft:cobblestone> * 1``` 的掉落替换为将原方块随机替换为一块朝向各不同的橡木, 云杉或白桦原木(```"oak"```, ```"spruce"``` 或 ```"birch"```)
 
 ```csharp
@@ -722,6 +726,7 @@ Dropt.list("blockstate_replacement")
 ```
 
 ### 落空匹配
+
 当一个 ```Rule``` 对象启用了 ```fallthrough``` 时, Dropt 将试图为对应方块匹配另一个 ```Rule``` 对象. 即继续为该方块匹配父 ```RuleList``` 中其余的规则，直到匹配到一个没有启用 ```fallthrough``` 的 ```Rule``` 对象或父 ```RuleList``` 中没有更多匹配对应方块的 ```Rule``` 对象.
 
 ```csharp

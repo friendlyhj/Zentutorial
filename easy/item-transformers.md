@@ -4,11 +4,11 @@ description: 想在配方当中使用工具又不想吞工具？想合成物品�
 
 # 物品转换器
 
-### 例子
+## 例子
 
 `recipes.addShapeless(<minecraft:stick> * 3, [<minecraft:stone_axe>.transformDamage(), <ore:plankWood>]);` 石斧和木板合成为3木棍，石斧掉1点耐久。
 
-### 可用的物品转换器
+## 可用的物品转换器
 
 | 基本格式 | 参数设置 | 作用 |
 | :--- | :--- | :--- |
@@ -22,4 +22,3 @@ description: 想在配方当中使用工具又不想吞工具？想合成物品�
 | `item.transformNew(function)` | `function`为以这个物品为参数的匿名函数 | 自定义物品转换，具体用法将在高级运用讲解 |
 
 此外，若你需要以一个装有流体的桶作为合成，合成后会自动返回桶，不需要用物品转换器。如果你不想返回桶，可用`.noReturn()`物品转换器。
-

@@ -16,7 +16,7 @@ description: 部件是这个物品是什么，比如齿轮、板、外壳、箔.
 
 以下是CoT已经预设好的部件。你也可以用`/ct parts` 命令将所有已经注册的部件打印至CrT日志中。
 
-### Items:
+### Items
 
 * Beam![icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/beam.png)
 * Bolt![icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/bolt.png)
@@ -34,21 +34,21 @@ description: 部件是这个物品是什么，比如齿轮、板、外壳、箔.
 * Rod![icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/rod.png)
 * Shard![icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/shard.png)
 
-### Blocks:
+### Blocks
 
 * Block![icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/block.png)
 
-### Ores:
+### Ores
 
 * Ore
 * Dense Ore \(dense\_ore\)
 * Poor Ore\(poor\_ore\)
 
-### Fluids:
+### Fluids
 
 * Molten
 
-### Armor:
+### Armor
 
 * Armor ![head icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/armor_head.png)![chest icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/armor_chest.png)![legs icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/armor_legs.png)![feet icon](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Materials/Parts/Assets/armor_feet.png)
 
@@ -122,6 +122,5 @@ contenttweaker.part.dense_ingot=致密%s锭
 需要在所需的文件夹放置于文件名与部件名相同的png文件。
 
 例如上文的例子需要在/resources/contenttweaker/textures/items放置dense_gear.png和dense_ingot.png
-
 
 方块就自然要放到 blocks 文件夹里。

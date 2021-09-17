@@ -1,7 +1,5 @@
 # ZenSetter
 
-
-
 ZenSetter与ZenGetter差不多，但他是设置数据，而不是获取数据。还以IItemStack有一个ZenSetter，也叫"displayName"，我们知道这个信息应该是字符串。
 
 ```csharp
@@ -21,4 +19,3 @@ ZenSetter与ZenGetter差不多，但他是设置数据，而不是获取数据�
 <minecraft:iron_ingot>.displayName += "最棒啦";
 <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + "最棒啦";
 ```
-

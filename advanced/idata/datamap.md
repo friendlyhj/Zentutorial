@@ -5,7 +5,6 @@ description: >-
 
 # DataMap
 
-
 ## 声明
 
 声明一个DataMap的方法与IData其他子类的声明不同。

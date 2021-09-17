@@ -34,7 +34,8 @@ val myTrait as TraitBuilder = mods.contenttweaker.tconstruct.TraitBuilder.create
 | identifier | string | 设置名称 |
 | commandString | string | 见下 |
 
-关于 commandString : 
+关于 commandString :
+
 ```csharp
 var cactus as string = <ticontrait:cactus>.commandString;
 print(cactus); //输出的结果为 <ticontrait:cactus>
@@ -42,7 +43,8 @@ print(cactus); //输出的结果为 <ticontrait:cactus>
 
 ## 访问特性数据
 
-例子 : 
+例子 :
+
 ```csharp
 val myTraitData as TraitDataRepresentation = myTrait.getData(itemWithTrait);
 ```  

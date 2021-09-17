@@ -11,6 +11,5 @@
 * [IEntity](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Entities/IEntity/) ：指定一个实体
 * [IWorld](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/World/IWorld/#iworld)：包含世界中的一个维度的信息，包含天气效果、方块信息、服务端客户端等信息。可以用来在世界中召唤一个实体
 * [IBlockPos](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/World/IBlockPos/) ：指定世界中一个坐标，常用这个获取或更改一个IWorld的指定坐标的IBlockState
-* [ICommandSender](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Commands/ICommandSender/) ：指令发送者，如果想用zs发送指令需要用这个，但也要注意权限，推荐用`mods.ctutils.commands.Commands.getServerCommandSender()`获取服务端对应的CommandSender
+* [ICommandSender](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Commands/ICommandSender/) ：指令发送者，如果想用 zs 发送指令需要用这个，但也要注意权限，推荐用直接用 `server` 关键词，表示服务器发送指令
 * [IBlock](https://crafttweaker.readthedocs.io/en/latest/#Vanilla/Blocks/IBlock/) ：方块
-

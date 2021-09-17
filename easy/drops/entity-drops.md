@@ -1,7 +1,5 @@
 # 生物掉落物
 
-
-
 可用`/ct entities`指令查看所有实体ID。
 
 ```text
@@ -31,4 +29,3 @@ entity.removeDrop(<minecraft:wool>);
 //删除所有掉落物
 entity.clearDrops();
 ```
-

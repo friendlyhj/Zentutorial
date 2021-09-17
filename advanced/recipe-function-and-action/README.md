@@ -5,4 +5,3 @@
 `recipes.addShaped(recipeName, output, inputBox, recipeFunction, recipeAction);`
 
 这两个都是用函数来处理的。配方函数用来决定配方输出结果，配方事件用于决定合成后会发生什么。
-

@@ -1,7 +1,5 @@
 # 物品名称修改
 
-
-
 使用`物品ID.displayName = "xxx";`来修改一个物品的名称。
 
 例如`<minecraft:grass>.displayName = "充满力量的方块";` 将草方块重命名为充满力量的方块。
@@ -16,4 +14,3 @@
   例如`game.setLocalization("tile.chest.name","StorageBox Deluxe");`
 
   说白了就是可以在zs中修改语言文件的一部分内容。
-

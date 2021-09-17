@@ -9,4 +9,3 @@ var wool as IItemDefiniton = <minecraft:wool>.defintion;
 wool.makeStack(13);
 //将会返回<minecraft:wool:13>
 ```
-

@@ -46,4 +46,3 @@ for i, log in logs {
 > foreach是for语句的简化，但是foreach并不能替代for循环。可以这么说，任何foreach都能改写为for循环，但是反之则行不通。
 >
 > foreach不是一个关键字。foreach的循环对象一般是一个集合，List、ArrayList、LinkedList、Vector、数组等。
-

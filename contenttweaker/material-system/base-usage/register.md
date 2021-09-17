@@ -52,4 +52,3 @@ copper.registerParts(["gear", "casing", "rod"]); //同时注册铜齿轮、铜�
 val denseIngotPart = MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(MaterialSystem.getPartType("item")).setOreDictName("denseIngot").build(); //构建致密锭 Part
 copper.registerPart(denseIngotPart); //注册致密铜锭 MaterialPart
 ```
-

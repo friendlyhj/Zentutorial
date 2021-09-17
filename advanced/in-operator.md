@@ -14,4 +14,3 @@ if (<ore:ingotIron> in <minecraft:iron_ingot>) {
 ```
 
 请注意分清左右两个参数： 只有当所有在 `in` 之后的对象可以在 `in` 之前的对象找到时，结果才为真。用`has`可能更便于理解。
-

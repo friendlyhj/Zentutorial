@@ -2,8 +2,6 @@
 
 看似简单的修改，实则事件运用
 
-
-
 ```csharp
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.BlockHarvestDropsEvent;
@@ -39,4 +37,3 @@ events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
     }
 });
 ```
-

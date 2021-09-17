@@ -63,4 +63,3 @@ soup.onItemFoodEaten = function(stack, world, player) {
 };
 soup.register();
 ```
-

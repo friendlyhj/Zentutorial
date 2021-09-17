@@ -3,6 +3,7 @@
 LootTable(战利品表) 是原版概念, 用于决定各个情况下生成什么物品, 比如自然生成的容器的内容物, 破坏方块时的掉落物, 杀死实体时的掉落物, 钓鱼时可以钓上的物品等. 它不会影响经验的掉落和不掉落物品的实体, 比如大型史莱姆产生的史莱姆和被虫蚀的方块中的蠹虫.
 
 ## 简介
+
 对于箱子, 陷阱箱, 漏斗, 运输矿车, 漏斗矿车, 发射器, 投掷器, 潜影盒, 木桶而言, 包含一个 LootTable 本体和一个 LootTableSeed.
 
 对生物而言, 其根标签下包含一个 DeathLootTable 和一个 DeathLootTableSeed.
@@ -13,5 +14,6 @@ LootTable(战利品表) 是原版概念, 用于决定各个情况下生成什么
 
 每个 LootTable, pool, entry 都可以拥有多个 function(函数), 每个 function 可拥有多个 condition(函数被应用条件).
 
-# 引用
-部分内容, 说明来自 [Minecraft Wiki](https://minecraft.fandom.com/zh/wiki/%E6%88%98%E5%88%A9%E5%93%81%E8%A1%A8), 原文在[CC BY-NC-SA 3.0](https://www.fandom.com/zh/licensing-zh)许可协议下提供. 
+## 引用
+
+部分内容, 说明来自 [Minecraft Wiki](https://minecraft.fandom.com/zh/wiki/%E6%88%98%E5%88%A9%E5%93%81%E8%A1%A8), 原文在[CC BY-NC-SA 3.0](https://www.fandom.com/zh/licensing-zh)许可协议下提供。

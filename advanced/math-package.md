@@ -1,7 +1,5 @@
 # Math包
 
-
-
 只有加减乘除取余乘方的运算，是远远不能满足需求的。CrT本身并没有Math包。其附属mod [CraftTweaker Utils\(ctutils\)](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-utils)提供了Math包。该包有多个方法提供数学运算。
 
 需要用`import mods.ctutils.utils.Math;`导入
@@ -42,4 +40,3 @@ print(Math.clamp(12, 14, 19));
 // 10 不在 12 与 19 之间，返回 12
 print(Math.clamp(10, 12, 19));
 ```
-

@@ -5,7 +5,7 @@ description: >-
 
 # Zenscript
 
-### scripts文件夹
+## scripts 文件夹
 
 当你安装了CrT后，你可以在.minecraft文件夹下新建scripts文件夹，里面就是存放你的魔改脚本的地方。这里可以放无限多的脚本，其子文件夹里的脚本也能加载。魔改脚本以zs为后缀名。zs文件是纯文本文件，你可以用任何文本编辑器编辑（这里强烈建议使用 [VS Code](https://code.visualstudio.com/)），文本编码应为UTF-8（不带BOM），里面标点应该为英文标点。
 
@@ -57,4 +57,3 @@ CraftTweaker的指令可以以`/crafttweaker`、`/ct`、`/minetweaker`和`/mt`�
 ### 编排脚本的建议
 
 建议把不同mod的物品的合成修改放在不同mod。比如Vanilla.zs ic2.zs mekanism.zs thermal.zs等等。由于一些特殊原因，也会分开脚本。实际按照个人喜好和具体情况而定。
-

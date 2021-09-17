@@ -4,8 +4,6 @@ description: IData是一个数据接口，用来操纵各种数据。
 
 # IData 类型
 
-
-
 IData是一个数据接口，用来操纵各种数据。
 
 通过IData接口你可以将任意基础类型（短整型，双精度，字符串，整型），甚至数组类型转换为数据类型（IData）。使用`as IData`转换。
@@ -77,4 +75,3 @@ IData是一个数据接口，用来操纵各种数据。
 | DataMap | ✘ | ✘ | `null` | ✘ | ✘ | ✘ | `null` | `null` | ✘ | `≡` | ✘ | ✔ |
 | DataShort | ✘ | ✔ | `null` | ✔ | ✔ | ✔ | `null` | `null` | ✔ | `null` | `≡` | ✔ |
 | DataString | ✘ | ✔ | `null` | ✔ | ✔ | ✔ | `null` | `null` | ✔ | `null` | ✔ | `≡` |
-

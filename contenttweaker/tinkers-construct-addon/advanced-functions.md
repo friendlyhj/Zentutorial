@@ -2,7 +2,7 @@
 
 ## 实例
 
-请看 https://ikexing.gitbook.io/crt/
+请看 [](https://ikexing.gitbook.io/crt/)
 
 ## 运用于 MaterialBuilder 对象的函数
 
@@ -10,10 +10,11 @@
 
 该函数用于计算材料名称  
 
- * [Material](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Material/) 类的 `thisMaterial`
- * String 类型的 `itemName`
+* [Material](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Material/) 类的 `thisMaterial`
+* String 类型的 `itemName`
 
 例子 :
+
 ```csharp
 myMat.itemLocalizer = function(thisMaterial, itemName) {
     return "Cool " + itemName;
@@ -28,20 +29,22 @@ myMat.itemLocalizer = function(thisMaterial, itemName) {
 
 此函数可以使特性或附魔不能同存  
 
- * [Trait](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Trait/) 类的 `thisTrait`
- * String 类型的 `otherTrait`
+* [Trait](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Trait/) 类的 `thisTrait`
+* String 类型的 `otherTrait`
 
 例子1 :
+
 ```csharp
 myTrait.canApplyTogetherTrait = function(thisTrait, otherTrait) {
     return otherTrait != 特性名称(也就是 identifier)
 };
 ```
 
- * [IEnchantmentDefinition](https://docs.blamejared.com/1.12/en/Vanilla/Enchantments/IEnchantmentDefinition/) 类的 `thisTrait`
- * String 类型的 `enchantmentDefinition`
+* [IEnchantmentDefinition](https://docs.blamejared.com/1.12/en/Vanilla/Enchantments/IEnchantmentDefinition/) 类的 `thisTrait`
+* String 类型的 `enchantmentDefinition`
 
 例子2 :
+
 ```csharp
 myTrait.canApplyTogetherEnchantment = function(thisTrait, enchantmentDefinition) {
     return enchant != 附魔名称(不要傻傻的填个"附魔名称")
@@ -52,11 +55,12 @@ myTrait.canApplyTogetherEnchantment = function(thisTrait, enchantmentDefinition)
 
 可以在工具装配台看到额外信息
 
- * [Trait](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Trait/) 类的 `thisTrait`
- * [IItemStack](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/) 类的 `item`
- * [IData](https://docs.blamejared.com/1.12/en/Vanilla/Data/IData/) 类的 `tag`
+* [Trait](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Tinkers_Construct/Trait/) 类的 `thisTrait`
+* [IItemStack](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/) 类的 `item`
+* [IData](https://docs.blamejared.com/1.12/en/Vanilla/Data/IData/) 类的 `tag`
 
 例子 :
+
 ```csharp
 myTrait.extraInfo = function(thisTrait, item, tag){
     val infos as string[] = ["1", "2"];
@@ -81,6 +85,7 @@ myTrait.extraInfo = function(thisTrait, item, tag){
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.getMiningSpeed = function(thisTrait, tool, event) {
     //Code
@@ -100,6 +105,7 @@ myTrait.getMiningSpeed = function(thisTrait, tool, event) {
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.beforeBlockBreak = function(thisTrait, tool, event) {
     //Code
@@ -121,6 +127,7 @@ myTrait.beforeBlockBreak = function(thisTrait, tool, event) {
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.afterBlockBreak = function(thisTrait, tool, world, blockstate, pos, miner, wasEffective) {
     //Code
@@ -140,6 +147,7 @@ myTrait.afterBlockBreak = function(thisTrait, tool, world, blockstate, pos, mine
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.onBlockHarvestDrops = function(thisTrait, tool, event) {
     //Code
@@ -160,6 +168,7 @@ myTrait.onBlockHarvestDrops = function(thisTrait, tool, event) {
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.onUpdate = function(thisTrait, tool, world, entity, itemSlot, isSelected) {
     //Code
@@ -180,6 +189,7 @@ myTrait.onUpdate = function(thisTrait, tool, world, entity, itemSlot, isSelected
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.onHit = function(thisTrait, tool, attacker, target, damage, isCritical) {
     //Code
@@ -201,6 +211,7 @@ myTrait.onHit = function(thisTrait, tool, attacker, target, damage, isCritical) 
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
     //Code
@@ -220,6 +231,7 @@ mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCriti
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.onBlock = function(thisTrait, tool, attacker, event) {
     //Code
@@ -240,6 +252,7 @@ myTrait.onBlock = function(thisTrait, tool, attacker, event) {
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :
+
 ```csharp
 myTrait.onPlayerHurt = function(thisTrait, tool, player, attacker, event) {
     //Code
@@ -257,6 +270,7 @@ myTrait.onPlayerHurt = function(thisTrait, tool, player, attacker, event) {
 此函数不需要返回值(想在一些不满足条件的情况下结束代码怎么办? 不需要返回值的函数用 return 就可以了)
 
 函数写法 :  
+
 ```csharp
 myTrait.onToolRepair = function(thisTrait, tool, amount) {
     //Code
@@ -275,6 +289,7 @@ myTrait.onToolRepair = function(thisTrait, tool, amount) {
 此函数需要返回值, 返回 `true` 或者 `false`
 
 函数写法 :
+
 ```csharp
 myTrait.calcCrit = function(thisTrait, tool, attacker, target) {
     //Code 
@@ -298,6 +313,7 @@ myTrait.calcCrit = function(thisTrait, tool, attacker, target) {
 此函数需要返回值, 返回 float 类型的新伤害或者返回 `currentDamage`
 
 函数写法 :
+
 ```csharp
 myTrait.calcDamage = function(thisTrait, tool, attacker, target, originalDamage, currentDamage, isCritical) {
     //Code 
@@ -321,6 +337,7 @@ myTrait.calcDamage = function(thisTrait, tool, attacker, target, originalDamage,
 此函数需要返回一个 float 类型的击退数值, 或者返回 `newKnockback`
 
 函数写法 :
+
 ```csharp
 myTrait.calcDamage = function(thisTrait, tool, attacker, target, damage, knockback, newKnockback, isCritical) {
     //Code  
@@ -341,6 +358,7 @@ myTrait.calcDamage = function(thisTrait, tool, attacker, target, damage, knockba
 此函数需要返回一个 int 类型的耐久或者返回 `newDamage`
 
 函数写法 :
+
 ```csharp
 myTrait.onToolDamage = function(thisTrait, tool, damage, newDamage, entity) {
     //Code  
@@ -361,6 +379,7 @@ myTrait.onToolDamage = function(thisTrait, tool, damage, newDamage, entity) {
 此函数需要返回一个 int 类型的耐久或者返回 `newDamage`
 
 函数写法 :  
+
 ```csharp
 myTrait.onToolDamage = function(thisTrait, tool, damage, newDamage, entity) {
     //Code  

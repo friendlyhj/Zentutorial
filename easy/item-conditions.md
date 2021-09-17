@@ -17,4 +17,3 @@
 | `item.onlyWithTag(NBT)` | `NBT`为物品所带NBT | 需要**只**带有设定NBT的物品才能参与合成 |
 | `item.withDamage(value)` | `value`为整数 | 输出带有`value`点耐久损耗的物品 |
 | `item.only(function)` | `function`为以这个物品为参数的匿名函数 | 自定义物品条件，具体用法将在高级运用讲解 |
-

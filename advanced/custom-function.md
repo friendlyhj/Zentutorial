@@ -4,9 +4,7 @@ description: 函数可以用于计算结果也可以打包一系列操作。
 
 # 自定义函数
 
-### 基本格式
-
-
+## 基本格式
 
 ```csharp
 function 函数名(参数表) as 返回类型名 {
@@ -19,9 +17,7 @@ function 函数名(参数表) as 返回类型名 {
 
 return关键字将会把指定的值返回至函数的调用点上，执行后续操作。若函数处理时，碰到return后，程序将跳出函数，不再执行之后的函数内操作（跳出所有循环）。所以一般return会在函数代码的最下方。
 
-### 例子
-
-
+## 例子
 
 例子一：getItemName函数，返回输入的IItemStack的物品名
 
@@ -56,4 +52,3 @@ global addition as function(int, int)int = function (a as int, b as int) as int 
     return a + b;
 };
 ```
-
