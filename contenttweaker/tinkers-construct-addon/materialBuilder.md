@@ -11,7 +11,7 @@ import mods.contenttweaker.tconstruct.MaterialBuilder;
 **记得导包!**
 
 ```csharp
-val myMat as MaterialBuilder = MaterialBuilder.create(identifier as string);
+var myMat as MaterialBuilder = MaterialBuilder.create(identifier as string);
 ```
 
 ## 可设置参数
