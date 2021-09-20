@@ -93,6 +93,7 @@
 * [更多鸡联动](contenttweaker/chickens-addon.md)
 * [匠魂联动](contenttweaker/tinkers-construct-addon/README.md)
   * [材料](contenttweaker/tinkers-construct-addon/material.md)
+  * [构建材料](contenttweaker/tinkers-construct-addon/materialBuilder.md)
   * [特性](contenttweaker/tinkers-construct-addon/trait.md)
   * [构建特性](contenttweaker/tinkers-construct-addon/traitBuilder.md)
   * [特性数据](contenttweaker/tinkers-construct-addon/traitDataRepresentation.md)
