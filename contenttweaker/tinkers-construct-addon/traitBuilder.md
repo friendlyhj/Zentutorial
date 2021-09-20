@@ -28,7 +28,7 @@ var myTrait as TraitBuilder = TraitBuilder.create(identifier as string);
 
 ## 方法
 
-| 字段 | 描述 |
+| 方法 | 描述 |
 | :---- | :---- |
 | addItem(ingredient as [IIngredient](https://docs.blamejared.com/1.12/en/Vanilla/Variable_Types/IIngredient/), amountNeeded as int, amountMatched as int) | 使 `ingredient` 可以在工具装配台为匠魂工具添加此特性, `amountNeeded` 为需求数量, `amountMatched` 为匹配数量, 后两个参数选填, 默认为 1 |
 | removeItem(itemStack as [IItemStack](https://docs.blamejared.com/1.12/en/Vanilla/Items/IItemStack/)) | 使 itemStack 不能制作此特性 |
