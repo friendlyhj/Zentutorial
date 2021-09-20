@@ -79,25 +79,25 @@ myMat.removeMaterialTrait("fiery", "bowstring");
 有以下方法增删 MaterialStats
 
 ```csharp
-myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
+myMat.addHeadMaterialStats(durability as int, miningSpeed as float, attackDamage as float, harvestLevel as int);
 myMat.removeHeadMaterialStats();
 
-myMat.addHandleMaterialStats(float modifier, int durability);
+myMat.addHandleMaterialStats(modifier as float, durability as int);
 myMat.removeHandleMaterialStats();
 
-myMat.addExtraMaterialStats(int extraDurability);
+myMat.addExtraMaterialStats(extraDurability as int);
 myMat.removeExtraMaterialStats();
 
-myMat.addBowMaterialStats(float drawSpeed, float range, float bonusDamage);
+myMat.addBowMaterialStats(drawSpeed as float, range as float, bonusDamage as float);
 myMat.removeBowMaterialStats();
 
-myMat.addBowStringMaterialStats(float modifier);
+myMat.addBowStringMaterialStats(modifier as float);
 myMat.removeBowStringMaterialStats();
 
-myMat.addArrowShaftMaterialStats(float modifier, int bonusAmmo);
+myMat.addArrowShaftMaterialStats(modifier as float, int bonusAmmo as int);
 myMat.removeArrowShaftMaterialStats();
 
-myMat.addFletchingMaterialStats(float accuracy, float modifier);
+myMat.addFletchingMaterialStats(accuracy as float, modifier as float);
 myMat.removeFletchingMaterialStats();
 
 myMat.addProjectileMaterialStats();
