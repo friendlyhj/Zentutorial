@@ -38,24 +38,11 @@ var myMat as MaterialBuilder = MaterialBuilder.create(identifier as string);
 
 ## 材料特性
 
-可以向材料对应的部件添加一些特性
+可以向材料对应的部件添加特性
 
-### 增删特性至部件的方法
+## 部件类型
 
-```csharp
-//第一个参数可以填 Trait 对象, TraitBuilder 对象, String 类型的 identifier(特性名)
-//这里比较建议填 String 类型的 identifier
-//第二个参数都为部件类型
-myMat.addMaterialTrait("fiery", "bowstring");
-//第一个参数只能为 String 类型的 identifier(特性名) 
-myMat.removeMaterialTrait("fiery", "bowstring");
-```
-
-### CoT 自带的部件类型
-
-ContentTweaker 自带的部件类型有以下几种
-
-(不填部件类型会把这个特性添加到材料的所有的部件上)
+ContentTweaker 自带的部件类型有以下几种 (不填部件类型会把这个特性添加到材料的所有的部件上)
 
 * "head"\-头部
 * "handle"\-手柄
@@ -66,17 +53,24 @@ ContentTweaker 自带的部件类型有以下几种
 * "shaft"\-箭杆, 弩箭核心
 * "fletching"\-箭羽
 
-#### 为什么没有碎片部件
+### 为什么没有碎片部件
 
 答 : 你只要使用一次 `addMaterialTrait` 方法就会自动添加碎片部件
 
-### 怎么知道我想要的特性的 identifier ?
+## 增删特性至部件的方法
 
-1.翻看带有此特性的工具的 `nbt`, 找到 `"trait"`, `trait` 后面的数组内的字符串即是特性名称
+```csharp
+//第二个参数都为部件类型
+//第一个参数可以填 Trait 对象, TraitBuilder 对象, String 类型的 identifier(特性名)
+myMat.addMaterialTrait("fiery", "bowstring");
+//第一个参数只能为 String 类型的 identifier(特性名) 
+myMat.removeMaterialTrait("fiery", "bowstring");
+```
 
+## 怎么知道我想要的特性的 identifier ?
+
+1.翻看带有此特性的工具的 `nbt`, 找到 `"trait"`, `trait` 后面的数组内的字符串即是特性名称  
 2.安装 Infini-TiC Mod, 进入游戏后输入 `/infinitic traits` 获取所有已注册的特性
-
-3.使用 [Tinkers Exporter](https://www.mcmod.cn/class/2740.html) Mod 导出匠魂各类数据
 
 ## MaterialStats
 

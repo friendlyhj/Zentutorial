@@ -92,13 +92,11 @@
   * [函数](contenttweaker/advanced-usage/functions.md) -->
 * [更多鸡联动](contenttweaker/chickens-addon.md)
 * [匠魂联动](contenttweaker/tinkers-construct-addon/README.md)
-  * [材料引导](contenttweaker/tinkers-construct-addon/material/README.md)
-    * [材料](contenttweaker/tinkers-construct-addon/material/material.md)
-    * [构建材料](contenttweaker/tinkers-construct-addon/material/materialBuilder.md)
-  * [特性引导](contenttweaker/tinkers-construct-addon/trait/README.md)
-    * [特性](contenttweaker/tinkers-construct-addon/trait/trait.md)
-    * [构建特性](contenttweaker/tinkers-construct-addon/trait/traitBuilder.md)
-  * [特性数据](contenttweaker/tinkers-construct-addon/trait/traitDataRepresentation.md)
+  * [材料](contenttweaker/tinkers-construct-addon/material.md)
+  * [构建材料](contenttweaker/tinkers-construct-addon/materialBuilder.md)
+  * [特性](contenttweaker/tinkers-construct-addon/trait.md)
+  * [构建特性](contenttweaker/tinkers-construct-addon/traitBuilder.md)
+  * [特性数据](contenttweaker/tinkers-construct-addon/traitDataRepresentation.md)
   * [高级运用](contenttweaker/tinkers-construct-addon/advanced-functions.md)
 
 ## 实战 <a id="actual-combat"></a>
