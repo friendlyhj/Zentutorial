@@ -1,4 +1,4 @@
-# 材料  
+# 材料 (Material)
 
 ## 导包
 
@@ -16,10 +16,20 @@ import mods.contenttweaker.tconstruct.Material;
 ### 关于 commandString
 
 ```csharp
-var cactus as string = <ticontrait:cactus>.commandString;
-// <ticontrait:trait> 是一个尖括号调用
-//返回找到的特性 (返回值为 Trait 类)
-print(cactus); //输出的结果为 <ticontrait:cactus>
+var wood as string = <ticonmaterial:wood>.commandString;
+print(wood); //输出的结果为 <ticonmaterial:wood>
+```
+
+## 尖括号调用
+
+可以访问游戏中匠魂或者 CoT 自定义的材料
+
+如果找到特性则返回 [Material](material.md) 对象, 否则返回 null
+
+### 访问方法
+
+```cscsharp
+<ticonmaterial:材料名>
 ```
 
 ## 方法

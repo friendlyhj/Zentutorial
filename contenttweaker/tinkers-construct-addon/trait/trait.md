@@ -1,4 +1,4 @@
-# 特性
+# 特性 (Trait)
 
 在游戏中的特性就是这个类的实例啦
 
@@ -18,10 +18,20 @@ import mods.contenttweaker.tconstruct.Trait;
 ### 关于 commandString
 
 ```csharp
-var cactus as string = <ticontrait:cactus>.commandString;
-// <ticontrait:trait> 是一个尖括号调用
-//返回找到的特性 (返回值为 Trait 类)
-print(cactus); //输出的结果为 <ticontrait:cactus>
+var ecological as string = <ticontrait:ecological>.commandString;
+print(ecological); //输出的结果为 <ticontrait:cactus>
+```
+
+## 尖括号调用
+
+可以访问游戏中匠魂或者 CoT 自定义的特性
+
+如果找到特性则返回 [Trait](trait.md) 对象, 否则返回 null
+
+### 访问方法
+
+```cscsharp
+<ticontrait:特性名>
 ```
 
 ## 访问特性的数据
@@ -31,7 +41,7 @@ print(cactus); //输出的结果为 <ticontrait:cactus>
 ### 访问例子
 
 ```csharp
-val myTraitData as TraitDataRepresentation = myTrait.getData(itemWithTrait);
+var myTraitData as TraitDataRepresentation = myTrait.getData(itemWithTrait);
 ```
 
 - myTrait as Trait 为被访问的特性

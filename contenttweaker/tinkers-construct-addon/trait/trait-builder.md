@@ -35,11 +35,11 @@ var myTrait as TraitBuilder = TraitBuilder.create(identifier as string);
 
 ## 注册特性
 
-最后记得调用一下 `register` 零参方法, 否则游戏内会无反应  
+最后记得调用一下 `register` 零参方法, 否则游戏内会无反应
 
 ## 本地化
 
-本地化为上文的 `localizedDescription` 和 `localizedName`  
+本地化为上文的 `localizedDescription` 和 `localizedName`
 
 ## 实例
 

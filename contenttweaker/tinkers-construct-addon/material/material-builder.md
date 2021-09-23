@@ -38,45 +38,49 @@ var myMat as MaterialBuilder = MaterialBuilder.create(identifier as string);
 
 ## 材料特性
 
-可以向材料对应的部件添加特性
+可以向材料对应的部件添加一个或一些特性
 
-## 部件类型
-
-ContentTweaker 自带的部件类型有以下几种 (不填部件类型会把这个特性添加到材料的所有的部件上)
-
-* "head"\-头部
-* "handle"\-手柄
-* "extra"\-大板, 绑定节, 坚韧手柄, 坚韧绑定节, 护手, 宽护手, 十字柄
-* "bow"\-弓箭
-* "bowstring"\-弓弦
-* "projectile"\-?
-* "shaft"\-箭杆, 弩箭核心
-* "fletching"\-箭羽
-
-### 为什么没有碎片部件
-
-答 : 你只要使用一次 `addMaterialTrait` 方法就会自动添加碎片部件
-
-## 增删特性至部件的方法
+### 增删特性至部件的方法
 
 ```csharp
-//第二个参数都为部件类型
 //第一个参数可以填 Trait 对象, TraitBuilder 对象, String 类型的 identifier(特性名)
+//第二个参数都为部件类型
+//不填部件类型会把这个特性添加到材料所有的部件上
 myMat.addMaterialTrait("fiery", "bowstring");
 //第一个参数只能为 String 类型的 identifier(特性名) 
 myMat.removeMaterialTrait("fiery", "bowstring");
 ```
 
-## 怎么知道我想要的特性的 identifier ?
+### CoT 自带的部件类型
 
-1.翻看带有此特性的工具的 `nbt`, 找到 `"trait"`, `trait` 后面的数组内的字符串即是特性名称  
+ContentTweaker 自带的部件类型有以下几种
+
+* "head"\-镐头，斧刃，铲头，剑刃，宽剑刃，锤头，开掘铲头，园艺镰头，盘，牌板
+* "handle"\-手柄
+* "extra"\-大板, 绑定节, 坚韧手柄, 坚韧绑定节, 护手, 宽护手, 十字柄
+* "bow"\-弓箭
+* "bowstring"\-弓弦
+* "projectile"\-刀刃, 箭头
+* "shaft"\-箭杆, 弩箭核心
+* "fletching"\-箭羽
+
+#### 为什么没有碎片部件
+
+答 : 你只要使用一次 `addMaterialTrait` 方法就会自动添加碎片部件
+
+### 怎么知道我想要的特性的 identifier ?
+
+1.翻看带有此特性的工具的 `nbt`, 找到 `"trait"`, `trait` 后面的数组内的字符串即是特性名称
+
 2.安装 Infini-TiC Mod, 进入游戏后输入 `/infinitic traits` 获取所有已注册的特性
 
-## MaterialStats
+3.使用 [Tinkers Exporter](https://www.mcmod.cn/class/2740.html) Mod 导出匠魂各类数据
 
-如果未给材料可制作的部件设置各项属性, 那此部件无法制作出来
+## 部件属性
 
-有以下方法增删 MaterialStats
+### 如果未调用对应部件的 add 方法则该部件不会出现在游戏内
+
+有以下方法增删部件属性 (MaterialStats)
 
 ```csharp
 myMat.addHeadMaterialStats(durability as int, miningSpeed as float, attackDamage as float, harvestLevel as int);
@@ -94,7 +98,7 @@ myMat.removeBowMaterialStats();
 myMat.addBowStringMaterialStats(modifier as float);
 myMat.removeBowStringMaterialStats();
 
-myMat.addArrowShaftMaterialStats(modifier as float, int bonusAmmo as int);
+myMat.addArrowShaftMaterialStats(modifier as float, bonusAmmo as int);
 myMat.removeArrowShaftMaterialStats();
 
 myMat.addFletchingMaterialStats(accuracy as float, modifier as float);
@@ -113,26 +117,27 @@ myMat.removeProjectileMaterialStats();
 * modifier\-系数
 * extraDurability\-耐久度
 * drawSpeed\-蓄力时间
-* range\-范围
+* range\-射程
 * bonusDamage\-箭矢的附加伤害
 * bonusAmmo\-额外弹药
 * accuracy\-精准度
 
 ## 注册材料
 
-最后记得调用一下 `register` 零参方法, 否则游戏内会无反应  
+最后记得调用一下 `register` 零参方法, 否则游戏内会无反应
 
 ## 本地化key
 
-本地化key为 `material.材料名.name`
+本地化 key 为 `material.材料名.name`
 
 ## 实例
 
 ```csharp
-#loader contenttweaker
-import mods.contenttweaker.tconstruct.MaterialBuilder;
+#loader contenttweaker //一定要加这行
+import mods.contenttweaker.tconstruct.MaterialBuilder; //导包
 
-var testMat = MaterialBuilder.create("kindlich_mat");
+var testMat as MaterialBuilder = MaterialBuilder.create("kindlich_mat");
+//testMat.identifier = "kindlich_mat"; //没必要写这行, 你调用 create 方法并传入一个字符串的时候就已经指定 identifier 了
 testMat.color = 0x8e661b;
 testMat.craftable = true;
 testMat.castable = true;
@@ -140,12 +145,12 @@ testMat.liquid = <liquid:lava>;
 testMat.localizedName = "Wicked";
 testMat.representativeItem = <item:minecraft:red_flower:4>;
 testMat.addItem(<item:minecraft:red_flower:4>);
-testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5);
-testMat.addHandleMaterialStats(0.3, 500);
-testMat.addBowStringMaterialStats(0.5f);
+testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5); //如果未写这行则游戏不会出现 "头部" 部件
+testMat.addHandleMaterialStats(0.3, 500); //如果未写这行则游戏不会出现 "手柄" 部件
+testMat.addBowStringMaterialStats(0.5f); //如果未写这行则游戏不会出现 "弓弦" 部件
 testMat.addMaterialTrait("blasting", "bowstring");
 testMat.addMaterialTrait("blasting", "head");
-testMat.addMaterialTrait("dense", null);
+testMat.addMaterialTrait("dense");
 //此函数将在高级运用讲解
 testMat.itemLocalizer = function(thisMaterial, itemName) {
     return "Cool " + itemName;
