@@ -24,7 +24,7 @@ print(wood); //输出的结果为 <ticonmaterial:wood>
 
 可以访问游戏中匠魂或者 CoT 自定义的材料
 
-如果找到特性则返回 [Material](material.md) 对象, 否则返回 null
+如果找到材料则返回 [Material](material.md) 对象, 否则返回 null
 
 ### 访问方法
 
