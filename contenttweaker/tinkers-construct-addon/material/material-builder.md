@@ -45,7 +45,7 @@ var myMat as MaterialBuilder = MaterialBuilder.create(identifier as string);
 ```csharp
 //第一个参数可以填 Trait 对象, TraitBuilder 对象, String 类型的 identifier(特性名)
 //第二个参数都为部件类型
-//不填部件类型会把这个特性添加到材料所有的部件上
+//不填部件类型会把这个特性附加到材料可添加的部件上
 myMat.addMaterialTrait("fiery", "bowstring");
 //第一个参数只能为 String 类型的 identifier(特性名) 
 myMat.removeMaterialTrait("fiery", "bowstring");
@@ -55,8 +55,10 @@ myMat.removeMaterialTrait("fiery", "bowstring");
 
 ContentTweaker 自带的部件类型有以下几种
 
+(只有匠魂及其前置 Mod 的情况下)
+
 * "head"\-镐头，斧刃，铲头，剑刃，宽剑刃，锤头，开掘铲头，园艺镰头，盘，牌板
-* "handle"\-手柄
+* "handle"\-手柄, 坚韧手柄
 * "extra"\-大板, 绑定节, 坚韧手柄, 坚韧绑定节, 护手, 宽护手, 十字柄
 * "bow"\-弓箭
 * "bowstring"\-弓弦
@@ -70,7 +72,7 @@ ContentTweaker 自带的部件类型有以下几种
 
 ### 怎么知道我想要的特性的 identifier ?
 
-1.翻看带有此特性的工具的 `nbt`, 找到 `"trait"`, `trait` 后面的数组内的字符串即是特性名称
+1.手持具有该特性的物品, 输入 `/ct nbt`, 然后去 `crafttweaker.log` 找刚才输出的结果, 在结果找 `"trait"`, `trait` 数组内的字符串即是特性名称
 
 2.安装 Infini-TiC Mod, 进入游戏后输入 `/infinitic traits` 获取所有已注册的特性
 
