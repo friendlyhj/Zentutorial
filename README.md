@@ -10,7 +10,7 @@
 
 [\[从零开始\]魔改教程-MT技巧性使用叙述](https://www.mcbbs.net/thread-673968-1-1.html)
 
-[酒石酸的汉化CrT的wiki](https://www.mcbbs.net/plugin.php?id=link_redirect&target=https%3A%2F%2Fcrafttweaker.readthedocs.io%2Fzh_CN%2Flatest%2F)（然而那个目录不能折叠，我宁愿英文wiki+谷歌机翻……）
+酒石酸的汉化CrT的wiki（然而那个目录不能折叠，我宁愿英文wiki+谷歌机翻……）
 
 更多内容参见[官方wiki](https://docs.blamejared.com/1.12/en/)  
 还有一个 CrT 的[高级运用教程](https://ikexing.gitbook.io/crt/) (持续更新)
