@@ -328,7 +328,7 @@ Harvester type(string type);
 
 * ```PLAYER```: 必须被玩家破坏. (真假皆可)
 * ```NON_PLAYER```: 必须被非玩家破坏.
-* ```ANY```: The matcher does not care what broke the block.任何方式皆可. 如果是被玩家破坏且定义了 ```heldItemMainHand```, ```gamestages``` 或 ```playerName```, 则以上参数会被检查匹配.
+* ```ANY```: 任何方式皆可. 如果是被玩家破坏且定义了 ```heldItemMainHand```, ```gamestages``` 或 ```playerName```, 则以上参数会被检查匹配.
 * ```EXPLOSION```: 必须被爆炸破坏.  注: 部分物品可能会被爆炸炸没.
 * ```REAL_PLAYER```: 必须被真玩家采掘.
 * ```FAKE_PLAYER```: 必须被假玩家采掘.
