@@ -8,18 +8,6 @@ Map 是集合的一种，也称作映射、关联数组等。特点是存储的�
 > - 不可使用变量作为 key，变量名会被解释为字符串
 > - 数组可以作为 value，但不可以作为 key
 
-ZenScript 的 Map 以 Java 的 HashMap 实现。所以如果 key 的类没有重写 hashCode 和 equals 方法的话，在访问和修改时就会出现问题。而只有少数 CrT 的类重写了这两个方法。所以请尽量使用基本类型（在 zs 中为数据类型和字符串）作为 key。
-
-以下类重写了这两个方法：
-
-- IItemStack
-- IIOreDictEntry
-- IItemDefinition
-- ILiquidDefinition
-- IFacing
-- IBlockPos
-- IPlayer（然而 IPlayer 对象在玩家死亡重生后就会被游戏删除，并非持久保存，依旧不推荐作为 key）
-
 当然如果你的映射只是为了遍历就不用担心这个了。
 
 ## 定义与访问
