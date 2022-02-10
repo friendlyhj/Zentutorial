@@ -26,7 +26,7 @@
 | clamp | 三个double/float/int/long参数 | 区间限制函数，见下例 |
 
 ```csharp
-import mods.ctuils.utils.Math;
+import mods.ctutils.utils.Math;
 
 // Math.clamp(x, min, max)
 // 将数字限制在一个范围内
