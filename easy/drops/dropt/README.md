@@ -1,7 +1,7 @@
 # Dropt - 导言
 
 ## 前言
-Dropt 是一个强大, 灵活的方块掉落物替换系统, 可以在不使用[事件系统](/advanced/event-overview/README.md)的前提下简单的添加多条件的方块掉落物替换. 其在通过使用规则缓存 Blockstate 以显著提升性能的同时, 提供了大量条件匹配和判断, 同时链式调用的格式也提升了代码可读性, 对尤其是对事件系统不甚理解的新手非常友好. Dropt 本身提供 JSON, ZenScript 以及 Java DroptAPI 支持, 但本文将侧重 ZenScript 兼容. 
+[Dropt](https://www.mcmod.cn/class/2195.html) 是一个强大, 灵活的方块掉落物替换系统, 可以在不使用[事件系统](/advanced/event-overview/README.md)的前提下简单的添加多条件的方块掉落物替换. 其在通过使用规则缓存 Blockstate 以显著提升性能的同时, 提供了大量条件匹配和判断, 同时链式调用的格式也提升了代码可读性, 对尤其是对事件系统不甚理解的新手非常友好. Dropt 本身提供 JSON, ZenScript 以及 Java DroptAPI 支持, 但本文将侧重 ZenScript 兼容. 
 
 ## Dropt 特性一览
 Dropt 可以匹配:
