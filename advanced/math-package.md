@@ -34,8 +34,8 @@ import mods.ctutils.utils.Math;
 // 若 x 小于 min，则返回 min
 // 若 x 大于 max，则返回 max
 
-// 12 在 14 与 19 之间，返回 12
-print(Math.clamp(12, 14, 19));
+// 15 在 10 与 19 之间，返回 15
+print(Math.clamp(15, 10, 19));
 
 // 10 不在 12 与 19 之间，返回 12
 print(Math.clamp(10, 12, 19));
