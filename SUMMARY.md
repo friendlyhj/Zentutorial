@@ -37,6 +37,7 @@
   * [ZenGetter](advanced/overview/zengetter.md)
   * [ZenSetter](advanced/overview/zensetter.md)
   * [ZenMethod\(方法\)](advanced/overview/zenmethod.md)
+* [常见错误](advanced/common-errors.md)
 * [基本运算](advanced/calculate.md)
 * [数组与集合](advanced/arrays.md)
 * [循环与遍历](advanced/loops.md)
