@@ -305,7 +305,7 @@ function foo(bar as int) {
 }
 ```
 
-如果你真的有这个需求，可以考虑新建一个参数，初值设为参数
+如果你真的有这个需求，可以考虑新建一个变量，初值设为参数
 
 ```csharp
 function foo(bar as int) {
