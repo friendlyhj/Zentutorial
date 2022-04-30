@@ -46,8 +46,8 @@ print(array.length); // array 的元素个数为 4，输出 4
 你用过`recipes.addShaped()`吗？它的参数里面就有一个多维数组。准确的来说，是一个二维数组。
 
 ```csharp
-var <minecraft:gold_ingot> as IItemStack = gold;
-var <minecraft:apple> as IItemStack = apple;
+var gold as IItemStack = <minecraft:gold_ingot>;
+var apple as IItemStack = <minecraft:apple>;
 
 recipes.addShaped("golden_apple", <minecraft:golden_apple>,
     [[gold,gold,gold],
