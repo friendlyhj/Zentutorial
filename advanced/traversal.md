@@ -14,7 +14,7 @@
 例子一：删除一个物品所参与的所有合成配方
 
 ```csharp
-for recipe in recipes.all() { // 遍历游戏内所有注册配方
+for recipe in recipes.all { // 遍历游戏内所有注册配方
     //用ICraftingRecipe的ingredients1D ZenGetter获取配方的材料，返回IIngredient[]
     if (recipe.ingredients1D has <minecraft:iron_ingot>) {
         recipes.removeByRecipeName(recipe.name);
