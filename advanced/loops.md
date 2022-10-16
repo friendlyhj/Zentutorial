@@ -71,13 +71,24 @@ while(j >= 0) {
 
 ```csharp
 // 定义一个数组并遍历
-var numbers as int[] = [2,4,8,16,32,64];
+var numbers as int[] = [2, 4, 8];
 for number in numbers {
     print(number);
 }
-// 输出 2, 4, 8, 16, 32, 64
+// 输出 2, 4, 8
 
-// 定义一个 Map 映射并遍历
+// 对于数组的 foreach，可以使用带索引的遍历法
+for i, number in numbers {
+    // i 变量代表现在遍历到哪个索引下的元素
+    print("Index: " + i + ", Element: " + number);
+}
+
+// 依次输出
+// Index: 0, Element: 2
+// Index: 1, Element: 4
+// Index: 2, Element: 8
+
+// 定义一个 Map (映射)并遍历
 var map as string[int] = {
     1 : "一",
     2 : "二",
