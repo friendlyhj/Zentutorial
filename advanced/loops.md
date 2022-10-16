@@ -77,9 +77,9 @@ for number in numbers {
 }
 // 输出 2, 4, 8
 
-// 对于数组的 foreach，可以使用带索引的遍历法
+// 对于数组的 foreach，可以使用带下标的遍历法
 for i, number in numbers {
-    // i 变量代表现在遍历到哪个索引下的元素
+    // i 变量为现在遍历到哪个下标下的元素
     print("Index: " + i + ", Element: " + number);
 }
 
