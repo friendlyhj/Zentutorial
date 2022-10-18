@@ -2,7 +2,9 @@
 
 有时候普通的物品还不足以使用，可能需要一些特殊的合成，只有在完全满足对应条件下才会工作。可以在物品后面添加一些物品条件小尾巴，给物品添加条件。你甚至可以同时使用两个物品条件，例如：
 
-`<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "我是消耗了耐久的铁镐"}});`
+注意：如果需要使用关于耐久的物品条件，请先添加 meta 通配符禁用掉默认的精准耐久匹配！
+
+`<minecraft:iron_pickaxe:*>.onlyDamaged().withTag({display: {Lore: "我是消耗了耐久的铁镐"}});`
 
 可用的物品条件
 
