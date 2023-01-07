@@ -18,12 +18,12 @@ description: 配方事件也是有三个参数的函数，用来指定合成完�
   recipes.addShapeless("recipe_action_test", <minecraft:sapling>,
   [<minecraft:stick>,<minecraft:leaves>],
     function (out,ins,info) {
-          //生命值只有大于5才能合成，防止掉5点血后直接死亡
+          //生命值只有大于 5 才能合成，防止掉 5 点血后直接死亡
           return info.player.health > 5 ? out : null;
     },
     function (out,info,player) { // 声明配方事件
-          //合成后玩家掉5点血
-          player.health -= 5;
+          //合成后玩家受到 5 点魔法伤害
+          player.attackEntityFrom(<damageSource:MAGIC>, 5.0f);
   });
 ```
 

@@ -10,7 +10,7 @@ import crafttweaker.event.PlayerCraftedEvent //导入玩家合成事件的类
 
 //使用events全局关键词调用事件管理器，并使用一个ZenMethod指定使用的事件，在函数头将事件匹配至PlayerCraftedEvent
 events.onPlayerCrafted(function(event as PlayerCraftedEvent){
-    event.player.xp += 1; //玩家 +1 经验
+    event.player.attackEntityFrom(<damageSource:MAGIC>, 1.0f); // 玩家受到 1 点魔法伤害
 });
 ```
 
