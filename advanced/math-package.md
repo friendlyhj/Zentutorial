@@ -1,8 +1,8 @@
 # Math包
 
-只有加减乘除取余乘方的运算，是远远不能满足需求的。CrT本身并没有Math包。其附属mod [CraftTweaker Utils\(ctutils\)](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-utils)提供了Math包。该包有多个方法提供数学运算。
+只有加减乘除取余乘方的运算，是远远不能满足需求的。CraftTweaker 4.1.20.688 添加了 Math 包提供了一系列数学函数。
 
-需要用`import mods.ctutils.utils.Math;`导入
+需要用`import crafttweaker.util.Math;`导入
 
 | 方法名 | 参数要求 | 用途 |
 | :--- | :--- | :--- |
@@ -21,12 +21,11 @@
 | cosh | 1个double | 双曲余弦（弧度制） |
 | tanh | 1个double | 双曲正切（弧度制） |
 | sqrt | 1个double | 开方 |
-| random | 无参数 | 返回0到1之间的随机数 |
 | round | 1个double | 四舍五入取整 |
 | clamp | 三个double/float/int/long参数 | 区间限制函数，见下例 |
 
 ```csharp
-import mods.ctutils.utils.Math;
+import crafttweaker.util.Math;
 
 // Math.clamp(x, min, max)
 // 将数字限制在一个范围内
