@@ -62,8 +62,6 @@
   * [配方函数](advanced/recipe-function-and-action/recipe-function.md)
   * [配方事件](advanced/recipe-function-and-action/recipe-action.md)
 * [事件概论](advanced/event-overview/README.md)
-  * [常用类](advanced/event-overview/usual-classes.md)
-  * [基本框架](advanced/event-overview/basic-framework.md)
   * [一些忠告](advanced/event-overview/tips.md)
 * [ZenClass](advanced/zenclass.md)
 
