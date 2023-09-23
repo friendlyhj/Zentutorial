@@ -21,6 +21,8 @@
 | cosh | 1个double | 双曲余弦（弧度制） |
 | tanh | 1个double | 双曲正切（弧度制） |
 | sqrt | 1个double | 开方 |
+| log  | 1个double | 自然对数 |
+| log10 | 1个double | 常用对数 |
 | round | 1个double | 四舍五入取整 |
 | clamp | 三个double/float/int/long参数 | 区间限制函数，见下例 |
 
