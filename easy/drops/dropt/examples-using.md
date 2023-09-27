@@ -140,8 +140,8 @@ Dropt.list("grass_drop")
       // 创建一个 Rule 对象
       Dropt.rule()
 
-      // 为父 Rule 对象添加匹配破坏 "minecraft:tallgrass:*" 的条件 (使用 META 通配符匹配所有高草丛)
-      .matchBlocks(["minecraft:tallgrass:*"])
+      // 为父 Rule 对象添加匹配破坏 "minecraft:double_plant:2" 的条件 (高草丛的 ID)
+      .matchBlocks(["minecraft:double_plant:2"])
 
       // 将父 Rule 对象的替换策略从默认的 "REPLACE_ALL" 切换为 "ADD"
       .replaceStrategy("ADD")
