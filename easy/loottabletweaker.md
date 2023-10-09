@@ -58,7 +58,7 @@ LootTable.removeTable("desert_pyramid");
 LootTable.removePool("end_city_treasure", "main");
 
 // 移除村庄铁匠铺箱子的 LootTable 的 main 池中的 minecraft:iron_ore 这一被抽出项
-LootTable.removeEntry("minecraft:chests/village_blacksmith", "main", <minecraft:iron_ore>.id;
+LootTable.removeEntry("minecraft:chests/village_blacksmith", "main", <minecraft:iron_ore>.id);
 
 /*指定 LootTable "minecraft:chests/simple_dungeon" (小刷怪房箱子)
   选中此 LootTable 中的 "main" 池
