@@ -8,7 +8,7 @@
 
 ## 创建
 
-用`val testItem as ItemFood = VanillaFactory.createItemFood(字符串物品ID, 整数可恢复饥饿值);`呼出一个物品类的一个实例，并存储在某个变量中，以做接下来的修改。物品ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
+用`val testItem as ItemFood = VanillaFactory.createItemFood(字符串物品ID, 整数可恢复饥饿值);`创建一个「即将」加入进游戏的食物，并存储在某个变量中，以做接下来的修改。物品ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
 
 食物是一种特殊的物品，接下来的操作与物品差不多。（注册、设置信息、设置本地化、材质与添加物品一致）[传送门](https://youyi580.gitbook.io/zentutorial/contenttweaker/vanilla-factory/item)
 

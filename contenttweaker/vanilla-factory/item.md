@@ -2,7 +2,7 @@
 
 需要`import mods.contenttweaker.Item;`导入有关包。原版加工厂包也需要导入！
 
-用`val testItem as Item = VanillaFactory.createItem(字符串物品ID);`呼出一个物品类的一个实例，并存储在某个变量中，以做接下来的修改。物品ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
+用`val testItem as Item = VanillaFactory.createItem(字符串物品ID);`创建一个「即将」加入进游戏的物品，并存储在某个变量中，以做接下来的修改。物品ID必须全小写，可以包含数字和下划线\_ ，必须字母开头。
 
 然后你对这个对象用一堆ZenProperties\(既是ZenSetter，也是ZenGetter\)设置这个物品的一些定义信息。最后用register方法将这个物品注册进游戏，注意注册后你不能对该物品再次修改，这样一个自定义物品就做好了。材质放在\resources\contenttweaker\textures\items文件夹，文件名与物品ID一致。
 
