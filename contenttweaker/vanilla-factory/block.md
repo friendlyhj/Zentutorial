@@ -12,7 +12,7 @@
 
 | 名称 | 类型 | 默认值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| axisAlignedBB | MCAxisAlignedBB | 完整方块 | 设置方块碰撞箱 |
+| axisAlignedBB | [MCAxisAlignedBB](https://docs.blamejared.com/1.12/en/Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB) | 完整方块 | 设置方块碰撞箱 |
 | beaconBase | bool | false | 是否可作为信标基座 |
 | blockHardness | float | 5.0 | 方块硬度 |
 | blockLayer | string | "SOLID" | 可用“SOLID”, “CUTOUT\_MIPPED”, “CUTOUT”, “TRANSLUCENT”之一。渲染类似冰的半透明请用 TRANSLUCENT，类似玻璃的请用 CUTOUT_MIPPED 或 CUTOUT|
