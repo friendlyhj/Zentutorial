@@ -45,7 +45,7 @@ var k2 as IData = mySecondMap.memberGet("key2");
 print(k2.asString());
 ```
 
-你可以用 `+` 来合并两个IDataMap和 `-` 来裁剪IDataMap。合并时，相同key的值后者会覆盖前者（这是你唯一可以修改值的方法）。裁剪可以去除特定key的元素。
+你可以用 `+` 来合并两个IDataMap和 `-` 来裁剪IDataMap。合并时，相同key的值后者会覆盖前者（这是你唯一可以「修改」值的方法，注意它们都不会真正修改原有的 DataMap，而是返回一个新的 DataMap 结果是两个 DataMap 合并/裁剪后的）。裁剪可以去除特定key的元素。
 
 ```csharp
 val map1 as IData = {
