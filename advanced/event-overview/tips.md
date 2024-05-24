@@ -100,7 +100,7 @@ import crafttweaker.event.BlockPlaceEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 
-events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
+events.onBlockPlace(function(event as BlockPlaceEvent) {
     if(event.player.world.remote) return;// 保证仅在服务端执行
     var data as IData = event.player.data;// 获取玩家数据
     if(isNull(data.PlayerPersisted.custom)) return;// 防止该标签为空时出现空指针异常
