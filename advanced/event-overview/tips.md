@@ -44,7 +44,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 });
 ```
 
-当玩家触发`PlayerCraftedEvent`事件时，就会写入该自定义标签到玩家数据中，同时输出调试信息。
+当玩家合成时，就会写入该自定义标签到玩家数据中，同时输出调试信息。
 
 ```log
 [SERVER_STARTED][SERVER][INFO] {custom: 1 as byte}
@@ -96,7 +96,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 ```csharp
 import crafttweaker.events.IEventManager;
-import crafttweaker.event.BlockPlaceEvent;
+import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 
@@ -109,7 +109,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 });
 ```
 
-当玩家触发`BlockPlaceEvent`事件时，就会修改他保存着的`custom`标签的数据，同时输出调试信息。
+当玩家合成时，就会修改他保存着的`custom`标签的数据，同时输出调试信息。
 
 ```log
 [SERVER_STARTED][SERVER][INFO] 10
